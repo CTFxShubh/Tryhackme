@@ -1,0 +1,30 @@
+# Nmap 7.93 scan initiated Wed Apr 19 03:40:29 2023 as: nmap -sV -A -O -oN nmap.txt 10.10.200.43
+Nmap scan report for 10.10.200.43 (10.10.200.43)
+Host is up (0.15s latency).
+Not shown: 977 filtered tcp ports (no-response), 20 filtered tcp ports (admin-prohibited)
+PORT   STATE SERVICE VERSION
+21/tcp open  ftp     vsftpd 3.0.3
+22/tcp open  ssh     OpenSSH 8.0 (protocol 2.0)
+| ssh-hostkey: 
+|   3072 de5b0eb540aa434d2a83311420779ca1 (RSA)
+|   256 f4b5a660f4d1bfe2852e2e7e5f4cce38 (ECDSA)
+|_  256 29e66109ed8a882b5574f2b733aedfc8 (ED25519)
+80/tcp open  http    Apache httpd 2.4.37 ((centos))
+| http-methods: 
+|_  Potentially risky methods: TRACE
+|_http-title: Overpass Hosting
+|_http-server-header: Apache/2.4.37 (centos)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Linux 3.10 - 3.13 (91%), Crestron XPanel control system (89%), HP P2000 G3 NAS device (86%), ASUS RT-N56U WAP (Linux 3.4) (86%), Linux 3.1 (86%), Linux 3.16 (86%), Linux 3.2 (86%), AXIS 210A or 211 Network Camera (Linux 2.6.17) (86%), Linux 5.4 (85%), Linux 2.6.32 (85%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 5 hops
+Service Info: OS: Unix
+
+TRACEROUTE (using port 80/tcp)
+HOP RTT       ADDRESS
+1   21.88 ms  10.17.0.1 (10.17.0.1)
+2   ... 4
+5   142.03 ms 10.10.200.43 (10.10.200.43)
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Apr 19 03:41:18 2023 -- 1 IP address (1 host up) scanned in 49.49 seconds
