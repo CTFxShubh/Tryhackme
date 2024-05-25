@@ -1,0 +1,51 @@
+Email 1 Content :
+
+Return-Path: <root@ubuntu>
+X-Original-To: natalya
+Delivered-To: natalya@ubuntu
+Received: from ok (localhost [127.0.0.1])
+        by ubuntu (Postfix) with ESMTP id D5EDA454B1
+        for <natalya>; Tue, 10 Apr 1995 19:45:33 -0700 (PDT)
+Message-Id: <20180425024542.D5EDA454B1@ubuntu>
+Date: Tue, 10 Apr 1995 19:45:33 -0700 (PDT)
+From: root@ubuntu
+
+Natalya, please you need to stop breaking boris' codes. Also, you are GNO supervisor for training. I will email you once a student is designated to you.
+
+Also, be cautious of possible network breaches. We have intel that GoldenEye is being sought after by a crime syndicate named Janus.
+.
+
+
+
+
+Email 2 Content : 
+
+
+Return-Path: <root@ubuntu>
+X-Original-To: natalya
+Delivered-To: natalya@ubuntu
+Received: from root (localhost [127.0.0.1])
+        by ubuntu (Postfix) with SMTP id 17C96454B1
+        for <natalya>; Tue, 29 Apr 1995 20:19:42 -0700 (PDT)
+Message-Id: <20180425031956.17C96454B1@ubuntu>
+Date: Tue, 29 Apr 1995 20:19:42 -0700 (PDT)
+From: root@ubuntu
+
+Ok Natalyn I have a new student for you. As this is a new system please let me or boris know if you see any config issues, especially is it's related to security...even if it's not, just enter it in under the guise of "security"...it'll get the change order escalated without much hassle :)
+
+Ok, user creds are:
+
+username: xenia
+password: RCP90rulez!
+
+Boris verified her as a valid contractor so just create the account ok?
+
+And if you didn't have the URL on outr internal Domain: severnaya-station.com/gnocertdir
+**Make sure to edit your host file since you usually work remote off-network....
+
+Since you're a Linux user just point this servers IP to severnaya-station.com in /etc/hosts.
+
+
+.
+-ERR Disconnected for inactivity.
+Connection closed by foreign host.

@@ -1,0 +1,10 @@
+Target: http://golden.thm/
+Total requests: 4989
+==================================================================
+ID    Response   Lines      Word         Chars          Request    
+==================================================================
+
+Total time: 0
+Processed Requests: 4989
+Filtered Requests: 4989
+Requests/sec.: 0

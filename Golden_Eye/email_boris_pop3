@@ -1,0 +1,50 @@
+Email 1 content : 
+
+Return-Path: <root@127.0.0.1.goldeneye>
+X-Original-To: boris
+Delivered-To: boris@ubuntu
+Received: from ok (localhost [127.0.0.1])
+        by ubuntu (Postfix) with SMTP id D9E47454B1
+        for <boris>; Tue, 2 Apr 1990 19:22:14 -0700 (PDT)
+Message-Id: <20180425022326.D9E47454B1@ubuntu>
+Date: Tue, 2 Apr 1990 19:22:14 -0700 (PDT)
+From: root@127.0.0.1.goldeneye
+
+Boris, this is admin. You can electronically communicate to co-workers and students here. I'm not going to scan emails for security risks because I trust you and the other admins here.
+
+
+
+Email 2 content : 
+
+Return-Path: <natalya@ubuntu>
+X-Original-To: boris
+Delivered-To: boris@ubuntu
+Received: from ok (localhost [127.0.0.1])
+        by ubuntu (Postfix) with ESMTP id C3F2B454B1
+        for <boris>; Tue, 21 Apr 1995 19:42:35 -0700 (PDT)
+Message-Id: <20180425024249.C3F2B454B1@ubuntu>
+Date: Tue, 21 Apr 1995 19:42:35 -0700 (PDT)
+From: natalya@ubuntu
+
+Boris, I can break your codes!
+
+
+Email 3 content : 
+
+Return-Path: <alec@janus.boss>
+X-Original-To: boris
+Delivered-To: boris@ubuntu
+Received: from janus (localhost [127.0.0.1])
+        by ubuntu (Postfix) with ESMTP id 4B9F4454B1
+        for <boris>; Wed, 22 Apr 1995 19:51:48 -0700 (PDT)
+Message-Id: <20180425025235.4B9F4454B1@ubuntu>
+Date: Wed, 22 Apr 1995 19:51:48 -0700 (PDT)
+From: alec@janus.boss
+
+Boris,
+
+Your cooperation with our syndicate will pay off big. Attached are the final access codes for GoldenEye. Place them in a hidden file within the root directory of this server then remove from this email. There can only be one set of these acces codes, and we need to secure them for the final execution. If they are retrieved and captured our plan will crash and burn!
+
+Once Xenia gets access to the training site and becomes familiar with the GoldenEye Terminal codes we will push to our final stages....
+
+PS - Keep security tight or we will be compromised.

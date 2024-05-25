@@ -1,0 +1,48 @@
+Found an user with name --> ** Boris ** 
+" "    " "    "  " name --> ** Natalya **
+
+Found password of User Boris "&#73;&#110;&#118;&#105;&#110;&#99;&#105;&#98;&#108;&#101;&#72;&#97;&#99;&#107;&#51;&#114;"
+
+Decoding User Boris Password "InvincibleHack3r"
+
+
+
+BruteForcing The POP3 with USER : "boris" and wordlist = fasttrack.txt using HYDRA 
+
+Found credentials for POP3 Service --> User : "boris" & PASS : secret1!
+
+Using The same method the find the password for USER : "natalya"
+
+Found credentials for POP3 Service --> User : "natalya" & PASS : "bird"
+
+
+
+Reading all the mails of boris and natalya , found an interesting email in natalya in which a user credentials were givem and there is an subdomain and we need to add that subdomain in our /etc/hosts and visit a directory 
+
+severnaya-station.com/gnocertdir
+
+--> visiting the subdomain and login using the credentials , seems like it's and online learning platform 
+
+--> enumerating the contents found an msg of Dr Doak , in which he told his email username doak
+
+So bruteforcing the POP3 (Port : 55007) found the password 
+  --> USERNAME : doak
+  --> PASSWORD : goat
+
+Login in the same website using Dr Doak credentials and again enumerating the website for credentials 
+
+ --> USERNAME : dr_doak
+ --> PASSWORD : 4England!
+
+
+In the MSG secting , there was an file name with "secret.txt" , downloading the file and opening it tell's that 
+
+ --> 007 was able to capture the admin password in clear text , so he gave us an hidden directory to visit in subdomain 
+
+     "/dir007key/for-007.jpg"
+
+Visiting the page and downloading the image , seems like an normal 007 picture 
+
+Using exiftool , found an hidden password for admin user which was base64 encoded
+ --> USERNAME : admin
+ --> PASSWORD : xWinter1995x!
