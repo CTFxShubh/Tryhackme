@@ -1,0 +1,52 @@
+1.  Nmap to find the ports and services 
+    found ssh,ftp,and a webserver 
+
+2.  we need to redirect to secret login page 
+    so we will use curl 
+    SYNTAX : curl -A "C" -L "http://10.10.113.179" > curl.txt
+
+             -A allows us to send user agent to server 
+             -L follows the redirection 
+
+
+    found that charles as a weal password so bruteforcing ftp to find the password
+
+3.  hydra -l chris -P ~/Tryhackme/List_For_Enumeration/wordlists/rockyou.txt 10.10.113.179 ftp -s 21 -V -f
+
+    Found the password:
+    [21][ftp] host: 10.10.113.179   login: chris   password: crystal
+
+4.  login in ftp using the above credentials 
+    found 1 txt file and 2 images 
+
+5. using binwalk <image name>  to see any hidden image inside the file 
+
+   found a hidden zipfile inside the image 
+   
+   SYNTAX : binwalk -e <image name> it will automatically extract the know file type 
+
+6. there is text by from agent j which tell the password for the next image but the password is encoded 
+   using cyberchef website to decode that code 
+   Found password Area51 
+
+7. Now using steghid --extract -sf <image name>
+   it will ask for password : Area51 
+   found a "message.txt" file in which it tells about the ssh login credentials about james
+
+8. using above credentails we will login using ssh 
+
+9. now privilege escalation 
+   typing sudo -l 
+   it shows : (ALL, !root) /bin/bash
+   which means the user james cannot run /bin/bash as root 
+   
+
+
+   searching for the exploits found one CVE-2019-14287
+   a python3 code , creating a python3 file and giving it exectuing permission 
+
+10. we got the root account 
+
+
+
+-> Thank You <-

