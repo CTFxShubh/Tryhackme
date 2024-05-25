@@ -1,0 +1,3340 @@
+# Nmap 7.93 scan initiated Sat Apr 29 11:32:04 2023 as: nmap -sV -A -O -oN nmap.txt 10.10.173.125
+Nmap scan report for 10.10.173.125 (10.10.173.125)
+Host is up (0.14s latency).
+Not shown: 94 closed tcp ports (reset)
+Bug in dicom-ping: no string output.
+Bug in ganglia-info: no string output.
+Bug in ganglia-info: no string output.
+Bug in uptime-agent-info: no string output.
+PORT      STATE SERVICE            VERSION
+1/tcp     open  tcpmux?
+| fingerprint-strings: 
+|   NULL: 
+|_    550 12345 0000000000000000000000000000000000000000000000000000000
+3/tcp     open  compressnet?
+| fingerprint-strings: 
+|   NULL: 
+|_    550 12345 0000000000000000000000000000000000000000000000000000000
+4/tcp     open  unknown
+6/tcp     open  unknown
+7/tcp     open  echo?
+| fingerprint-strings: 
+|   NULL: 
+|_    550 12345 0fffffffffffff777778887777777777cffffffffffffffffffff00
+9/tcp     open  discard?
+| fingerprint-strings: 
+|   NULL: 
+|_    550 12345 0ffffffffff80000088808000000888800000008887ffffffffff00
+13/tcp    open  daytime?
+| fingerprint-strings: 
+|   NULL: 
+|_    550 12345 0ffffffff000000888000000000800000080000008800007fffff00
+17/tcp    open  qotd?
+| fingerprint-strings: 
+|   NULL: 
+|_    550 12345 0fffff7880000780f7cffff7800f8000008fffffff80808807fff00
+19/tcp    open  chargen?
+| fingerprint-strings: 
+|   NULL: 
+|_    550 12345 0ff70008fc77f7000000f80008f8000007f0000000000000888ff00
+20/tcp    open  ftp-data?
+21/tcp    open  ftp?
+|_tls-nextprotoneg: ERROR: Script execution failed (use -d to debug)
+| fingerprint-strings: 
+|   NULL: 
+|_    550 12345 0f7000f800770008777 go to port 12345 80008f7f700880cf00
+|_sslv2: ERROR: Script execution failed (use -d to debug)
+|_ftp-syst: ERROR: Script execution failed (use -d to debug)
+|_ssl-date: ERROR: Script execution failed (use -d to debug)
+|_tls-alpn: ERROR: Script execution failed (use -d to debug)
+|_ftp-anon: ERROR: Script execution failed (use -d to debug)
+|_ftp-bounce: ERROR: Script execution failed (use -d to debug)
+|_ssl-cert: ERROR: Script execution failed (use -d to debug)
+22/tcp    open  ssh?
+| fingerprint-strings: 
+|   NULL: 
+|_    550 12345 0f8008c008fff8000000000000780000007f800087708000800ff00
+23/tcp    open  telnet?
+24/tcp    open  priv-mail?
+| fingerprint-strings: 
+|   NULL: 
+|_    550 12345 0f7000f888f8007ff7800000770877800000cf780000ff00807ff00
+25/tcp    open  smtp?
+|_smtp-commands: SMTP EHLO 10.10.173.125: failed to receive data: connection closed
+| fingerprint-strings: 
+|   NULL: 
+|_    550 12345 0ff0808800cf0000ffff70000f877f70000c70008008ff8088fff00
+26/tcp    open  rsftp?
+30/tcp    open  unknown
+| fingerprint-strings: 
+|   NULL: 
+|_    550 12345 0ffffff8000007f0780cffff700000c000870008f07fff707ffff00
+32/tcp    open  unknown
+33/tcp    open  dsp?
+37/tcp    open  time?
+42/tcp    open  nameserver?
+| fingerprint-strings: 
+|   NULL: 
+|_    550 12345 0fffffffffffffffffffffc800000000000000000088800007fff00
+43/tcp    open  whois?
+| fingerprint-strings: 
+|   NULL: 
+|_    550 12345 0fffffffffffffffffffffff7800000000000008888000008ffff00
+49/tcp    open  tacacs?
+| fingerprint-strings: 
+|   NULL: 
+|_    550 12345 0000000000000000000000000000000000000000000000000000000
+53/tcp    open  domain?
+| fingerprint-strings: 
+|   NULL: 
+|     HTTP/1.331 b
+|_    Server: Oracle_Web_listener_?B
+|_dns-nsid: ERROR: Script execution failed (use -d to debug)
+70/tcp    open  gopher?
+| fingerprint-strings: 
+|   NULL: 
+|     HTTP/1.1 302 Moved Temporarily
+|     Set-Cookie: JSESSIONID=32; Path=/; Secure; HttpOnly
+|     Date: n GMT
+|     Location: /login.html
+|     Content-Type: text/html;charset=UTF-8
+|_    rServer: NSC/BVXp (JVM)
+|_gopher-ls: 
+79/tcp    open  ssh                WRQ Reflection for Secure IT sshd iyQza (OpenVMS MultiNet; protocol 8979361)
+| finger: SSH-8979361-ReflectionForSecureIT_iyQza - Process Software MultiNet\x0D
+|_
+80/tcp    open  http               lighttpd 80 (Western Digital My Book http config)
+|_http-title: Shared Storage Manager
+81/tcp    open  http               TriActive MicroAgent httpd pj_E_
+|_http-title: Site doesn't have a title.
+|_http-server-header: TriActive MicroAgent (pj_E_)
+82/tcp    open  xfer?
+| fingerprint-strings: 
+|   NULL: 
+|_    'QX'><stream:error><xml-not-well-formed xmlns
+83/tcp    open  mit-ml-dev?
+| fingerprint-strings: 
+|   NULL: 
+|_    0000
+84/tcp    open  ctf?
+| fingerprint-strings: 
+|   NULL: 
+|_    'http://etherx.jabber.org/streams' xmlns='jabber:client' version='1.0' id=''><stream:error><not-well-formed xmlns
+85/tcp    open  smtp
+|_smtp-commands: SMTP EHLO 10.10.173.125: failed to receive data: connection closed
+| fingerprint-strings: 
+|   NULL: 
+|_    220 BZmtdY ESMTP NetIQ MailMarshal 5x Service Pack q(v1LSDXjp) Ready
+88/tcp    open  kerberos-sec?
+| fingerprint-strings: 
+|   NULL: 
+|_    icy-caps:9r
+89/tcp    open  su-mit-tg?
+| fingerprint-strings: 
+|   NULL: 
+|_    0{1,2}:15:65 0{4}/97/81
+90/tcp    open  dnsix?
+| fingerprint-strings: 
+|   NULL: 
+|     HTTP/1.335 r
+|_    Server: Lotus-Domino/Release-5-EhMClP
+99/tcp    open  metagram?
+| fingerprint-strings: 
+|   NULL: 
+|     HTTP/1.0 200 OK
+|     Date: g
+|     Content-Type: text/html
+|     Content-Encoding: identity
+|     Content-Length: 2r
+|_    Expires: y
+100/tcp   open  ftp                AXIS r print server ftpd GQZU
+106/tcp   open  ssh                (protocol 1.5)
+| fingerprint-strings: 
+|   NULL: 
+|_    SSH-1.5-By-ICE_4_All ( Hackers Not Allowed! )
+109/tcp   open  http               HP Apache-based httpd 5cIE (n)
+|_http-server-header: HP-UX_Apache-based_Web_Server/5cIE n
+110/tcp   open  pop3?
+| fingerprint-strings: 
+|   NULL: 
+|     HTTP/1.1 200 OK
+|     Date: c
+|     Server: ENI-Web/R9274_01
+|     Content-Type: text/html
+|     Expires: y
+|     Last-Modified: w
+|     Cache-Control: no-cache
+|     Pragma: no-cache
+|     <html>
+|     <head>
+|     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+|     <title>SpeedStream 0Management Interface</title>
+|_    </head>
+111/tcp   open  rpcbind            2-4 (RPC #100000)
+| rpcinfo: 
+|   program version    port/proto  service
+|   100000  2,3,4        111/tcp   rpcbind
+|   100000  2,3,4        111/udp   rpcbind
+|   100000  3,4          111/tcp6  rpcbind
+|   100000  3,4          111/udp6  rpcbind
+|   100003  3           2049/udp   nfs
+|   100003  3           2049/udp6  nfs
+|   100003  3,4         2049/tcp   nfs
+|   100003  3,4         2049/tcp6  nfs
+|   100005  1,2,3      36848/udp6  mountd
+|   100005  1,2,3      40412/udp   mountd
+|   100005  1,2,3      40801/tcp6  mountd
+|   100005  1,2,3      56347/tcp   mountd
+|   100021  1,3,4      37930/udp6  nlockmgr
+|   100021  1,3,4      38091/tcp   nlockmgr
+|   100021  1,3,4      43909/tcp6  nlockmgr
+|   100021  1,3,4      52641/udp   nlockmgr
+|   100227  3           2049/tcp   nfs_acl
+|   100227  3           2049/tcp6  nfs_acl
+|   100227  3           2049/udp   nfs_acl
+|_  100227  3           2049/udp6  nfs_acl
+113/tcp   open  ftp-proxy          Proxy602 ftp proxy
+119/tcp   open  jabber             Zimbra 6 jabberd
+| xmpp-info: 
+|   STARTTLS Failed
+|   info: 
+|     features: 
+|     errors: 
+|       (timeout)
+|     unknown: 
+|     xmpp: 
+|     capabilities: 
+|     auth_mechanisms: 
+|_    compression_methods: 
+125/tcp   open  smtp               hMailServer smtpd 41225
+|_smtp-commands: SMTP EHLO 10.10.173.125: failed to receive data: connection closed
+135/tcp   open  msrpc?
+| fingerprint-strings: 
+|   NULL: 
+|     version
+|_    bindvPowerDNS Recursor 401
+139/tcp   open  http               Wifi Pineapple Jasager httpd (PHP wvMW)
+|_http-trane-info: Problem with XML parsing of /evox/about
+|_http-title: Site doesn't have a title (text/html).
+143/tcp   open  ftp                Ipswitch notification ftpd
+|_imap-capabilities: CAPABILITY
+144/tcp   open  news?
+| fingerprint-strings: 
+|   NULL: 
+|     HTTP/1.1 404 Not Found
+|     Content-Type: text/html
+|     Content-Length: 3r
+|     Cache-Control: no-cache
+|     Connection: close
+|     Proxy-Connection: close
+|     <style type="text/css">
+|_    body{ font-family: Tahoma, Arial, sans-serif, Helvetica, Verdana; font-size: 11px; color: #000000; background-color: #FFFFFF; margin: 2 }
+146/tcp   open  http               F-Secure Policy Manager Server
+161/tcp   open  snmp?
+| fingerprint-strings: 
+|   NULL: 
+|     statusResponse
+|     yversion remulous (whQ
+|     linux-
+|_    )(?=\)
+163/tcp   open  http               APC UPS_Server httpd HVqYG (APC 66074 network management card)
+|_http-server-header: UPS_Server/HVqYG
+|_http-title: UPS Properties
+|_http-trane-info: Problem with XML parsing of /evox/about
+179/tcp   open  ftp                QMS/Minolta Magicolor 2200 DeskLaser printer ftpd
+199/tcp   open  telnet             WPI Network Power Switch (remote reboot) telnetd
+211/tcp   open  914c-g?
+| fingerprint-strings: 
+|   NULL: 
+|_    220 SFOqWm (Cisco BRcVe) ready
+212/tcp   open  http               NET-DK Ckh (Motorola SB5101 or SB6120 cable modem http config)
+|_http-server-header: NET-DK/Ckh
+222/tcp   open  efi-webtools       EFI Fiery WebTools communication
+254/tcp   open  http               Dahlia httpd 06554464 (Sony Storestation http interface)
+|_http-title: Site doesn't have a title.
+255/tcp   open  unknown
+| fingerprint-strings: 
+|   NULL: 
+|_    220
+256/tcp   open  control-gc-ports   Global Cache GC-100 config
+259/tcp   open  ftp                MoreFTPd
+264/tcp   open  smtp-proxy         GData AntiVirenKit MailGateway smtp proxy
+280/tcp   open  sip                Asterisk PBX (Status: m)
+| fingerprint-strings: 
+|   NULL: 
+|     SIP/2.0 m
+|_    User-Agent: Asterisk PBX
+301/tcp   open  unknown
+306/tcp   open  ftp                netapp ftpd
+311/tcp   open  smtp-proxy         Tumbleweed smtp proxy
+340/tcp   open  http               Ingrian Security Encryption http config
+|_http-title: Error 404
+366/tcp   open  odmr?
+| fingerprint-strings: 
+|   NULL: 
+|     HTTP/1.0 200 OK
+|     hServer: TSEWS
+|_    x<title>TechniSat WebTools</title>y<meta name='copyright' content='TechniSat Digital(r) 2006-2009(c)'>
+389/tcp   open  http               BNBT Bittorrent Tracker
+|_http-title: Site doesn't have a title.
+406/tcp   open  telnet             BusyBox telnetd a
+407/tcp   open  http               Zonet ZSR0104CP router http config 76988000 (Released 6288)
+|_http-server-header: httpd-impacct/76988000 6288
+|_http-title: Site doesn't have a title.
+416/tcp   open  silverplatter?
+| fingerprint-strings: 
+|   NULL: 
+|     HTTP/1.0 404 Not Found
+|_    Connection: close?
+417/tcp   open  http               HP StorageWorks AG118A tape autoloader http config
+|_http-title: 501 Method Not Implemented
+425/tcp   open  icad-el?
+| fingerprint-strings: 
+|   NULL: 
+|     usyn0
+|     @000000000a$Id: //ral_depot/products/IxChariotqF/?:ENDPOINT|endpoint/CODE/client.c#1$000dt0
+|     e1_thread00
+|_    main_process_incoming0
+427/tcp   open  svrloc?
+| fingerprint-strings: 
+|   NULL: 
+|_    SCMBUG-SERVER RELEASE_qgBDJS 5n
+443/tcp   open  http               Belkin Bulldog UPS Monitor http config
+|_http-title: Site doesn't have a title.
+|_http-server-header: Delta UPSentry
+| http-auth: 
+| HTTP/1.1 401 Unauthorized
+|_  Basic realm=Delta UPS Web
+444/tcp   open  snpp?
+| fingerprint-strings: 
+|   NULL: 
+|     help
+|_    0000 CKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA00!0
+445/tcp   open  microsoft-ds?
+458/tcp   open  dict               Serpento dictd
+464/tcp   open  kpasswd5?
+| fingerprint-strings: 
+|   NULL: 
+|     HTTP/1.0 200 u
+|_    pServer: Linux/B, UPnP/dAQ_R, Free UPnP Entertainment Service/ReadyNAS
+465/tcp   open  smtps?
+| fingerprint-strings: 
+|   NULL: 
+|_    "spa user", domain
+|_smtp-commands: SMTP EHLO 10.10.173.125: failed to receive data: connection closed
+481/tcp   open  dvs?
+| fingerprint-strings: 
+|   NULL: 
+|     HTTP/1.1 899 oServer: Webserver
+|     Xerox Corporation (R)
+|_    Xerox Corporation 2002 - 2004.
+497/tcp   open  http               Mongoose httpd
+|_http-title: Site doesn't have a title (text/plain).
+500/tcp   open  http               Microsiga httpd
+512/tcp   open  exec?
+| fingerprint-strings: 
+|   NULL: 
+|_    Loan IQ %1 Request Server - Ready for Request0
+513/tcp   open  ftp
+| fingerprint-strings: 
+|   NULL: 
+|_    220 lrLhMmSR FTP server (Version 1i1p23821241 a-z]{2} a-z]{2} w) readyn
+514/tcp   open  telnet             AMX NXD-CV5 Modero touch panel telnetd 8551
+515/tcp   open  pop3               Eudora Worldmail pop3d 20435
+524/tcp   open  ncp?
+| fingerprint-strings: 
+|   NULL: 
+|_    E000aSo0C0A0000MProtocole non support?e de l'interface 65363
+541/tcp   open  vnc                RealVNC Personal (protocol 4.0)
+543/tcp   open  http               Lispweb httpd 7keoTkD
+|_http-title: Site doesn't have a title.
+|_http-server-header: LispWeb 7keoTkD (acl)
+544/tcp   open  avk                G Data AVK anti-virus
+545/tcp   open  http               Prolexic DDoS protected httpd (SI3PHX1/05)
+|_http-server-header: SI3PHX1/05
+548/tcp   open  pop3-proxy         CCProxy pop3d S+
+|_afp-serverinfo: ERROR: Script execution failed (use -d to debug)
+554/tcp   open  rtsp?
+| fingerprint-strings: 
+|   NULL: 
+|     HTTP/1.1 200 OK
+|     uConnection: keep-Alive
+|_    a<meta name=description content=VZ018>
+|_rtsp-methods: ERROR: Script execution failed (use -d to debug)
+555/tcp   open  smtp               Worldmail smtpd 2.y..
+|_smtp-commands: SMTP EHLO 10.10.173.125: failed to receive data: connection closed
+563/tcp   open  http               Check Point R65 firewall http config
+587/tcp   open  netsync            Netsync (Monotone VCS)
+|_smtp-commands: SMTP EHLO 10.10.173.125: failed to receive data: connection closed
+593/tcp   open  echolink           EchoLink radio-over-VoIP
+616/tcp   open  http               Oracle Application Server 10g httpd 907
+|_http-title: Site doesn't have a title.
+|_http-server-header: Oracle-Application-Server-10g/907 Oracle-HTTP-Server
+617/tcp   open  http               Blue Coat Security Appliance HTTP admin interface
+|_http-title: Did not follow redirect to /Secure/Local/console/index.htm
+625/tcp   open  apple-xsrvr-admin?
+| fingerprint-strings: 
+|   NULL: 
+|     ~<^l]
+|     \xd7
+|     S<_-
+|_    ?M,c
+631/tcp   open  telnet
+| fingerprint-strings: 
+|   NULL: 
+|     Welcome to MLDonkey CdlHcsMZ
+|_    [36mWelcome on mldonkey command-line
+636/tcp   open  upnp               MiniUPnP cv (OpenWrt Kamikaze; UPnP -OMicNfj)
+646/tcp   open  finger             Internet Rex finger server
+| finger: No such user No such user N
+|_
+648/tcp   open  telnet
+| fingerprint-strings: 
+|   NULL: 
+|     39-d638:82:03 %MSCM-I-NEWTERM: New TELNET connection from ?:52937055
+|_    Password:
+666/tcp   open  upnp               Conexant-EmWeb 3 (UPnP 098593)
+667/tcp   open  disclose?
+| fingerprint-strings: 
+|   NULL: 
+|     HTTP/1.1 200 Document follows
+|     dConnection: Close
+|     Server: Micro-Web
+|_    n<!-- ** THIS FILE CONTAINS NO REALTIME DATA ** -->n<title> LocalSite - ARC Plus Web Interface</title>
+668/tcp   open  mecomm?
+| fingerprint-strings: 
+|   NULL: 
+|     +OK POP3 server ready
+|     -ERR invalid command
+|_    p/IBM OS 400 pop3d/ o|OS/400
+683/tcp   open  http-proxy         Lusca http proxy _i
+|_http-title: Site doesn't have a title.
+|_http-server-header: Lusca/_i
+687/tcp   open  http               Web-Based Enterprise Management CIM serverOpenPegasus WBEM httpd
+|_http-title: Site doesn't have a title.
+691/tcp   open  smtp               Axigen smtpd
+|_smtp-commands: SMTP EHLO 10.10.173.125: failed to receive data: connection closed
+700/tcp   open  http               Ubicom httpd cNCfYPuJQ (Netgear WNHDE111 WAP http config)
+|_http-server-header: Ubicom/cNCfYPuJQ
+705/tcp   open  agentx?
+| fingerprint-strings: 
+|   NULL: 
+|     m000
+|_    Host hat keine Berechtigung, eine Verbindung zu diesem MySQL Server herzustellen.
+711/tcp   open  finger             Internet Rex finger server
+| finger: No such user No such user N
+|_
+714/tcp   open  iris-xpcs?
+| fingerprint-strings: 
+|   NULL: 
+|     HTTP/1.1 401 Unauthorized
+|     Connection: close
+|     Content-Type: text/html
+|     Content-Length: 3r
+|     Server: Indy/VztSH
+|_    WWW-Authenticate: Basic realm="KutinSoft Reboot Service"
+720/tcp   open  http               Siemens HG 1500 router http config
+|_http-server-header: <xxxx>
+722/tcp   open  http               PRINT_SERVER WEB uEir-n (LevelOne FPS-3001TXU print server http config)
+|_http-server-header: PRINT_SERVER WEB uEir-n
+726/tcp   open  irr                Merit Internet Routing Registry whoisd
+749/tcp   open  kerberos-adm?
+| fingerprint-strings: 
+|   NULL: 
+|     HTTP/1.1 200 OK
+|     Content-Type: ?:audio/mpeg|application/x-ogg
+|     Connection: close
+|     Pragma: no-cache
+|_    Cache-Control: no-cache, no-store
+765/tcp   open  http               Netman UPS monitor http config
+777/tcp   open  telnet             Huawei telnetd
+| fingerprint-strings: 
+|   NULL: 
+|     rights reserved (1997-2006) *
+|_    Without the owner's prior written consent, +*
+783/tcp   open  telnet             Avaya Ethernet Routing Switch 4550T telnetd
+787/tcp   open  smtp               Lotus Domino smtpd mNozZl_P (Italian)
+|_smtp-commands: SMTP EHLO 10.10.173.125: failed to receive data: connection closed
+800/tcp   open  ftp                Konica Minolta bizhub printer ftpd
+801/tcp   open  telnet             FORE Systems ES-3810
+808/tcp   open  pop3               Eudora Internet Mail Server X pop3d oqJiSD
+843/tcp   open  telnet             VLC media player telnetd IqfN .4
+873/tcp   open  http-proxy         (bad gateway)
+| fingerprint-strings: 
+|   NULL: 
+|_    HTTP/1.1 502 Proxy Error ( The Uniform Resource Locator (URL) does not use a recognized protocol. Either the protocol is not supported or the request was not typed correctly. Confirm that a valid protocol is in use (for example, HTTP for a Web request).
+880/tcp   open  http               Milestone IP video management http interface
+|_http-trane-info: Problem with XML parsing of /evox/about
+|_http-title: Site doesn't have a title (text/html).
+888/tcp   open  http               Zeus httpd 9QF
+| http-auth: 
+| HTTP/1.1 401 Unauthorised\x0D
+|_  Server returned status 401 but no WWW-Authenticate header.
+|_http-server-header: Zeus/9QF
+898/tcp   open  telnet             HP Integrated Lights Out telnetd
+| fingerprint-strings: 
+|   NULL: 
+|     Ethernet SNMP Module
+|     B.8478
+|     EEPROM A.21043630
+|     B.49
+|_    Enter password:
+900/tcp   open  omginitialrefs?
+| fingerprint-strings: 
+|   NULL: 
+|     HTTP/1.p
+|_    Server: Mikrotik HttpProxy
+901/tcp   open  samba-swat?
+| fingerprint-strings: 
+|   NULL: 
+|     0000
+|     version
+|_    bind00
+902/tcp   open  iss-realsecure?
+| fingerprint-strings: 
+|   NULL: 
+|_    ~djb
+903/tcp   open  telnet             Polycom VoIP phone debug telnetd
+911/tcp   open  http               GlobespanVirata httpd (on broadband router)
+912/tcp   open  apex-mesh?
+981/tcp   open  http               AEG Powersolutions UPS View http viewer
+|_http-server-header: qHTTPs
+987/tcp   open  solproxy           Dell Serial Over LAN proxy
+990/tcp   open  ftps?
+|_ftp-bounce: ERROR: Script execution failed (use -d to debug)
+| fingerprint-strings: 
+|   NULL: 
+|_    disconnect
+992/tcp   open  sip-proxy          SIP Router 330 (8112)
+993/tcp   open  telnet             HP LaserJet printer telnetd
+|_imap-capabilities: CAPABILITY
+995/tcp   open  pop3s?
+| fingerprint-strings: 
+|   NULL: 
+|     ">Application and Content Networking ?:System ?Software 50</a>)
+|_    </BODY><
+999/tcp   open  http               Tandberg 2500 video conferencing http config
+|_http-title: Site doesn't have a title.
+1000/tcp  open  cadlock?
+| fingerprint-strings: 
+|   NULL: 
+|     HTTP/1.0 200 OK
+|     <HTML>
+|     <HEAD><TITLE> [wIApR] </TITLE></HEAD>
+|     <BODY>
+|     <SPAN style='position: absolute; top:0px;left:0px'>
+|     <APPLET CODE=VncViewer.class ARCHIVE=VncViewer.jar WIDTH=7HEIGHT=9
+|     <PARAM NAME=PORT VALUE=0
+|     <PARAM NAME=ENCODING VALUE=Tight>
+|     </APPLET> </SPAN>
+|     </BODY>
+|_    </HTML>
+1001/tcp  open  webpush?
+| fingerprint-strings: 
+|   NULL: 
+|     "AP0F1D85"
+|     Connection: close
+|     <HTML><HEAD><TITLE>401 Unauthorized</TITLE></HEAD>
+|_    <BODY BGCOLOR
+1002/tcp  open  http               WYM httpd jFer (Grandtec wifi webcam http config)
+|_http-title: Site doesn't have a title.
+|_http-server-header: WYM/jFer
+| http-auth: 
+| HTTP/1.0 401 Unauthorized\x0D
+|_  Basic realm=Welcome to IPCam !
+1007/tcp  open  http               Secure Computing Sidewinder firewall http admin
+|_http-title: ERROR: Access Denied
+1009/tcp  open  http               NeepHttpd 2
+|_http-title: Site doesn't have a title.
+|_http-server-header: NeepHttpd/2 (Linux)
+1010/tcp  open  ftp                FTPshell ftpd OVc
+1011/tcp  open  unknown
+| fingerprint-strings: 
+|   NULL: 
+|     *KISMET: 0.0.0 7
+|     Kismet
+|     71S+ 
+|_    *PROTOCOLS:
+1021/tcp  open  http               Cisco ATA 186 SIP http config
+1022/tcp  open  exp2?
+| fingerprint-strings: 
+|   NULL: 
+|_    HTTP/1.1 180 jServer: CherryPy/zmpZ
+1023/tcp  open  netvenuechat?
+| fingerprint-strings: 
+|   NULL: 
+|     0000DB2DAS k{28}
+|     000Z000
+|     000L0000000$000
+|     000O000000000000000000000000000
+|     000L0000000
+|_    SQL08579
+1024/tcp  open  http               Tandberg 2500 video conferencing http config
+|_http-title: Site doesn't have a title.
+1025/tcp  open  pop3               Hotmail Popper hotmail to pop3 gateway
+1026/tcp  open  http               Sun Java System Application Server httpd
+|_http-server-header: Sun-Java-System/Application-Server
+|_http-title: Site doesn't have a title.
+1027/tcp  open  telnet             BusyBox telnetd
+1028/tcp  open  unknown
+| fingerprint-strings: 
+|   NULL: 
+|     0000
+|     0000 CKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA00!0
+|     0000annv{1,15} *0
+|     0k{1,15} *0
+|     0i{1,15} *
+|     0x{1,15} *
+|     0s{1,15} *
+|     0n{1,15} *
+|     __MSBROWSE__
+|_    0b{1,15} *
+1029/tcp  open  http               Motion-httpd 689592
+|_http-title: Site doesn't have a title.
+|_http-server-header: Motion-httpd/689592
+1030/tcp  open  http               Lantronix UDS10 ethernet-serial http config Z
+1031/tcp  open  telnet             Motorola Canopy WAP telnetd (SSE 1673494)
+1032/tcp  open  vnc                (protocol 3)
+| fingerprint-strings: 
+|   NULL: 
+|     RFB 003.001
+|_    0000000:Unable to open license file: No such file or directory (2)
+| vnc-info: 
+|   Protocol version: 003.001
+|   Security types: 
+|     Unknown security type (48)
+|     Unknown security type (48)
+|     Unknown security type (48)
+|     Unknown security type (48)
+|     Unknown security type (48)
+|     Unknown security type (48)
+|     Unknown security type (58)
+|     Unknown security type (85)
+|     Unknown security type (110)
+|     Unknown security type (97)
+|     Unknown security type (98)
+|     Unknown security type (108)
+|     Unknown security type (101)
+|     Unknown security type (32)
+|     Unknown security type (116)
+|     Unknown security type (111)
+|     Unknown security type (32)
+|     Unknown security type (111)
+|     Unknown security type (112)
+|     Unknown security type (101)
+|     Unknown security type (110)
+|     Unknown security type (32)
+|     Unknown security type (108)
+|     Unknown security type (105)
+|     Unknown security type (99)
+|     Unknown security type (101)
+|     Unknown security type (110)
+|     Unknown security type (115)
+|     Unknown security type (101)
+|     Unknown security type (32)
+|     Unknown security type (102)
+|     Unknown security type (105)
+|     Unknown security type (108)
+|     Unknown security type (101)
+|     Unknown security type (58)
+|     Unknown security type (32)
+|     Unknown security type (78)
+|     Unknown security type (111)
+|     Unknown security type (32)
+|     Unknown security type (115)
+|     Unknown security type (117)
+|     Unknown security type (99)
+|     Unknown security type (104)
+|     Unknown security type (32)
+|     Unknown security type (102)
+|     Unknown security type (105)
+|     Unknown security type (108)
+|_    Unknown security type (101)
+1033/tcp  open  telnet             Cisco telnetd (IOS 6.X)
+1034/tcp  open  zincite-a?
+| fingerprint-strings: 
+|   NULL: 
+|     220*
+|_    214-The following commands are recognized (* =>'s unimplemented):
+1035/tcp  open  smtp               AvMailGate smtp anti-virus mail gateway 5-
+|_smtp-commands: SMTP EHLO 10.10.173.125: failed to receive data: connection closed
+1036/tcp  open  http               iRMC RemoteView httpd
+1037/tcp  open  ams?
+| fingerprint-strings: 
+|   NULL: 
+|     HTTP/1.0 200 OK
+|_    tServer: MacHTTP/8695265
+1038/tcp  open  mtqp?
+| fingerprint-strings: 
+|   NULL: 
+|     version
+|     bind00
+|     VERSION
+|     BIND00
+|_    00000
+1039/tcp  open  http               PLT Scheme httpd
+|_http-trane-info: Problem with XML parsing of /evox/about
+|_http-title: Site doesn't have a title.
+|_http-server-header: PLT Scheme
+1040/tcp  open  irc
+1041/tcp  open  http               HP ProCurve Switch 1810G http config
+|_http-title: Login
+|_http-server-header: Web Server
+|_http-trane-info: Problem with XML parsing of /evox/about
+1042/tcp  open  systat             QNX systat
+1043/tcp  open  printer            lpsched (Unauthorized)
+1044/tcp  open  http               TED 5000 power use monitor
+|_http-trane-info: Problem with XML parsing of /evox/about
+|_http-title: Site doesn't have a title (text/html).
+1045/tcp  open  telnet             Ambit cable modem telnetd
+1046/tcp  open  ftp                zFTPServer
+1047/tcp  open  telnet-proxy       kingate telnet proxy K
+1048/tcp  open  http               PortWise mVPN httpd
+|_http-server-header: PortWise mVPN (www.portwise.com)
+|_http-title: Site doesn't have a title.
+1049/tcp  open  smtp               qmail smtpd (qmail-smtpd-auth 0.31)
+|_smtp-commands: SMTP EHLO 10.10.173.125: failed to receive data: connection closed
+1050/tcp  open  ftp                Cerberus ftpd (banned)
+1051/tcp  open  upnp               Huawei broadband router upnp
+1052/tcp  open  http               UI-View Automatic Packet Reporting System httpd gWqvKRiZ
+|_http-server-header: UI-WebServer VgWqvKRiZ
+|_http-trane-info: Problem with XML parsing of /evox/about
+|_http-title: Site doesn't have a title.
+1053/tcp  open  http               SSL Explorer browser-based VPN httpd
+|_http-title: Did not follow redirect to https://64764/showHome.do
+1054/tcp  open  brvread?
+| fingerprint-strings: 
+|   NULL: 
+|     HTTP/1.1 200 OK
+|     yServer: NessusWWW
+|     lContent-Length: 6518
+|     sETag: "186071cd1807c2c4b2d058d0aad65e63"
+|     i<!-- saved from url=(0016)http://localhost -->
+|     <html lang="en">
+|     <!-- 
+|     Smart developers always View Source. 
+|_    This application was built using Adobe Flexn<title>Nessus</title>
+1055/tcp  open  http               WindWeb 040965 (Xerox 8830 printer/plotter)
+|_http-server-header: XES 8830 WindWeb/040965
+1056/tcp  open  stockfish          Stockfish chess engine
+1057/tcp  open  smtp               Tobit David.fx smtpd foD
+|_smtp-commands: SMTP EHLO 10.10.173.125: failed to receive data: connection closed
+1058/tcp  open  http               Linksys Wireless-G DSL router http config
+|_http-server-header: httpd
+| http-auth: 
+| HTTP/1.0 401 Unauthorized\x0D
+|_  Basic
+|_http-title: 401 Unauthorized
+1059/tcp  open  nimreg?
+| fingerprint-strings: 
+|   NULL: 
+|     HTTP/1.1 200 OK
+|     Connection: close
+|     <HTML>
+|     <HEAD><TITLE>Siemens Sm@rtClient Desktop [WinVNC]</TITLE></HEAD>
+|     <BODY>
+|     <APPLET CODE=VncViewer.class ARCHIVE=VncViewer.jar WIDTH=8HEIGHT=0
+|     <PARAM NAME="PORT" VALUE="7">
+|     </APPLET><BR>
+|     </BODY>
+|_    </HTML>
+1060/tcp  open  http               Glucose WeatherPop Advanced httpd x
+|_http-server-header: WPA/x
+|_http-title: Site doesn't have a title (text/plain).
+1061/tcp  open  telnet             (Usually a Cisco/3com switch)
+1062/tcp  open  ftp                Netgear broadband router or ZyXel VoIP adapter ftpd 1.0
+1063/tcp  open  kyoceranetdev?
+| fingerprint-strings: 
+|   NULL: 
+|     HTTP/1.1 119 o
+|     Server: Rapid Logic/270
+|     e<!-- Copyright &#copy; 87Hewlett Packard Company. All rights reserved. -->
+|     i<title>hp business inkjet 
+|_    </title>
+1064/tcp  open  http               Cisco VPN Concentrator http config
+|_http-server-header: Web Server
+|_http-title: Site doesn't have a title.
+1065/tcp  open  telnet             F5 BIG-IP load balancer telnetd (telnet disabled)
+1066/tcp  open  fpo-fns?
+| fingerprint-strings: 
+|   NULL: 
+|_    000000
+1067/tcp  open  instl_boots?
+| fingerprint-strings: 
+|   NULL: 
+|     HTTP/1.1 200 OK
+|     Cache-Control: no-cache
+|     Connection: close
+|     Pragma: no-cache
+|     Content-Length: 0r
+|     Content-Type: text/html
+|     Accept-Ranges: bytes
+|     <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+|     <html xmlns="http://www.w3.org/1999/xhtml">
+|     <head>
+|_    <title>kqvq</title>
+1068/tcp  open  rtsp               AXIS 207W or 212 PTZ network camera rtspd
+|_rtsp-methods: DESCRIBE, GET_PARAMETER, PAUSE, PLAY, SETUP, SET_PARAMETER, TEARDOWN
+1069/tcp  open  cognex-insight?
+| fingerprint-strings: 
+|   NULL: 
+|     HTTP/1.019 y
+|_    Server: Hop
+1070/tcp  open  telnet             Foundry FastIron 1500 switch telnetd
+1071/tcp  open  http               AverMedia WebCamX httpd
+1072/tcp  open  ssh                Nand sshd Osj (protocol 15934872)
+1073/tcp  open  http               MailEnable httpd 97125370
+|_http-server-header: MailEnable-HTTP/97125370
+|_http-title: Site doesn't have a title.
+1074/tcp  open  http               Hacking Team Remote Control System command and control httpd
+|_http-title: Site doesn't have a title (text/html).
+1075/tcp  open  backdoor           Subseven backdoor (**BACKDOOR**)
+1076/tcp  open  sns_credit?
+| fingerprint-strings: 
+|   NULL: 
+|     HTTP/1.448 j
+|     Date: s
+|_    Server: PicoWebServer
+1077/tcp  open  http               Spyglass Microserver embedded httpd 7p
+|_http-server-header: Spyglass_MicroServer/7p
+1078/tcp  open  http               ADH-Web httpd (Dedicated Micros Digital Sprite 2 DVR http config)
+|_http-server-header: ADH-Web
+|_http-title: Site doesn't have a title.
+|_http-trane-info: Problem with XML parsing of /evox/about
+1079/tcp  open  asprovatalk?
+| fingerprint-strings: 
+|   NULL: 
+|     HTTP/1.0 500 Internal Server Error
+|     Connection: close
+|     X-UA-Compatible: IE=EmulateIE7
+|     jP3P: CP="NON COR CURa ADMa OUR NOR UNI COM NAV STA"
+|_    mServer: sw-cp-server
+1080/tcp  open  sip                X-Lite SIP phone LE
+1081/tcp  open  http               Allen-Bradley 1763 MicroLogix 1100 logic controller http config (A-B WWW gPii)
+|_http-title: Site doesn't have a title.
+|_http-server-header: A-B WWW/gPii
+1082/tcp  open  telnet             BusyBox telnetd 1.00-pre7 - 1.14.0
+| fingerprint-strings: 
+|   NULL: 
+|     xFirmware Version: WY-T
+|     Built: q
+|     Number: 0
+|     Role: m
+|_    _JcTqtVXz login:
+1083/tcp  open  vnc-http           TigerVNC BwdRvb
+|_http-server-header: TigerVNC/BwdRvb
+|_http-title: Site doesn't have a title.
+1084/tcp  open  ansoft-lm-2?
+| fingerprint-strings: 
+|   NULL: 
+|     kbqd0000pvssftlp
+|     2*MacBook77x04
+|     AFP3.3
+|     AFP3.2
+|     AFP3.1
+|     AFPX03
+|     DHCAST128f
+|_    QBXWLtu
+1085/tcp  open  telnet             Nortel Extranet Contivity Secure IP Services telnetd
+1086/tcp  open  cplscrambler-lg?
+| fingerprint-strings: 
+|   NULL: 
+|_    +OK <-?533@EZc>, POP3 server ready.
+1087/tcp  open  cplscrambler-in?
+| fingerprint-strings: 
+|   NULL: 
+|     HTTP/1.1 200 OK
+|     kServer: NSMXwui (Juniper)
+|_    m<title>Network and Security Manager - Download UI Client</title>
+1088/tcp  open  telnet             Symantec Raptor firewall secure gateway telnetd
+1089/tcp  open  http               Nicira bridge http admin
+|_http-title: Site doesn't have a title (text/html; charset=UTF-8).
+1090/tcp  open  ff-fms?
+| fingerprint-strings: 
+|   NULL: 
+|_    PJLINK 1 8}
+1091/tcp  open  ftp                Motorola/Symbol WS2000 WAP ftpd
+1092/tcp  open  http               Google Search Appliance httpd
+|_http-server-header: Google Search Appliance
+|_http-title: Site doesn't have a title.
+1093/tcp  open  ftp-proxy          JanaServer ftp proxy
+1094/tcp  open  rootd?
+| fingerprint-strings: 
+|   NULL: 
+|     000000000000000
+|_    00000
+1095/tcp  open  nsclient           NSClient++
+1096/tcp  open  telnet             HP Integrated Lights Out telnetd
+| fingerprint-strings: 
+|   NULL: 
+|     Welcome to D-Link Print Server *
+|     +Telnet Console +*
+|     Server Name : vNSMXdgL0+
+|_    Server Model : XGKxLQyd0
+1097/tcp  open  pop3               Cyrus pop3d bI
+1098/tcp  open  rmiactivation?
+| fingerprint-strings: 
+|   NULL: 
+|     HTTP/1.0 200 OK
+|     oDate: 6910-80-13 
+|     hServer: IWeb/91913148
+|_    k<title>VisionWEB</title>y<meta name="AUTHOR" content="Insignis Technologies" />i<meta name="DESCRIPTION" content="Linearis VisionWEB. Cieffe srl, manufactures and markets CCTV digital video recorders and Remote Surveillance products for the security market" />
+1099/tcp  open  ftp                Riedel Artist intercom system ftpd
+1100/tcp  open  mctp?
+| fingerprint-strings: 
+|   NULL: 
+|_    "IMPLEMENTATION" "Cyrus timsieved vf-Debianxu_+-]+"
+1102/tcp  open  ftp                ArGoSoft ftpd 75784606
+|_ftp-bounce: ERROR: Script execution failed (use -d to debug)
+1104/tcp  open  imap-proxy         Zarafa imap proxy
+1105/tcp  open  http               RG4000 Access Control Gateway 471546368
+|_http-server-header: RG4000.CMC.471546368
+|_http-title: Site doesn't have a title.
+1106/tcp  open  ftp                FileZilla ftpd (IP blocked)
+1107/tcp  open  upnp               Conexant-EmWeb 609210300 (UPnP 20)
+1108/tcp  open  http               BrowseAmp WinAmp webcontrol plugin
+|_http-server-header: BrowseAmp
+|_http-title: Site doesn't have a title.
+1110/tcp  open  nfsd-status?
+| fingerprint-strings: 
+|   NULL: 
+|     00fietmcnp0000eaugdudh
+|     Macintoshk
+|     AFP3.3
+|     AFP3.2
+|     AFP3.1
+|     AFPX03
+|     AFP2.2g DHCAST128iyj-]+
+|_    hafpserver
+1111/tcp  open  http               Allegro RomPager YGFqru (Xerox Phaser 8560DN printer http config)
+|_http-server-header: Allegro-Software-RomPager/YGFqru
+|_http-title: Did not follow redirect to https://66701104/home.html
+1112/tcp  open  msql?
+| fingerprint-strings: 
+|   NULL: 
+|     HTTP/1.0 404 Not Found
+|     content-length : 90
+|     content-type : text/html
+|     <html>
+|     <pre><html><h2>404 Not Found</h2>The server could not locate the resource you requested</html>0</pre>
+|_    </html>
+1113/tcp  open  smtp               Postfix smtpd
+|_smtp-commands: SMTP EHLO 10.10.173.125: failed to receive data: connection closed
+1114/tcp  open  http               Netman UPS monitor http config
+1117/tcp  open  ardus-mtrns?
+| fingerprint-strings: 
+|   NULL: 
+|     220-Welcome to XBOX FileZilla?: (XBMC|)
+|     220-version: XBFileZilla version 10, (based on FileZilla Server 6713916)
+|_    http://sourceforge.net/projects/xbfilezilla
+1119/tcp  open  http               CoreHTTP aGjuc (directory listing)
+|_http-server-header: corehttp-aGjuc
+|_http-title: Site doesn't have a title (text/html).
+|_http-trane-info: Problem with XML parsing of /evox/about
+1121/tcp  open  rmpp?
+| fingerprint-strings: 
+|   NULL: 
+|_    HTTP/1.1 880 j<a href="http://jetty.mortbay.org/?">Powered by Jetty://</a>
+1122/tcp  open  http               Cisco VPN 3000 Concentrator http config
+|_http-server-header: Web Server
+1123/tcp  open  murray?
+| fingerprint-strings: 
+|   NULL: 
+|     version
+|_    bindtIND 3,20}
+1124/tcp  open  hpvmmcontrol?
+| fingerprint-strings: 
+|   NULL, SSLSessionReq: 
+|_    550 0k8e6 oV
+1126/tcp  open  backdoor           Haxdoor trojan (**BACKDOOR**)
+1130/tcp  open  smtp
+|_smtp-commands: SMTP EHLO 10.10.173.125: failed to receive data: connection closed
+| fingerprint-strings: 
+|   NULL: 
+|_    220 UpffCjZs+ESMTP MDaemon 0639593; q
+1131/tcp  open  http               BrowseAmp WinAmp webcontrol plugin
+|_http-title: Site doesn't have a title.
+|_http-server-header: BrowseAmp
+1132/tcp  open  kvm-via-ip?
+| fingerprint-strings: 
+|   NULL: 
+|     k000
+|_    many connections
+1137/tcp  open  trim?
+| fingerprint-strings: 
+|   NULL: 
+|     HTTP/1.1 200 OK
+|     mExpires: Thu, 01 Jan 1970 00:00:00 GMT
+|     Set-Cookie: JSESSIONID=1-75; Path=/; Secure; HttpOnly
+|_    w<title>VMwareView Portal</title>
+1138/tcp  open  ftp                ProFTPD 1.2.5
+1141/tcp  open  http               IVM Answering Attendant httpd
+|_http-title: IVM Answering Attendant
+1145/tcp  open  http               DirecTV JSON RPC
+|_http-title: Site doesn't have a title (application/json; charset=UTF-8).
+1147/tcp  open  capioverlan?
+| fingerprint-strings: 
+|   NULL: 
+|     0000amkj0000hwunauqt
+|     }gMyBookWorld*Netatalk vFNhl
+|     AFP2.2
+|     AFPX03
+|     AFP3.1
+|     AFP3.2
+|_    AFP3.3
+1148/tcp  open  gamebots-control   GameBots for Unreal Tournament 2004 control server
+1149/tcp  open  bvtsonar?
+| fingerprint-strings: 
+|   NULL: 
+|     ixwghB000000
+|_    00000000000000
+1151/tcp  open  ssh                (protocol 184134914)
+| fingerprint-strings: 
+|   NULL: 
+|     SSH-184134914-IPSSH-9611871
+|_    p|Cisco/3com IPSSHd
+1152/tcp  open  winpoplanmess?
+| fingerprint-strings: 
+|   NULL: 
+|     HTTP/1.418 x
+|     Connection: close
+|_    Server: httrack-small-server
+1154/tcp  open  telnet             HP LaserJet telnetd
+| fingerprint-strings: 
+|   NULL: 
+|     [00H+----------------------------------------------------------------------+
+|     Motorola PTP 5Lite Console Application +|
+|     Software Version: A +|
+|_    Hardware Version: XJmcthNG +|
+1163/tcp  open  sddp?
+| fingerprint-strings: 
+|   NULL: 
+|     000000000
+|_    0000bkdaupiThe X.Org Group
+1164/tcp  open  ftp                AXIS 6135 print server ftpd -mtt
+1165/tcp  open  telnet             BusyBox telnetd 1.00-pre7 - 1.14.0
+| fingerprint-strings: 
+|   NULL: 
+|_    FVShlogin:
+1166/tcp  open  sip                (SIP end point; Status: 200 OK)
+| fingerprint-strings: 
+|   NULL: 
+|     SIP/2.0 200 OK
+|     cAllow: INVITE,ACK,CANCEL,OPTIONS,UPDATE,INFO,NOTIFY,BYE,REFER
+|_    Accept: application/sdp,application/media_control+xml,application/dtmf-relay,application/dtmf,message/sipfrag;version=2.0
+1169/tcp  open  telnet             Nortel-LG VoIP IAD telnetd
+1174/tcp  open  telnet             USRobotics Wireless MAXg ADSL router telnetd
+1175/tcp  open  telnet             Soyo SIP VoIP phone telnetd TFsOK
+1183/tcp  open  klogin             MIT Kerberos klogin (broken - All authentication systems disabled; connection refused)
+1185/tcp  open  pop3               PMDF pop3d Q
+1186/tcp  open  mysql-cluster?
+| fingerprint-strings: 
+|   NULL: 
+|     HTTP/1.0 400 Bad Request
+|     Connection: close
+|     Content-Type: text/html
+|     Content-Length: 4r
+|     Cache-Control: no-cache
+|     <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+|     <HTML>
+|     <HEAD>
+|     <TITLE>Invalid Request</TITLE>
+|     </HEAD>
+|     <BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+|     <CENTER>
+|     <FONT SIZE="+2" COLOR="#FFFFFF" ALIGN="Center">
+|     </FONT>
+|     <B>Invalid Request. Some Error</B>
+|     </BODY>
+|_    </HTML>
+1187/tcp  open  alias?
+| fingerprint-strings: 
+|   NULL: 
+|     "Netgear"
+|     Connection: close
+|     Pragma: no-cache
+|_    <html><head><title>401 Unauthorized</title>v<form name="RgAuthentication" action="/goform/RgAuthentication" method
+1192/tcp  open  caids-sensor?
+| fingerprint-strings: 
+|   NULL: 
+|     000000000000000000000
+|_    000O
+1198/tcp  open  ident              pidentd
+1199/tcp  open  http               Kerio MailServer http config
+1201/tcp  open  nucleus-sand?
+| fingerprint-strings: 
+|   NULL: 
+|     ~x30xa0
+|     69491759274462Z
+|     x02?:
+|     lxs|
+|     krbtgt
+|_    client in request
+1213/tcp  open  ndb_mgmd           MySQL cluster management server 5.1
+1216/tcp  open  ftp
+| fingerprint-strings: 
+|   NULL: 
+|_    220 cab Mach4/5FTP Server ready.
+1217/tcp  open  hpss-ndapi?
+| fingerprint-strings: 
+|   NULL: 
+|     HTTP/1.401 Unauthorizedl
+|_    WWW-Authenticate: Basic alm="DSL-o"
+1218/tcp  open  http               Polycom VVX VoIP phone http config
+1233/tcp  open  http               Kguard Security DVR http config
+1234/tcp  open  ssh                (protocol 531)
+| fingerprint-strings: 
+|   NULL: 
+|_    SSH-531-RomCliSecure_431
+1236/tcp  open  http               Mono-HTTPAPI KIO (Beagle desktop search)
+|_http-title: Site doesn't have a title (text/html; charset=utf-8).
+|_http-server-header: Mono-HTTPAPI/KIO
+1244/tcp  open  isbconference1?
+| fingerprint-strings: 
+|   NULL: 
+|     HTTP/1.1 404 Not Found
+|     Connection: Close
+|     Content-Type: text/html
+|_    specified URL cannot be found<!--?:0123456789{50}01234-->
+1247/tcp  open  telnet             BusyBox telnetd 0.61 - 1.00-pre7
+| fingerprint-strings: 
+|   NULL: 
+|     BCMmADSL Router version uukpH (UmAHfv)
+|_    Login:
+1248/tcp  open  http               Virata-EmWeb 07 (Allied Data CopperJet http config)
+| http-auth: 
+| HTTP/1.1 401 Unauthorized\x0D
+|_  Server returned status 401 but no WWW-Authenticate header.
+|_http-server-header: Virata-EmWeb/R07
+|_http-title: Site doesn't have a title.
+1259/tcp  open  http               Novell httpd YMvXjV
+|_http-title: Site doesn't have a title.
+|_http-server-header: Novell-HTTP-Server/YMvXjV
+1271/tcp  open  irc                InspIRCd
+1272/tcp  open  cspmlockmgr?
+| fingerprint-strings: 
+|   NULL: 
+|_    * BYE Domino IMAP4 Server Configured for SSL Connections only. Please reconnect using SSL Port 1 y
+1277/tcp  open  ipp                Epson 980N Printer
+1287/tcp  open  ftp
+| fingerprint-strings: 
+|   NULL: 
+|_    220 gGomw XwmxZcg-ftpj
+1296/tcp  open  smtp               HP Sendmail 616224436
+|_smtp-commands: SMTP EHLO 10.10.173.125: failed to receive data: connection closed
+1300/tcp  open  telnet
+| fingerprint-strings: 
+|   NULL: 
+|_    POSTEF ADSL Modem/Router HoJmETyb
+1301/tcp  open  pop3               DBOX TCL pop3d 94
+1309/tcp  open  http               Plex Media Server httpd
+1310/tcp  open  http               apt-cache/apt-proxy httpd
+|_http-title: Site doesn't have a title.
+1311/tcp  open  rxmon?
+| fingerprint-strings: 
+|   NULL: 
+|_    L0E0general_fail0T0Error in file launchserver.c(1.67)969 (errno=2): inetd: check greeting0
+1322/tcp  open  telnet             PC Telnetd 6714
+1328/tcp  open  ewall?
+| fingerprint-strings: 
+|   NULL: 
+|     E000lSd0C0A0000MProtocole non support
+|     l'interface 65363.19778: le serveur supporte de 1.0 
+|_    3.00Fpostmaster.c0L40
+1334/tcp  open  http               BaseHTTPServer 6475099 (ViewCVS http interface; Python xcbpN)
+|_http-title: Did not follow redirect to http://Xcx/viewcvs/
+|_http-server-header: BaseHTTP/6475099 Python/xcbpN
+1352/tcp  open  lotusnotes?
+| fingerprint-strings: 
+|   NULL: 
+|     HTTP/1.0 002 n
+|     Content-type: text/html; charset=UTF-8
+|     Cache-Control: no-cache
+|     Content-Length: 6r
+|_    index.html: VLC media player web interface
+1417/tcp  open  http               COLIB_ASYNC_HTTP_SERVER Kb (Cotendo content delivery network)
+|_http-title: Site doesn't have a title.
+|_http-server-header: COLIB_ASYNC_HTTP_SERVER/Kb
+1433/tcp  open  nntp               Microsoft NNTP Service yYHZIn (Spanish)
+1434/tcp  open  ms-sql-m?
+| fingerprint-strings: 
+|   NULL: 
+|_    220 lk (Cisco BRuVDEkB_R) ready
+1443/tcp  open  ftp                Actiontec router ftpd (firewall broken; BusyBox Wu)
+|_ftp-bounce: ERROR: Script execution failed (use -d to debug)
+1455/tcp  open  esl-lm?
+| fingerprint-strings: 
+|   NULL: 
+|     HTTP/1.1 403 Forbidden
+|     vContent-Type: text/html;charset=e
+|     pServer: Hidden
+|_    <html><head><title>Apache Tomcat/B - Error report</title>
+1461/tcp  open  gopher             Gophernicus fWDBWiKY
+|_gopher-ls: 
+1494/tcp  open  ftp                VxWorks ftpd 9.IE.m
+1500/tcp  open  http               Siemens Gigaset S+ WAP http config
+|_http-server-header: Apache/0.6.5
+1501/tcp  open  http               Novell httpd Lz
+|_http-title: Site doesn't have a title.
+|_http-server-header: Novell-HTTP-Server/Lz
+1503/tcp  open  http               SMC Barricade WAP http config
+|_http-title: SMC Barricade Wireless Broadband Router
+1521/tcp  open  oracle?
+| fingerprint-strings: 
+|   NULL: 
+|     HTTP/1.1 200 OK
+|     sServer: BaseHTTP/478 Python/Ha
+|_    j<title>Ajaxterm</title>
+1524/tcp  open  ingreslock?
+| fingerprint-strings: 
+|   NULL: 
+|     HTTP/1.1 302 Found
+|_    jLocation: https://cpvjjC:4zimbra/
+1533/tcp  open  http               Ipswitch IMail web service 7QrmgIcdwE
+|_http-server-header: Ipswitch-IMail/7QrmgIcdwE
+|_http-title: Site doesn't have a title.
+1556/tcp  open  pppctl             pppctld
+1580/tcp  open  tn-tl-r1?
+| fingerprint-strings: 
+|   NULL: 
+|     version
+|     bind00
+|     VERSION
+|     BIND00
+|_    00000)(Meta IP DNS - BIND V907411-REL (Build 6)
+1583/tcp  open  telnet             Cisco CSS telnetd
+1594/tcp  open  sixtrak?
+| fingerprint-strings: 
+|   NULL: 
+|     HTTP/1.1 400 Bad Request
+|     Content-Type: text/html
+|     Content-Length: 2
+|     Cache-Control: no-cache
+|     Pragma: no-cache
+|_    Connection: Close
+1600/tcp  open  issd?
+1641/tcp  open  invision?
+| fingerprint-strings: 
+|   NULL: 
+|     HTTP/1.1 400 Bad Request
+|     Server: RealVNC/DZymPvxWR
+|     Date: Mon, 27 Jul 2009 08:06:03 GMT
+|     Last-Modified: Mon, 27 Jul 2009 08:06:03 GMT
+|     Connection: close
+|_    Content-Type: text/html
+1658/tcp  open  sixnetudr?
+| fingerprint-strings: 
+|   NULL: 
+|_    \x03yerfxbtvwapkllytyvbhovaheajipkqooiwojqkjqateou
+1666/tcp  open  netview-aix-6?
+| fingerprint-strings: 
+|   NULL: 
+|     220n?MERCUR SMTPerver (v
+|_    ready at
+1687/tcp  open  http               ZK Web Server (ZKSoftware ZEM500 fingerprint reader; MIPS)
+1688/tcp  open  login              Siemens HiPath logind
+1700/tcp  open  smtp               Trend Micro InterScan S+
+|_smtp-commands: SMTP EHLO 10.10.173.125: failed to receive data: connection closed
+1717/tcp  open  fj-hdnet?
+| fingerprint-strings: 
+|   NULL: 
+|_    220 S+ E?SMTP Sendmail;
+1718/tcp  open  h323gatedisc?
+| fingerprint-strings: 
+|   NULL: 
+|     HTTP/1.200 OK
+|     cServer: CPWS/1
+|_    jcontent="WEBUI LOGIN PAGE" /><TITLE>Gaia</TITLE>dvar version='307';var formAction
+1719/tcp  open  h323gatestat?
+| fingerprint-strings: 
+|   NULL: 
+|     * OK n
+|_    Please login first
+1720/tcp  open  sip-proxy          Comdasys SIP Server DJlLTB
+1721/tcp  open  http               Apple Server Monitor http interface
+|_http-title: Site doesn't have a title.
+|_http-server-header: servermgrd
+1723/tcp  open  http               Cisco Adaptive Security Appliance http config
+| http-auth: 
+| HTTP/1.1 401 Unauthorized\x0D
+|_  Basic realm=Authentication
+|_http-title: Authorization Required
+1755/tcp  open  ftp                Xylan PizzaSwitch ftpd
+1761/tcp  open  upnp               Virata-EmWeb 77. (Viking router UPnP; UPnP 30362; Nucleus 0)
+1782/tcp  open  ssh                SrSshServer agpx_ (sshlib YOCMpeOW; protocol 94)
+1783/tcp  open  http               Samba SWAT administration server (broken)
+|_http-title: 500 Server Error
+1801/tcp  open  http               MirandaWeb http plugin for Miranda-IM 291970949
+|_http-title: Site doesn't have a title.
+|_http-server-header: MirandaWeb/291970949
+1805/tcp  open  http               Siemens Simatic S7-300 PLC httpd
+1812/tcp  open  ftp                Baby FTP Server
+1839/tcp  open  http               Swazoo Smalltalk httpd Ehfh
+|_http-server-header: Swazoo Ehfh Smalltalk Web Server
+|_http-title: Site doesn't have a title.
+1840/tcp  open  telnet             HP LaserJet telnetd
+| fingerprint-strings: 
+|   NULL: 
+|     Huawei MAnMulti-service Access Module.
+|     Copyright(C) 5613-7679 by Huawei Technologies Co., Ltd.
+|_    >>User name:
+1862/tcp  open  ftp                Barracuda Backup 490 appliance ftpd
+1863/tcp  open  ftp                WinFtpd
+1864/tcp  open  paradym-31?
+| fingerprint-strings: 
+|   NULL: 
+|     HTTP/1.838 c
+|_    Server: AKCP Embedded Web Server
+1875/tcp  open  http               Ipswitch WhatsUp Gold 0DZyGH
+|_http-title: Site doesn't have a title.
+|_http-server-header: WhatsUp_Gold/0DZyGH
+1900/tcp  open  ftp                pyftpdlib DoM
+1914/tcp  open  smtp               MailEnable smtpd YzS-
+|_smtp-commands: SMTP EHLO 10.10.173.125: failed to receive data: connection closed
+1935/tcp  open  rtmp?
+| fingerprint-strings: 
+|   NULL: 
+|_    000L0
+1947/tcp  open  sentinelsrm?
+| fingerprint-strings: 
+|   NULL: 
+|     220- tr
+|_    Server powered by: Quick 'n Easy FTP Server
+1971/tcp  open  gopher             Bucktooth gopherd
+| gopher-ls: 
+|_[txt]  "'/GET / HTTP/1.0' doesn't exist!"
+1972/tcp  open  http               HP Remote Lights-Out Edition II http config
+1974/tcp  open  ms-sql-s           Microsoft SQL Server 2005 9.00.3068; SP2+ MS08-040
+1984/tcp  open  http               cPanel EntropyChat httpd 4545
+|_http-trane-info: Problem with XML parsing of /evox/about
+|_http-server-header: EntropyChat 4545
+|_http-title: Site doesn't have a title.
+1998/tcp  open  nntp
+| fingerprint-strings: 
+|   NULL: 
+|     200 NNTP Service Microsoft
+|_    Internet Services 7UQ Version: 1.0.8.6Posting Allowed
+1999/tcp  open  eggdrop            Eggdrop irc bot console
+2000/tcp  open  telnet             USRobotics ADSL router telnetd
+2001/tcp  open  http               Dell PowerEdge OpenManage Server Administrator httpd admin
+|_http-trane-info: Problem with XML parsing of /evox/about
+|_http-title: Site doesn't have a title (text/html; charset=UTF-8).
+2002/tcp  open  globe?
+| fingerprint-strings: 
+|   NULL: 
+|_    0brnabcdefghxoucsgrthnes
+2003/tcp  open  finger?
+| fingerprint-strings: 
+|   NULL: 
+|     HTTP/1.1 200 OK
+|     Content-Type: text/html; charset=utf-8
+|     tServer: TornadoServer/OXqAuYyk
+|_    n<link rel="stylesheet" href="/api/d31962c80b154e50adea3b4e7e8d4ba2/file.cache/minified_front.css?4"
+2004/tcp  open  telnet             BusyBox telnetd 1.00-pre7 - 1.14.0
+| fingerprint-strings: 
+|   NULL: 
+|_    OpenDreambox WrmtwUH dmxr
+2005/tcp  open  http               Agfeo TK-Suite PBX httpd
+|_http-title: Error
+|_http-server-header: tksock
+2006/tcp  open  invokator?
+| fingerprint-strings: 
+|   NULL: 
+|_    HTTP/1.1 178 iServer: Mono-HTTPAPI/uKqf
+2007/tcp  open  http               AkamaiGHost (Akamai's HTTP Acceleration/Mirror service)
+2008/tcp  open  telnet
+| fingerprint-strings: 
+|   NULL: 
+|     Product type: Avaya pMedia Gateway Release aJ
+|_    Login:
+2009/tcp  open  http               xtide Tide prediction httpd
+|_http-title:  XTide Tide Prediction Server 
+|_http-trane-info: Problem with XML parsing of /evox/about
+2010/tcp  open  smtp               hMailServer smtpd
+|_smtp-commands: SMTP EHLO 10.10.173.125: failed to receive data: connection closed
+2013/tcp  open  telnet             HP LaserJet telnetd
+| fingerprint-strings: 
+|   NULL: 
+|     Huawei MAhMulti-service Access Module.
+|     Copyright(C) 0294-7716 by Huawei Technologies Co., Ltd.
+|_    >>User name:
+2020/tcp  open  telnet
+| fingerprint-strings: 
+|   NULL: 
+|     0Username: data_error
+|     (rdata_error
+|     data_error
+|     data_error
+|     data_error
+|     data_error
+|     data_error
+|     data_error
+|     data_error
+|_    data_error
+2021/tcp  open  imap               Microsoft Exchange 2007-2010 imapd
+|_imap-capabilities: CAPABILITY
+2022/tcp  open  http               X10 ActivePhone remote control httpd sEIh
+|_http-title: Site doesn't have a title.
+|_http-server-header: X10 Control sEIh
+2030/tcp  open  telnet
+| fingerprint-strings: 
+|   NULL: 
+|     [21;1H
+|     [0m*+
+|     [22;1H
+|     [0mMessage Area:
+|     [24;1H
+|     [7mCTRL+R = Refresh +
+|     [9;16H
+|_    [0mDES-?B Stackable Fast Ethernet Switch Console Management
+2033/tcp  open  rtsp               MediaPortal TV-Server rtspd
+|_rtsp-methods: ERROR: Script execution failed (use -d to debug)
+2034/tcp  open  scoremgr?
+| fingerprint-strings: 
+|   NULL: 
+|     000v
+|     SMBr0000
+|     @00000000000000@
+|     A0000
+|_    00000
+2035/tcp  open  http               Akiva ChatSpace httpd 92633956
+|_http-server-header: ChatSpace/92633956
+|_http-title: Site doesn't have a title.
+2038/tcp  open  objectmanager?
+| fingerprint-strings: 
+|   NULL: 
+|     00s0000
+|     CONNECTIONLESS_TDS000
+|     0tg0
+|_    00000000
+2040/tcp  open  http               Voodoo chat daemon httpd .5.b
+|_http-server-header: Voodoo chat daemon ver perl \xE65\xBCb
+|_http-title: Site doesn't have a title.
+|_http-trane-info: Problem with XML parsing of /evox/about
+2041/tcp  open  vdr                VDR
+2042/tcp  open  http               WatchGuard SOHO i http config
+|_http-server-header: WatchGuard Firewall
+2043/tcp  open  http               Tcl-Webserver 20510012
+|_http-title: Site doesn't have a title.
+|_http-server-header: Tcl-Webserver/20510012 t
+2045/tcp  open  multiplicity       Stardock Multiplicity KVM daemon
+2046/tcp  open  ldap               (TLS required)
+2047/tcp  open  http               netTALK Duo http config
+|_http-trane-info: Problem with XML parsing of /evox/about
+|_http-title: NetTalk, Inc.
+2048/tcp  open  dls-monitor?
+| fingerprint-strings: 
+|   NULL: 
+|     HTTP/1.1 302 Moved Temporarily
+|     Set-Cookie: JSESSIONID=4FF782; Path=/; Secure; HttpOnly
+|     Date: p GMT
+|     Location: /login.html
+|     Content-Type: text/html;charset=UTF-8
+|_    gServer: NSC/vovs_paN (JVM)
+2049/tcp  open  nfs_acl            3 (RPC #100227)
+2065/tcp  open  dlsrpn?
+| fingerprint-strings: 
+|   NULL: 
+|     <boinc_gui_rpc_reply>
+|     <client_version>3/client_version>
+|     <unauthorized/>
+|_    </boinc_gui_rpc_reply>
+2068/tcp  open  avocentkvm?
+| fingerprint-strings: 
+|   NULL: 
+|     000T000
+|     0000000
+|     ?000
+|     aomSrv00000
+|     *000000
+|     0000000
+|     200000000
+|     root00
+|_    (000J
+2099/tcp  open  telnet             HP LaserJet telnetd
+| fingerprint-strings: 
+|   NULL: 
+|_    Cyclades-PR4000: CyROS V_176177466 (o) |
+2100/tcp  open  http               MMM BosServer httpd bTNuW
+|_http-title: Site doesn't have a title.
+2103/tcp  open  http               M3 Business Engine ServerView httpd /J.L'!.h
+|_http-title: 500 Internal server error
+|_http-server-header: M3 Business Engine /J\x9DL'!\x05h
+2105/tcp  open  http               Netgear DGGGNInZOl router http config
+|_http-server-header: <empty>
+2106/tcp  open  rtsp               Avtech MPEG4 DVR control rtspd
+|_rtsp-methods: DESCRIBE, SETUP, TEARDOWN, PLAY, PAUSE, SET_PARAMETER
+2107/tcp  open  http               udpxy multicast UDP-to-HTTP
+|_http-title: Site doesn't have a title.
+|_http-trane-info: Problem with XML parsing of /evox/about
+2111/tcp  open  http               Linksys BEFW11S4 router http config
+2119/tcp  open  pop3               SmarterMail pop3d
+2121/tcp  open  ftp                Actiontec router ftpd (firewall broken; BusyBox Nu)
+|_ftp-bounce: ERROR: Script execution failed (use -d to debug)
+2126/tcp  open  telnet             HP Integrated Lights Out telnetd
+| fingerprint-strings: 
+|   NULL: 
+|     Copyright 1Sun Microsystems, Inc. All rights reserved.
+|     subject to license terms.
+|     Sun(tm) Advanced Lights Out Manager 5 (ROMUsYn)
+|_    Please login:
+2135/tcp  open  http               AXIS 200
+2144/tcp  open  lv-ffx?
+| fingerprint-strings: 
+|   NULL: 
+|     0Caq00
+|     000/
+|     Login failed
+|     Microsoft SQL Server000
+|_    00000
+2160/tcp  open  apc-2160?
+| fingerprint-strings: 
+|   NULL: 
+|     HTTP/1.0 200 OK
+|     Connection: close
+|     Server: WindWeb/734321601
+|     Date: v
+|     Content-Type: text/html
+|     <html>
+|     <head>
+|_    <title>sSystem Control Center</title>
+2161/tcp  open  telnet             Network Systems Group router telnetd
+2170/tcp  open  http-proxy         GoogleSharing http proxy
+|_http-title: Site doesn't have a title.
+2179/tcp  open  vmrdp?
+| fingerprint-strings: 
+|   NULL: 
+|     d000r3.sByTFU0j
+|_    00000000000000
+2190/tcp  open  tivoconnect?
+| fingerprint-strings: 
+|   NULL: 
+|_    HTTP/1.760 xPowered By <a href='http://www.litespeedtech.com'>LiteSpeed Web Server</a>
+2191/tcp  open  smtp-proxy         Tumbleweed Email Firewall smtp proxy
+2196/tcp  open  http               Embedded HTTP Server YfYNEZtw (D-Link DWL-810+ WAP http config)
+|_http-server-header: Embedded HTTP Server vYfYNEZtw
+2200/tcp  open  ici?
+| fingerprint-strings: 
+|   NULL: 
+|_    NOT OK
+2222/tcp  open  EtherNetIP-1?
+| fingerprint-strings: 
+|   NULL: 
+|     HTTP/1.1 400 Bad Request
+|     Content-Type: text/html
+|     Content-Length: 2
+|     Cache-Control: no-cache
+|     Pragma: no-cache
+|_    Connection: Close
+2251/tcp  open  dif-port?
+| fingerprint-strings: 
+|   NULL: 
+|     HTTP/1.1 200 OK
+|_    dServer: Shareaza 9S+
+2260/tcp  open  irc
+2288/tcp  open  ms-sql-s           Microsoft SQL Server 2005 9.00.3054; SP2+
+2301/tcp  open  http               D-Link DSL-504G ADSL router http config
+|_http-title: Did not follow redirect to /hag/pages/home.ssi
+2323/tcp  open  telnet             USR5450 access point telnetd 544602531
+2366/tcp  open  http               Chrysler wiTECH VCI Pod automotive diagnostic device
+|_http-server-header: HTTP Server
+2381/tcp  open  compaq-https?
+| fingerprint-strings: 
+|   NULL: 
+|     HTTP/1.1 200 OK
+|_    y<title>MiFi4Mobile Hotspot</title><meta name=description content=Sprint020>
+2382/tcp  open  ms-olap3?
+| fingerprint-strings: 
+|   NULL: 
+|_    220S+ E?SMTP Sendmail AIX48863096/0ZR
+2383/tcp  open  http               BBC httpd 7PiTxP (HP OpenView ITO agent - Coda 4SB)
+|_http-server-header: BBC 7PiTxP; com.hp.openview.Coda 4SB
+2393/tcp  open  ftp                ProFTPD 1.2.5
+2394/tcp  open  telnet             Georgia SoftWorks telnetd wbgnuc
+2399/tcp  open  vnc-http           RealVNC H
+|_http-trane-info: Problem with XML parsing of /evox/about
+|_http-title: Site doesn't have a title.
+|_http-server-header: RealVNC/H
+2401/tcp  open  ftp                WinGate ftpd
+2492/tcp  open  groove?
+| fingerprint-strings: 
+|   NULL: 
+|_    HTTP/1.0 349 lServer: Grandstream/07
+2500/tcp  open  http               MoxaHttp BuUPGY (Moxa NPort serial to IP http config)
+|_http-server-header: MoxaHttp/BuUPGY
+2522/tcp  open  uucp               Taylor uucpd
+2525/tcp  open  http               Acme.Serve 5QA (APC Powerchute)
+|_http-server-header: Acme.Serve/v5QA
+| http-auth: 
+| HTTP/1.0 401 Unauthorized
+|_  Basic realm=PowerChute network shutdown
+|_http-title: Site doesn't have a title.
+2557/tcp  open  http               WindWeb DzWLJNfW (TrueTime NTS-200 http config)
+|_http-server-header: WindWeb/DzWLJNfW
+2601/tcp  open  jabber             Jabber instant messaging server
+| xmpp-info: 
+|   STARTTLS Failed
+|   info: 
+|     features: 
+|     errors: 
+|       
+|         text: Invalid XML
+|       (timeout)
+|     unknown: 
+|     xmpp: 
+|     capabilities: 
+|     auth_mechanisms: 
+|_    compression_methods: 
+2602/tcp  open  http               peercast.org
+|_http-title: Did not follow redirect to /html/en/index.html
+2604/tcp  open  ospfd?
+| fingerprint-strings: 
+|   NULL: 
+|     HTTP/1.1 200 OK
+|_    bServer: ZyXEL-RomPager/lAOBAbWhS
+2605/tcp  open  bgpd?
+| fingerprint-strings: 
+|   NULL: 
+|_    220 InterScan FTP VirusWall NT 8cqsxs (oGse Mode), Virus scan gr
+2607/tcp  open  connection?
+| fingerprint-strings: 
+|   NULL: 
+|     HTTP/1.0 404 Not Found
+|     Content-Type: text/html
+|     Date: b
+|     <H1>n Un host WebGroup/Virtual per la gestione / non 
+|     stato definito.</H1><BR><H3>SRVE0017W: Un host WebGroup/Virtual per la gestione / non 
+|_    stato definito.</H3><BR><I>IBM WebSphere Application Server</I>
+2608/tcp  open  wag-service?
+2638/tcp  open  sybase?
+| fingerprint-strings: 
+|   NULL: 
+|     00$000
+|     cncd000000
+|     000000000000000
+|_    p|Symantec/Veritas Backup Exec ndmp
+2701/tcp  open  http               micro_httpd
+|_http-title: Site doesn't have a title.
+2702/tcp  open  irc                Hybrid ircd
+2710/tcp  open  http               Websense Block Message httpd
+|_http-title: HTTP 404 File not found
+2717/tcp  open  ftp                ZyXEL ZyWALL USG k firewall ftpd
+2718/tcp  open  pn-requester2?
+| fingerprint-strings: 
+|   NULL: 
+|     "?:Prazos longos sao f
+|     ceis de subscrever.|Deus, para a felicidade do homem, inventou a f
+|     amor.|Ao vencido, 
+|     compaixao, ao vencedor, as batatas.|Quem nao sabe que ao p
+|     cada bandeira p
+|     blica,|Nao te irrites se te pagarem mal um benef
+|_    cio; antes cair|A vida, como a antiga Tebas, tem cem portas.
+2725/tcp  open  upnp               Virata-EmWeb 0045 (Eminent EM4104 WAP UPnP; UPnP 6)
+2800/tcp  open  netstat            Linux netstat (broken)
+2809/tcp  open  corbaloc?
+| fingerprint-strings: 
+|   NULL: 
+|     HTTP/1.1 200 OK
+|     Pragma: no-cache
+|     Connection: close
+|     Cache-Control: no-cache
+|     Content-Type: text/html
+|     <html><head><meta http-equiv="refresh" content="0;url=/_top.html">
+|_    <title></title></head><body></body></html>0
+2811/tcp  open  pop3               Microsoft Exchange pop3d 6 (French)
+2869/tcp  open  http               Galty Technologies GaltyExplorer httpd
+|_http-title: Site doesn't have a title.
+2875/tcp  open  http               VDR Streamdev plugin httpd
+|_http-title: VDR Channel Listing
+|_http-trane-info: Problem with XML parsing of /evox/about
+2909/tcp  open  funk-dialout?
+| fingerprint-strings: 
+|   NULL: 
+|     00errliksd0000hrtlpmxs
+|     g*MacBookPro82x05
+|     AFP3.4
+|     AFP3.3
+|     AFP3.2
+|     AFP3.1
+|     AFPX03
+|     DHCAST128
+|     DHX2
+|     Recon1
+|     Client Krb v2
+|     GSSo
+|_    $not_defined_in_RFC4178@please_ignore
+2910/tcp  open  pop3               WinWebMail pop3d 01105085
+2920/tcp  open  roboeda?
+| fingerprint-strings: 
+|   NULL: 
+|     HTTP/1.341 b
+|_    Server: svea_httpd/747778
+2967/tcp  open  symantec-av?
+| fingerprint-strings: 
+|   NULL: 
+|     "DSL Router"
+|     Content-Type: text/html
+|     Connection: close
+|     <HTML><HEAD><TITLE>401 Unauthorized</TITLE></HEAD>
+|_    <BODY BGCOLOR
+2968/tcp  open  enpp?
+| fingerprint-strings: 
+|   NULL: 
+|_    firewall/switch/WLAN -AP<
+2998/tcp  open  telnet             Cisco WAP telnetd
+3000/tcp  open  ppp?
+| fingerprint-strings: 
+|   NULL: 
+|_    421 Cannot establish SSL with SMTP server ow_:-]+, SSL_connect error 336031996
+3001/tcp  open  smtp               MailMax smtpd 79779
+|_smtp-commands: SMTP EHLO 10.10.173.125: failed to receive data: connection closed
+3003/tcp  open  pop3               Eudora Internet Mail Server X pop3d 5
+3005/tcp  open  telnet             Airspan MiMAX WiMAX WAP telnetd
+3006/tcp  open  deslogind?
+| fingerprint-strings: 
+|   NULL: 
+|     HTTP/1.256 u
+|_    Server: Apache/-cZHu Ben-SSL/SEwLQ (Unix)
+3007/tcp  open  ftp                Multitech MultiVoip 410 VoIP gateway ftpd
+3011/tcp  open  trusted-web?
+| fingerprint-strings: 
+|   NULL: 
+|     HTTP/1.0 320 fServer: $ProjectRevision: rVRCA $
+|_    c<title>HP LaserJet inbsp;&nbsp;&nbsp
+3013/tcp  open  pop3               Microsoft Exchange 2000 pop3d S+s
+3017/tcp  open  http               Gordian httpd 02967 (Lantronix MSS/100 http config)
+|_http-title: Lantronix Web Manager
+|_http-server-header: Gordian Embedded02967
+|_http-trane-info: Problem with XML parsing of /evox/about
+3030/tcp  open  http-proxy         CCProxy http proxy
+3031/tcp  open  eppc?
+| fingerprint-strings: 
+|   NULL: 
+|     220-TiMOS-B-YVaM both/hops ALCATEL SR m-lCF Copyright (c) 62Alcatel-Lucent.
+|     220-All rights reserved. All use subject to applicable license agreements.
+|     220-Built on s by builder in /relTYfPg/GhxZJjJ/DW/panos/main
+|     220-
+|     220-This is a Maxcom, system restricted to authorized individuals. This system is subject to monitoring. Unauthorized users, access, and/or modification will be prosecuted.
+|_    server ready
+3052/tcp  open  pop3               Dovecot pop3d (b)
+3071/tcp  open  http               GNUMP3d streaming server sd
+|_http-title: Site doesn't have a title.
+3077/tcp  open  orbix-loc-ssl?
+| fingerprint-strings: 
+|   NULL: 
+|     HTTP/1.1 200 OK
+|     Date: h
+|     Server: Web/RSGS
+|     sContent-Type: text/html
+|     <html>
+|     <head>
+|_    <script language="javascript">
+3128/tcp  open  imap               Microsoft Exchange Server imapd 7173 (Czech)
+|_imap-capabilities: CAPABILITY
+3168/tcp  open  poweronnud?
+| fingerprint-strings: 
+|   NULL: 
+|     HTTP/1.0 404 Not Found
+|_    hServer: lighttpd/31
+3211/tcp  open  directconnect      Direct Connect P2P (User: ctcKJ)
+3221/tcp  open  http               Snom 300 VoIP phone http config
+| http-auth: 
+| HTTP/1.1 401 Unauthorized\x0D
+|_  Basic REALM=snom
+|_http-title: Site doesn't have a title (text/plain).
+3260/tcp  open  iscsi?
+| fingerprint-strings: 
+|   NULL: 
+|     HTTP/1.n
+|     Server: Kerio MailServer 3451087
+|_    bX-Powered-By: PHP/820
+3261/tcp  open  ftp                NcFTPd
+|_ftp-bounce: ERROR: Script execution failed (use -d to debug)
+3268/tcp  open  websm              AIX wsmserver
+3269/tcp  open  telnet             DrayTek Vigor ADSL router telnetd
+3283/tcp  open  netassistant?
+| fingerprint-strings: 
+|   NULL: 
+|     ~xa0
+|     9{14}Z
+|     71154013306428Z
+|     x02?:
+|     mmn|
+|     krbtgt
+|_    NULL_CLIENT0
+3300/tcp  open  ceph?
+| fingerprint-strings: 
+|   NULL: 
+|     p000
+|_    6.a0fxo0
+3301/tcp  open  ftp                Sasser worm minimal ftpd
+3306/tcp  open  pop3
+| fingerprint-strings: 
+|   NULL: 
+|_    +OK vecot ready.
+3322/tcp  open  active-net?
+| fingerprint-strings: 
+|   NULL: 
+|     match ftp m%^220 q
+|     214-The following commands are recognized (* =>'s unimplemented).
+|     ?:214-| USER PASS ACCT* CWD XCWD CDUP XCUP SMNT* 
+|     ?:214-| QUIT REIN* PORT PASV TYPE STRU MODE RETR 
+|     ?:214-| STOR STOU APPE ALLO* REST RNFR RNTO ABOR 
+|     ?:214-| DELE MDTM RMD XRMD MKD XMKD PWD XPWD 
+|_    ?:214-| SIZE% p/ProFTPD/ v/1v2w8 - 1a2p9/ o/Unix/ cpe:/a:proftpd:proftpd/
+3323/tcp  open  active-net?
+| fingerprint-strings: 
+|   NULL: 
+|     HTTP/1.0 401 Authorization Required
+|_    eServer: bitcoin-json-rpc/SjmH
+3324/tcp  open  active-net?
+| fingerprint-strings: 
+|   NULL: 
+|     i000MMS r0{7}s{9}000
+|     00000
+|     0000000
+|     0000
+|     00npr0v00000000000v00
+|_    4000
+3325/tcp  open  http               olsrd http info plugin 04
+|_http-server-header: Httpinfo olsrd plugin 04 HTTP/1.1
+|_http-title: Site doesn't have a title.
+3333/tcp  open  ssh                OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 374dbec48fc22043bb01f210fcbdff93 (RSA)
+|   256 2d231384ffcb00b4712a5e5672d690e5 (ECDSA)
+|_  256 2234b22f4a17870e755bd3a1a48af5d8 (ED25519)
+3351/tcp  open  ftp                BSDI/Unixware ftpd VdjXKLV
+3367/tcp  open  http               Agranat-EmWeb 2424 (HP LaserJet http config)
+|_http-server-header: Agranat-EmWeb/R2424
+|_http-title: Site doesn't have a title (text/html;charset=ISO-8859-1).
+|_http-trane-info: Problem with XML parsing of /evox/about
+3369/tcp  open  http               BQTWWW pXEHAeu
+|_http-server-header: BQTWWW/pXEHAeu (RSX) (RSX-11M-PLUS VqMD)
+|_http-title: Site doesn't have a title.
+|_http-trane-info: Problem with XML parsing of /evox/about
+3370/tcp  open  satvid-datalnk?
+| fingerprint-strings: 
+|   NULL: 
+|     000M
+|     SMBr0000
+|     0000000000000000@
+|     0000
+|_    0000
+3371/tcp  open  http               Cisco switch/router http config
+| http-auth: 
+| HTTP/1.0 401 Unauthorized\x0D
+|_  Basic realm=access
+|_http-title: Authorization Required
+3372/tcp  open  msdtc?
+| fingerprint-strings: 
+|   NULL: 
+|     HTTP/1.1 403
+|_    Server: Zervit GfsDxfZz
+3389/tcp  open  telnet             Procurve Secure Router telnetd
+3390/tcp  open  dsc?
+| fingerprint-strings: 
+|   NULL: 
+|_    0000
+3404/tcp  open  unknown
+| fingerprint-strings: 
+|   NULL: 
+|     HTTP/1.0 400 Bad Request
+|     mServer: BaseHTTP/66123 Python/ABnXx
+|     h<head>
+|     <title>Error response</title>
+|     </head>
+|     <body>
+|     <h1>Error response</h1>
+|     <p>Error code 400.
+|     <p>Message: Bad Request.
+|     <p>Error code explanation: 400 = Bad request syntax or unsupported method.
+|_    </body>
+3476/tcp  open  http               Sambar
+|_http-title: Site doesn't have a title.
+|_http-server-header: SAMBAR
+3493/tcp  open  nut?
+| fingerprint-strings: 
+|   NULL: 
+|     HTTP/1.419 e
+|     WWW-Authenticate: Basic realm="
+|_    Server :Tandberg Television Web server
+3517/tcp  open  802-11-iapp?
+| fingerprint-strings: 
+|   NULL: 
+|     HTTP/1.0 200 OK
+|_    hServer: Prayer/sJ
+3527/tcp  open  beserver-msg-q?
+| fingerprint-strings: 
+|   NULL: 
+|     This session allows you to set the TCPIP parameters for your
+|     Dell ?:Laser Printer ??:Printer ??:Dell ?fYzPFFcq bEthernet internal network device, with a hardware
+|_    address of 12} 12} (MSB, Canonical).
+3546/tcp  open  unknown
+| fingerprint-strings: 
+|   NULL: 
+|     HTTP/1.775 w
+|_    SERVER: Linux/qhkIxlVG UPnP/899 DLNADOC/pG Intel_SDK_for_UPnP_devices/arnD
+3551/tcp  open  upnp               Huawei SmartAX MT882 ADSL router UPnP (UPnP 80579)
+3580/tcp  open  ms-sql-s           Microsoft SQL Server 2000 8.00.760; SP3
+3659/tcp  open  apple-sasl?
+| fingerprint-strings: 
+|   NULL: 
+|     HTTP/1.0 301 Moved Permanently
+|     Cache-Control: no-store
+|     Connection: close
+|     Accept-Ranges: none
+|     Location: https?://P/CitrixLogonPoint/WICL/
+|_    Content-Length: 0
+3689/tcp  open  wincomm            Windows Communicator
+3690/tcp  open  svn?
+| fingerprint-strings: 
+|   NULL: 
+|     .NET
+|     0000000
+|     mv00Server encountered an internal error. To get more info turn on customErrors in the server's config file.
+|_    0000
+3703/tcp  open  adobeserver-3?
+| fingerprint-strings: 
+|   NULL: 
+|_    220lbftpd 005099 at OnuIi ready.?
+3737/tcp  open  ftp                Linksys WRT54Gv5 WAP ftpd
+3766/tcp  open  irc                Minbif ircd
+3784/tcp  open  bfd-control?
+| fingerprint-strings: 
+|   NULL: 
+|_    0000
+3800/tcp  open  pwgpsi?
+| fingerprint-strings: 
+|   NULL: 
+|     <html>
+|_    <title>DES-o+?:Login?</title>
+3801/tcp  open  ibm-mgr?
+| fingerprint-strings: 
+|   NULL: 
+|     HTTP/1.0 200 OK
+|     wContent-Type: text/htmlc
+|_    <!DOCTYPE html PUBLICu<title>RouterOS router configuration page</title>
+3809/tcp  open  apocd?
+| fingerprint-strings: 
+|   NULL: 
+|_    'http://etherx.jabber.org/streams' xmlns='jabber:client' version='1.0' id=''><stream:error><not-well-formed xmlns
+3814/tcp  open  http               UPS_Server httpd 2 (Powerware ConnectUPS WEB/SNMP Card http config)
+|_http-server-header: UPS_Server/2
+3826/tcp  open  http               Systinet Server for Java 059 (x.V)
+|_http-title: Site doesn't have a title.
+|_http-server-header: Systinet Server for Java/059 (x\xA7V)
+3827/tcp  open  http               Gordian httpd 31890 (Lantronix MSSVIA http config)
+|_http-title: Site doesn't have a title.
+|_http-server-header: Gordian Embedded31890
+3828/tcp  open  smtp               Winmail smtpd
+|_smtp-commands: SMTP EHLO 10.10.173.125: failed to receive data: connection closed
+3851/tcp  open  spectraport?
+| fingerprint-strings: 
+|   NULL: 
+|     HTTP/1.157 e
+|_    Server: BigFixHTTPServer/344
+3869/tcp  open  ovsam-mgmt?
+| fingerprint-strings: 
+|   NULL: 
+|     HTTP/1.0 200 OK
+|     Server: ZyXEL SSLVPN Server vV
+|_    r<title>ZyWALL SSL9/title>
+3871/tcp  open  avocent-adsap?
+| fingerprint-strings: 
+|   NULL: 
+|     * OK GYUxs+IdeaImapServer 
+|_    ready
+3878/tcp  open  fotogcad?
+| fingerprint-strings: 
+|   NULL: 
+|     0Videolan Server Administration System0
+|_    "Login: 0
+3880/tcp  open  ssh                (protocol 626561)
+| fingerprint-strings: 
+|   NULL: 
+|_    SSH-626561-OpenSSH_iCeBUnM Debian-S*maemoS*
+3889/tcp  open  dandv-tester?
+| fingerprint-strings: 
+|   NULL: 
+|     n000
+|_    ?Host h is blocked because of many connection errors.
+3905/tcp  open  http               Norman Security Endpoint Protection httpd 74989
+|_http-title: Norman Security Error
+|_http-server-header: Norman Security/74989
+3914/tcp  open  listcrt-port-2?
+| fingerprint-strings: 
+|   NULL: 
+|     HTTP/1.218 p
+|_    Server: WWW File Share Pro
+3918/tcp  open  http               GoAhead WebServer
+|_http-server-header: GoAhead-Webs
+|_http-title: Site doesn't have a title.
+3920/tcp  open  ssh                (protocol 2.0)
+| fingerprint-strings: 
+|   NULL: 
+|_    SSH-2.0-mpsa57B_3A
+3945/tcp  open  ssh                (protocol 73842)
+| fingerprint-strings: 
+|   NULL: 
+|_    SSH-73842-OpenSSH_yzavz.RL
+3971/tcp  open  ssh                OpenSSH NEvQusPyx (protocol 155159)
+3986/tcp  open  http               SmarterTools httpd 12
+|_http-server-header: SmarterTools/12
+|_http-title: Site doesn't have a title.
+3995/tcp  open  http               Netwave webcam http config
+|_http-title: Site doesn't have a title.
+|_http-server-header: Netwave IP Camera
+3998/tcp  open  dnx?
+| fingerprint-strings: 
+|   NULL: 
+|     c{3,4}
+|_    l{5,6}0
+4000/tcp  open  remoteanything?
+| fingerprint-strings: 
+|   NULL: 
+|_    0x{5}
+4001/tcp  open  newoak?
+| fingerprint-strings: 
+|   NULL: 
+|     0rsh: 
+|_    Command not supported
+4002/tcp  open  http               WebFinger httpd
+|_http-title: Site doesn't have a title.
+4003/tcp  open  pxc-splr-ft?
+| fingerprint-strings: 
+|   NULL: 
+|_    220 <19.8JvO> [XMail 8TnYhOSx ESMTP Server] service ready;
+4004/tcp  open  ssh                (protocol 43964)
+| fingerprint-strings: 
+|   NULL: 
+|_    SSH-43964-VShell_816_93 VShell
+4005/tcp  open  http               Veritas backup exec continuous protection httpd
+|_http-title: Site doesn't have a title (text/xml).
+4006/tcp  open  telnet             Huawei telnetd
+| fingerprint-strings: 
+|   NULL: 
+|     *{80}
+|     Copyright(c) 2004-2007 3Com Corp. and its licensors. All rights reserved. *
+|     Without the owner's prior written consent, *
+|_    decompiling or reverse-engineering shall be allowed.
+4045/tcp  open  http               Dell PowerEdge OpenManage Server Administrator httpd
+4111/tcp  open  mmouse             Mobile Air Mouse (server name:)
+4125/tcp  open  http               Fortinet FortiWifi 60 http config (FortiWeb 737064744)
+|_http-server-header: FortiWeb-737064744
+|_http-title: Site doesn't have a title.
+|_http-trane-info: Problem with XML parsing of /evox/about
+4126/tcp  open  ddrepl?
+| fingerprint-strings: 
+|   NULL: 
+|     NO Fatal error: Error initializing actions
+|_    p/Cyrus timsieved/ i|included w/cyrus imap
+4129/tcp  open  nuauth?
+| fingerprint-strings: 
+|   NULL: 
+|     HTTP/1.058 p
+|_    Server: Kannel/7285
+4224/tcp  open  xtell?
+| fingerprint-strings: 
+|   NULL: 
+|_    a-z]+day, a-z]+ 4{1,2}, ?:19|2058 4{1,2}:69:56
+4242/tcp  open  vrml-multi-use?
+| fingerprint-strings: 
+|   NULL: 
+|     HTTP/1.0 200 OK
+|     yServer: Mono.WebServer2/RB Unix
+|_    X-AspNet-Version: 70
+4279/tcp  open  http               Jablotron d alarm http control
+|_http-title: Site doesn't have a title.
+| http-auth: 
+| HTTP/1.1 401 Not Authorized\x0D
+|_  Basic realm=Communicator Jablotron d
+4321/tcp  open  sip                (SIP end point; Status: b)
+| fingerprint-strings: 
+|   NULL: 
+|     SIP/2.0 b
+|_    Server: Sphericall/OHDz Build/0r
+4343/tcp  open  unicall?
+| fingerprint-strings: 
+|   NULL: 
+|     MSS100 Version V53836134(7) - Time Since Boot: 500:64
+|_    Name pid stat pc cpusec stack pr/sy idle tty
+4443/tcp  open  telnet             Nortel BayStack 470-24T switch telnetd
+4444/tcp  open  telnet             USR5450 access point telnetd 44345899
+4445/tcp  open  http               DirecTV satellite receiver http interface
+|_http-title: Site doesn't have a title (application/json; charset=ISO-8859-1).
+4446/tcp  open  crestron-ctp       Crestron CEN-IDOC music player connection text ui
+4449/tcp  open  privatewire?
+| fingerprint-strings: 
+|   NULL: 
+|_    28}s*OpenAFSs+05730s+
+4550/tcp  open  gds-adppiw-db?
+| fingerprint-strings: 
+|   NULL: 
+|_    d A-Z]?:19|2006 17:83:88 S+
+4567/tcp  open  vmware-auth        VMware Authentication Daemon 6jQQGPr
+4662/tcp  open  smtp               Gruponet mail appliance smtpd 508
+|_smtp-commands: SMTP EHLO 10.10.173.125: failed to receive data: connection closed
+4848/tcp  open  ftp                ShareIt ftpd 85094
+4899/tcp  open  radmin?
+| fingerprint-strings: 
+|   NULL: 
+|_    220 S+ S+ ESMTP receiver fssmtpd0ready
+4900/tcp  open  hfcs?
+| fingerprint-strings: 
+|   NULL: 
+|_    Cirrato Client woPLrPlLz0
+4998/tcp  open  maybe-veritas?
+| fingerprint-strings: 
+|   NULL: 
+|     HTTP/1.706 r
+|_    Date: o<META NAME="GENERATOR" CONTENT="WebLogic Server">
+5000/tcp  open  upnp?
+| fingerprint-strings: 
+|   NULL: 
+|     HTTP/1.0 401 Default login not authorized to perform this action
+|     uWWW-Authenticate: Basic realm="/INOVAS/NovusDFM-trunk-xFj/Config/MMm"
+|_    yServer: Trapeze-Srv/13402
+5001/tcp  open  http               Spambayes pop3proxy web interface
+|_http-title: Home
+5002/tcp  open  http               Apple ODS DVD/CD Sharing Agent httpd FN-L
+|_http-server-header: ODS/FN-L
+5003/tcp  open  telnet             Siemens ADSL SL2-141-I HSN2 ADSL telnetd PgZff
+5004/tcp  open  avt-profile-1?
+| fingerprint-strings: 
+|   NULL: 
+|_    qm0lm0no
+5009/tcp  open  nagios-nsca        Nagios NSCA
+5030/tcp  open  pioneers           Pioneers game server
+5033/tcp  open  ssh                (protocol 2.0)
+| fingerprint-strings: 
+|   NULL: 
+|_    SSH-2.0-3{8,12}
+5050/tcp  open  mmcc?
+| fingerprint-strings: 
+|   NULL: 
+|_    220 Xerox Phaser sr
+5051/tcp  open  cyrus-sync         Cyrus sync server bsb
+5054/tcp  open  rlm-admin?
+| fingerprint-strings: 
+|   NULL: 
+|     HTTP/1.0 303 See Other
+|     Location: http://guide?:test?.opendns.com/?url=
+|     Content-Length: 0
+|     Connection: close
+|     Date: p
+|_    Server: OpenDNS Guide
+5060/tcp  open  http               Microsoft ISA httpd
+|_http-title: Site doesn't have a title.
+5061/tcp  open  sip-tls?
+| fingerprint-strings: 
+|   NULL: 
+|_    HTTP/1.0 942 gServer: Null httpd 626094138
+5080/tcp  open  http               Mercury SiteScope Application Managment httpd 1853611
+|_http-title: Site doesn't have a title.
+|_http-server-header: SiteScope/1853611 t
+5087/tcp  open  biotic?
+| fingerprint-strings: 
+|   NULL: 
+|_    220S+ WebShieldekSMTP Readyd
+5100/tcp  open  admd?
+| fingerprint-strings: 
+|   NULL: 
+|_    protocol specified
+5101/tcp  open  ftp-proxy          Proxy602 ftp proxy
+5102/tcp  open  http               Mongoose httpd 3.7 (directory listing)
+|_http-title: Index of /
+|_http-trane-info: Problem with XML parsing of /evox/about
+5120/tcp  open  upnp               Portable SDK for UPnP devices N (Linux HHlMk; DLNADOC 20213011; UPnP 3166)
+5190/tcp  open  http               Java 3_807_55 http.transport.HttpServerConnection httpd
+|_http-server-header: Java/3_807_55 javax.wbem.client.adapter.http.transport.HttpServerConnection
+|_http-title: Site doesn't have a title.
+5200/tcp  open  http               Actiontec TR069 remote access
+5214/tcp  open  http               Blue Coat http config
+5221/tcp  open  nntp               Synchronet NNTP Service 5oGB
+5222/tcp  open  icy                SHOUTcast server 81545
+| xmpp-info: 
+|   STARTTLS Failed
+|   info: 
+|     features: 
+|     errors: 
+|       (timeout)
+|     unknown: 
+|     xmpp: 
+|     capabilities: 
+|     auth_mechanisms: 
+|_    compression_methods: 
+5225/tcp  open  ftp                smallftpd 5454
+|_ftp-bounce: ERROR: Script execution failed (use -d to debug)
+5226/tcp  open  sip                (SIP end point; Status: -)
+| fingerprint-strings: 
+|   NULL: 
+|_    SIP/2.0 -
+5269/tcp  open  xmpp-server?
+| xmpp-info: 
+|   STARTTLS Failed
+|   info: 
+|     features: 
+|     errors: 
+|       (timeout)
+|     unknown: 
+|     xmpp: 
+|     capabilities: 
+|     auth_mechanisms: 
+|_    compression_methods: 
+| fingerprint-strings: 
+|   NULL: 
+|     000d
+|     SMBr0000
+|_    p|Nortel/D-Link router instant setup
+5280/tcp  open  xmpp-bosh?
+| fingerprint-strings: 
+|   NULL: 
+|     ^0\xa0
+|_    krbtgtorw
+5298/tcp  open  presence?
+| fingerprint-strings: 
+|   NULL: 
+|     HTTP/1.1 505 HTTP Version Not Supported
+|_    Server: HP HTTP Server; HP Photosmart sLh series - d Serial Number: f
+5357/tcp  open  wsdapi?
+| fingerprint-strings: 
+|   NULL: 
+|     HTTP/1.0 200 OK
+|     Connection: close
+|     Content-Length: 4r
+|     Content-Type: text/html
+|_    <html><body>This site is running <a href='http://www.TeamViewer.com'>TeamViewer</a>.
+5405/tcp  open  http               3Com OfficeConnect wireless access point http config
+|_http-trane-info: Problem with XML parsing of /evox/about
+|_http-title: OfficeConnect 11Mbps Wireless Access Point
+5414/tcp  open  ftp                Sina ftpd 947-0
+5431/tcp  open  http               NetGear FR114W WAP http config
+| http-auth: 
+| HTTP/1.0 401 Unauthorized\x0D
+|_  Basic realm=FR114W
+|_http-title: Site doesn't have a title (text/html).
+5432/tcp  open  http               SnapStream Media Beyond TV PVR http config
+|_http-title: Site doesn't have a title (text/html).
+|_http-server-header: SnapStream
+5440/tcp  open  bruker-axs         Bruker AXS X-ray controller status (X-rays: On)
+5500/tcp  open  http               D-Link DIR-xV WAP http config zFWNrH-
+|_http-title: Site doesn't have a title.
+|_http-server-header: Linux, HTTP/1.1, DIR-xV Ver zFWNrH-
+5510/tcp  open  secureidprop?
+| fingerprint-strings: 
+|   NULL: 
+|_    00000000000000
+5544/tcp  open  unknown
+| fingerprint-strings: 
+|   NULL: 
+|_    andReceiver-6.1.5
+5550/tcp  open  smtp-proxy         Genua smtprelay
+5555/tcp  open  http               WindWeb sxEUtW (Xerox FreeFlow Accxes Web Print Management Tool)
+|_http-title: Site doesn't have a title.
+|_http-trane-info: Problem with XML parsing of /evox/about
+|_http-server-header: XES WindWeb/sxEUtW
+5560/tcp  open  isqlplus?
+| fingerprint-strings: 
+|   NULL: 
+|     HTTP/1.284 t
+|_    Server: Hunchentoot aE
+5566/tcp  open  westec-connect?
+| fingerprint-strings: 
+|   NULL: 
+|     HTTP/1y1 401 Unauthorized
+|_    WWW-Authenticate: Basic realm="PortServer TS y
+5631/tcp  open  pcanywheredata?
+| fingerprint-strings: 
+|   NULL: 
+|     Microsoft Windows XP [Version 734]
+|_    Copyright 1985-4Microsoft Corp.
+5633/tcp  open  beorl?
+| fingerprint-strings: 
+|   NULL: 
+|     "08"
+|_    Refresh: 0;URL
+5666/tcp  open  http               Sun Java System Application Server httpd ...$q
+|_http-server-header: Sun-Java-System-Application-Server/\xB2\xEF\x9C$q
+|_http-title: Site doesn't have a title.
+5678/tcp  open  smtp               Hotmail smtpd
+|_smtp-commands: SMTP EHLO 10.10.173.125: failed to receive data: connection closed
+5679/tcp  open  http               Syabas Popcorn Hour media player BitTorrent interface
+|_http-title: 404 Not Found
+5718/tcp  open  http               D-Link DES-1526 switch http config
+5730/tcp  open  http               ARGUS httpd 9 (Intel Wireless Gateway http config)
+|_http-server-header: ARGUS/9
+5800/tcp  open  ftp                WinGate ftpd
+5801/tcp  open  vnc-http-1?
+| fingerprint-strings: 
+|   NULL: 
+|     WWWOFFLE Server Status
+|_    Version *: 5d
+5802/tcp  open  vnc-http-2?
+| fingerprint-strings: 
+|   NULL: 
+|     rFactorMonitor
+|_    04000
+5810/tcp  open  unknown
+| fingerprint-strings: 
+|   NULL: 
+|     statusResponse
+|     eversion\(
+|     linux-
+|_    )(?=\)
+5811/tcp  open  unknown
+| fingerprint-strings: 
+|   NULL: 
+|_    +OK <32}@XJsm>
+5815/tcp  open  http               IP_SHARER WEB GqOcEqKke (Allied Telesyn AT-h WAP http config)
+|_http-title: Site doesn't have a title (text/html).
+|_http-server-header: IP_SHARER WEB GqOcEqKke
+| http-auth: 
+| HTTP/1.0 401 Unauthorized\x0D
+|_  Basic realm=AT-h
+5822/tcp  open  unknown
+| fingerprint-strings: 
+|   NULL: 
+|     220 SLNP mrsion:s?V?
+|_    O@pid:5n
+5825/tcp  open  unknown
+| fingerprint-strings: 
+|   NULL: 
+|_    00svbim0000uOpen source0
+5850/tcp  open  http               Sanyo PLC-XU300 projector http config
+|_http-title: Network
+|_http-trane-info: Problem with XML parsing of /evox/about
+5859/tcp  open  ftp                Blackjumbodog FTPd .....$
+5862/tcp  open  telnet             Foundry Networks telnetd
+5877/tcp  open  smtp-proxy         PGP Universal smtp proxy (Proxied greeting: t)
+5900/tcp  open  vnc?
+| fingerprint-strings: 
+|   NULL: 
+|     00talstrsu0000elnmnmvq
+|     Macintosh
+|_    AFP3.1i DHCAST128
+5901/tcp  open  ftp                Ipswitch notification ftpd
+5902/tcp  open  http               Virata-EmWeb 368 (HP LaserJet http config)
+|_http-server-header: Virata-EmWeb/R368
+|_http-title: Site doesn't have a title (text/html;charset=ISO-8859-1).
+|_http-trane-info: Problem with XML parsing of /evox/about
+5903/tcp  open  vnc-3?
+5904/tcp  open  ag-swim?
+| fingerprint-strings: 
+|   NULL: 
+|     HTTP/1.0 400 Bad Request
+|_    pServer: doubleTwist Sync (Android)
+5906/tcp  open  http               IP_SHARER WEB Cx (Netgear DGorWlTBlX WAP http config)
+|_http-title: Site doesn't have a title.
+| http-auth: 
+| HTTP/1.0 401 Unauthorized\x0D
+|_  Basic realm=DGorWlTBlX
+|_http-server-header: IP_SHARER WEB Cx
+5907/tcp  open  dsd?
+| fingerprint-strings: 
+|   NULL: 
+|_    501 0 Endpoint is not ready - Unrecognized command verb
+5910/tcp  open  smtp               Yahoo! smtpd
+|_smtp-commands: SMTP EHLO 10.10.173.125: failed to receive data: connection closed
+5911/tcp  open  cpdlc?
+| fingerprint-strings: 
+|   NULL: 
+|     HTTP/1.518 u
+|_    Server: WebLogic WebLogic Server 4LULgsCgoD?: SP4 +lws
+5915/tcp  open  unknown
+| fingerprint-strings: 
+|   NULL: 
+|_    0:23:7632635
+5922/tcp  open  unknown
+| fingerprint-strings: 
+|   NULL: 
+|     HTTP/1.1 200 OK
+|     Content-Type: text/html; charset=utf-8
+|     iServer: TornadoServer/shp__sN
+|_    j<link rel="stylesheet" href="/api/d31962c80b154e50adea3b4e7e8d4ba2/file.cache/minified_front.css?9"
+5925/tcp  open  ftp                AXIS B print server ftpd 0HePvzG
+5950/tcp  open  telnet             Georgia SoftWorks telnetd ufOQitJVy (Registered version)
+5952/tcp  open  unknown
+| fingerprint-strings: 
+|   NULL: 
+|     match ftp m%^220 m
+|     214-The following commands are recognized (* =>'s unimplemented).
+|     ?:214-| USER PASS ACCT* CWD XCWD CDUP XCUP SMNT* 
+|     ?:214-| QUIT REIN* PORT PASV TYPE STRU MODE RETR 
+|     ?:214-| STOR STOU APPE ALLO* REST RNFR RNTO ABOR 
+|     ?:214-| DELE MDTM RMD XRMD MKD XMKD PWD XPWD 
+|_    ?:214-| SIZE% p/ProFTPD/ v/1e2w8 - 1g2j9/ o/Unix/ cpe:/a:proftpd:proftpd/
+5959/tcp  open  http               nostromo vMaaPv
+|_http-server-header: nostromo vMaaPv
+|_http-trane-info: Problem with XML parsing of /evox/about
+|_http-title: Site doesn't have a title.
+5960/tcp  open  klogin             Encrypted Kerberized rlogin
+5961/tcp  open  autosys            CA AutoSys RCS Listener JJEUe- (not authorized)
+5962/tcp  open  imap-proxy         imapproxy
+5963/tcp  open  http-proxy         Charles http proxy
+|_http-server-header: Charles
+|_http-title: Site doesn't have a title.
+5987/tcp  open  stargazer          Stargazer Billing System
+5988/tcp  open  wbem-http?
+| fingerprint-strings: 
+|   NULL: 
+|     8000
+|_    00000000000000000000000heux0000iumv0000dspk0000
+5989/tcp  open  bprd               Veritas Netbackup (broken)
+5998/tcp  open  http               Bosch Divar closed circuit camera http config
+5999/tcp  open  klogin             MIT Kerberos klogin (broken - All authentication systems disabled; connection refused)
+6000/tcp  open  ftp
+| fingerprint-strings: 
+|   NULL: 
+|_    220 Zm IBM Infoprint yFTP Server vJZnukrn ready.
+6001/tcp  open  http               D-Link DI-y http config
+|_http-title: Site doesn't have a title.
+6002/tcp  open  http               Linksys Wireless-G DSL router http config
+|_http-server-header: httpd
+| http-auth: 
+| HTTP/1.0 401 Unauthorized\x0D
+|_  Basic
+|_http-title: 401 Unauthorized
+6003/tcp  open  X11:3?
+| fingerprint-strings: 
+|   NULL: 
+|_    ffsiwpwqbndipqfbpojvqkatiiqjheuomnxlfwcinhqfxv
+6004/tcp  open  X11:4?
+| fingerprint-strings: 
+|   NULL: 
+|     00$0000000000000000
+|_    000000000000
+6005/tcp  open  telnet             Hauppauge MediaMVP telnetd
+6006/tcp  open  ftp                ADI Convergence Galaxy update ftpd 743258
+6007/tcp  open  acpc               Glassfrog computer poker server
+6009/tcp  open  pop3-proxy         AVG pop3 proxy 67345 Beta
+6025/tcp  open  x11?
+| fingerprint-strings: 
+|   NULL: 
+|_    djexfandgorcqqtyqwxf000000000000000000000
+6059/tcp  open  telnet             Airlive 5460AP WAP telnetd
+6100/tcp  open  synchronet-db?
+6101/tcp  open  http               Syabas Popcorn Hour media player XML command server httpd
+|_http-title: Site doesn't have a title (text/xml).
+6106/tcp  open  finger             Post.Office fingerd
+6112/tcp  open  tcpmux
+6123/tcp  open  http               SimpleHelp remote desktop httpd
+6129/tcp  open  rtsp
+| fingerprint-strings: 
+|   NULL: 
+|     RTSP/1.0 200 OK
+|_    dVia: 972496495 zjLxbgL (NetCache NetApp/CTh)
+|_rtsp-methods: ERROR: Script execution failed (use -d to debug)
+6156/tcp  open  telnet             HP LaserJet telnetd
+| fingerprint-strings: 
+|   NULL: 
+|_    Cyclades-PR4000: CyROS V_37279405 (p) |
+6346/tcp  open  http-proxy         distributed.net personal key proxy httpd 3227430
+|_http-server-header: Distributed-Net-Proxy/3227430
+|_http-open-proxy: Proxy might be redirecting requests
+|_http-title: Did not follow redirect to http://www.distributed.net/
+6389/tcp  open  http               Sandpiper Footprint http load balancer 3955
+|_http-title: Site doesn't have a title.
+6502/tcp  open  nntp               Servizio nntpd 846 (posting ok)
+6510/tcp  open  ssh                (protocol 2.0)
+| fingerprint-strings: 
+|   NULL: 
+|     SSH-2.0-OpenSSH_3.6p1
+|_    p|D-Link/Netgear DSL router modified dropbear sshd
+6543/tcp  open  http               Kemp 2500 load balancer http config (mini-http CIZREv-)
+|_http-title: Site doesn't have a title (text/html).
+| http-auth: 
+| HTTP/1.1 401 Authorization Required\x0D
+|_  Basic realm=user
+|_http-server-header: mini-http/CIZREv- (unix)
+6547/tcp  open  whois              rwhois 794177979
+6565/tcp  open  smtp
+| fingerprint-strings: 
+|   NULL: 
+|     220 E?SMTP 
+|_    5.5.2 Error: command not recognized
+|_smtp-commands: SMTP EHLO 10.10.173.125: failed to receive data: connection closed
+6566/tcp  open  telnet             BayStack 470 switch telnetd
+6567/tcp  open  telnet             Bosch VIP X1 video encoder telnetd
+6580/tcp  open  parsec-master?
+| fingerprint-strings: 
+|   NULL: 
+|     Process query: ''
+|     Query recognized as IP?:v4?.
+|_    Querying 30507154:1with whois.
+6646/tcp  open  unknown
+| fingerprint-strings: 
+|   NULL: 
+|     E000xSk0C0A0000Mnicht unterst
+|     tztes Frontend-Protokoll 65363.19778: Server unterst
+|_    3.00Fpostmaster.c0L60
+6666/tcp  open  telnet
+| fingerprint-strings: 
+|   NULL: 
+|_    [JPASSaPORT CS-6 SW VSQJqRA , HW Vn
+6667/tcp  open  irc?
+| fingerprint-strings: 
+|   NULL: 
+|_    inv2W
+6668/tcp  open  ftp                ProFTPD
+6669/tcp  open  irc?
+6689/tcp  open  athinfod           Athena athinfod
+6692/tcp  open  http               Indy httpd 180944 (German Wikipedia DVD browser)
+|_http-server-header: Indy/180944
+|_http-title: Did not follow redirect to /Wikipedia/
+6699/tcp  open  http               ThinStation http admin ZDRfAyup
+6779/tcp  open  smtp               AVM KEN! smtpd 32784691
+|_smtp-commands: SMTP EHLO 10.10.173.125: failed to receive data: connection closed
+6788/tcp  open  smc-http?
+| fingerprint-strings: 
+|   NULL: 
+|     HTTP/1.0 280 l
+|     Content-Length: 1r
+|     Content-Type: text/html
+|     Connection: close
+|_    Server: Fastream IQ Web/FTP Server
+6789/tcp  open  telnet             RemotelyAnywhere telnetd 901093401 (Name CO GqbeFO)
+6792/tcp  open  ftp                ACLogic CesarFTPd dh
+6839/tcp  open  unknown
+| fingerprint-strings: 
+|   NULL: 
+|     501 Not Implemented
+|_    sServer: RT-fUPnP/YSdXdsgSI MiniUPnPd/qROFXPnd
+6881/tcp  open  http               Belkin Bulldog UPS Monitor http config
+| http-auth: 
+| HTTP/1.1 401 Unauthorized
+|_  Basic realm=Delta UPS Web
+|_http-title: Site doesn't have a title.
+|_http-server-header: Delta UPSentry
+6901/tcp  open  vnc                (protocol 3)
+| vnc-info: 
+|   Protocol version: 3.7
+|   Security types: 
+|     Unknown security type (48)
+|     Unknown security type (48)
+|     Unknown security type (48)
+|     Unknown security type (48)
+|     Unknown security type (48)
+|     Unknown security type (48)
+|     Unknown security type (110)
+|     Unknown security type (86)
+|     Unknown security type (78)
+|     Unknown security type (67)
+|     Unknown security type (32)
+|     Unknown security type (83)
+|     Unknown security type (101)
+|     Unknown security type (114)
+|     Unknown security type (118)
+|     Unknown security type (101)
+|     Unknown security type (114)
+|     Unknown security type (32)
+|     Unknown security type (108)
+|     Unknown security type (105)
+|     Unknown security type (99)
+|     Unknown security type (101)
+|     Unknown security type (110)
+|     Unknown security type (115)
+|     Unknown security type (101)
+|     Unknown security type (32)
+|     Unknown security type (107)
+|     Unknown security type (101)
+|     Unknown security type (121)
+|     Unknown security type (32)
+|     Unknown security type (105)
+|     Unknown security type (115)
+|     Unknown security type (32)
+|     Unknown security type (109)
+|     Unknown security type (105)
+|     Unknown security type (115)
+|     Unknown security type (115)
+|     Unknown security type (105)
+|     Unknown security type (110)
+|     Unknown security type (103)
+|     Unknown security type (44)
+|     Unknown security type (32)
+|     Unknown security type (105)
+|     Unknown security type (110)
+|     Unknown security type (118)
+|     Unknown security type (97)
+|     Unknown security type (108)
+|_    Unknown security type (105)
+| fingerprint-strings: 
+|   NULL: 
+|     RFB 003.007
+|     0000000nVNC Server license key is missing, invalid or has expired.
+|_    Visit http://www.realvnc.com to purchase a license.
+6969/tcp  open  http-proxy         Etisalat censorship http proxy (site blocked)
+7000/tcp  open  afs3-fileserver?
+| fingerprint-strings: 
+|   NULL: 
+|_    * OKb?Courier-IMAP ready. Copyright 1998-2Double Precision, Inc. See COPYING for distribution information.
+7001/tcp  open  afs3-callback?
+| fingerprint-strings: 
+|   NULL: 
+|     220S+ E?SMTP Sendmail @(#)Sendmail version 9
+|_    Revision 406322057
+7002/tcp  open  afs3-prserver?
+| fingerprint-strings: 
+|   NULL: 
+|     version00000U0008|00
+|     0000000jhknxnoy
+|     00000000000000000
+|     rwqwxg
+|     00000000000000000
+|_    qabygvuhravykq0ehjp
+7004/tcp  open  pop3               Heimdal kerberized pop3 2iWddtx (UCB-pop3 derived)
+7007/tcp  open  pop3               IA MailServer pop3d
+7019/tcp  open  speechd            Speech Dispatcher text to speech
+7025/tcp  open  imap               Merak Mail Server imapd
+|_imap-capabilities: CAPABILITY
+7070/tcp  open  realserver?
+| fingerprint-strings: 
+|   NULL: 
+|     HTTP/1.0 200 OK
+|_    Server: ZOT-PS-750876588
+7100/tcp  open  font-service?
+| fingerprint-strings: 
+|   NULL: 
+|     HTTP/1.0 200 OK
+|     eSet-Cookie: pilot_session_test_cookie=; path=/; secure
+|     <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+|     <html xmlns="http://www.w3.org/1999/xhtml">
+|     <head>
+|_    <title>Riverbed Technology :: Cascade Shark</title>
+7103/tcp  open  smtp               WorkgroupMail smtpd 9100133
+|_smtp-commands: SMTP EHLO 10.10.173.125: failed to receive data: connection closed
+7106/tcp  open  unknown
+| fingerprint-strings: 
+|   NULL: 
+|     0000 000Heartbeat 000
+|     60000
+|_    000Compressed 000
+7200/tcp  open  fodms?
+| fingerprint-strings: 
+|   NULL: 
+|_    +OK <2{1,5}.109{8}@KJXosT-wZ>
+7201/tcp  open  rtsp               Microsoft Windows Media Services HD
+|_rtsp-methods: ERROR: Script execution failed (use -d to debug)
+7402/tcp  open  http               Oracle Application Server 10g httpd 1489223
+|_http-server-header: Oracle-Application-Server-10g/1489223 Oracle-HTTP-Server
+|_http-title: Site doesn't have a title.
+7435/tcp  open  oem-agent          Oracle Enterprise Manager Agent httpd 791322803
+|_http-title: Site doesn't have a title.
+7443/tcp  open  http               Axis 5400 print server web config
+|_http-title: Site doesn't have a title (text/html).
+|_http-trane-info: Problem with XML parsing of /evox/about
+7496/tcp  open  unknown
+| fingerprint-strings: 
+|   NULL: 
+|_    'http://etherx.jabber.org/streams' version
+7512/tcp  open  smtp               Panasonic DP-1820E printer smtpd
+|_smtp-commands: SMTP EHLO 10.10.173.125: failed to receive data: connection closed
+7625/tcp  open  unknown
+| fingerprint-strings: 
+|   NULL: 
+|_    <Hub-Security> Your IP is temporarily banned for 2minutes.|
+7627/tcp  open  telnet             Cisco 4400 wireless LAN controller telnetd
+7676/tcp  open  smtp
+| fingerprint-strings: 
+|   NULL: 
+|     220 CcpQrWhxn SMTP; c +9{4}
+|_    Syntax error, command unrecognized
+|_smtp-commands: SMTP EHLO 10.10.173.125: failed to receive data: connection closed
+7741/tcp  open  ftp                OkiData pXTYNIcVu printer ftpd 2344
+7777/tcp  open  http               Fnord httpd 3EYMnnCejp
+|_http-title: Site doesn't have a title.
+|_http-server-header: fnord/3EYMnnCejp
+7778/tcp  open  interwise?
+| fingerprint-strings: 
+|   NULL: 
+|_    vWelcome to ViewStationmPassword:
+7800/tcp  open  asr?
+| fingerprint-strings: 
+|   NULL: 
+|_    00000000
+7911/tcp  open  unknown
+| fingerprint-strings: 
+|   NULL: 
+|     HTTP/1.1 200 OK
+|     CONTENT-ENCODING: gzip
+|_    aSERVER: Linux/RCeGjtWN Motorola/Q
+7920/tcp  open  unknown
+| fingerprint-strings: 
+|   NULL: 
+|     HTTP/1.0 200 OK
+|_    kServer: PopChartServer 9621
+7921/tcp  open  unknown
+| fingerprint-strings: 
+|   NULL: 
+|     UNKNOWN 400 Bad Request
+|_    Server: thttpd/rvOmFe vr
+7937/tcp  open  http               Netgear FSM7352S switch http config
+|_http-server-header: Web Server
+7938/tcp  open  lgtomapper?
+| fingerprint-strings: 
+|   NULL: 
+|_    a-z]{2} a-z]{2} +1{1,2} 34:05:80 2001
+7999/tcp  open  irdmi2?
+| fingerprint-strings: 
+|   NULL: 
+|_    <HTML><HEAD><TITLE>Login Page</TITLE>i<font size=4 color="ffffffff">Welcome to Grandstream IP Phone<
+8000/tcp  open  pop3               QuickMail Pro pop3d 6
+8001/tcp  open  http               DrayTek Vigor ADSL router httpd
+|_http-title: 400 Bad Request !!!
+8002/tcp  open  http               Grisoft AVG TCP Server 2MF
+|_http-server-header: GRISOFT-AVG TCP Server/2MF v
+|_http-title: Site doesn't have a title.
+8007/tcp  open  smtp-proxy         Symantec Brightmail smtp proxy
+8008/tcp  open  http               OracleAS Web Cache 10g 12733403
+|_http-title: Site doesn't have a title.
+|_http-server-header: OracleAS-Web-Cache-10g/12733403
+8009/tcp  open  smtp               Mandamail smtpd 44098383
+|_smtp-commands: SMTP EHLO 10.10.173.125: failed to receive data: connection closed
+|_ajp-methods: Failed to get a valid response for the OPTION request
+8010/tcp  open  http               Etherpad lite
+|_http-server-header: Etherpad-Lite  (http://j.mp/ep-lite)
+|_http-trane-info: Problem with XML parsing of /evox/about
+|_http-title: Site doesn't have a title.
+8011/tcp  open  unknown
+| fingerprint-strings: 
+|   NULL: 
+|     0000 CKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA00!0
+|     0000hdi
+|     __MSBROWSE__
+|_    0MACBOOKPRO-4}0d0riGR
+8021/tcp  open  bruker-axs         Bruker AXS X-ray controller status (X-rays: Off)
+8022/tcp  open  pop3               qmail pop3d
+8031/tcp  open  http               Panasonic PLC Adaptor Ethernet-to-mains bridge http config
+| http-auth: 
+| HTTP/1.0 401 Unauthorized\x0D
+|_  Basic realm=PLC Adaptor
+|_http-title: Site doesn't have a title (text/html).
+8042/tcp  open  http-proxy         Charles http proxy
+|_http-title: Site doesn't have a title.
+|_http-server-header: Charles
+8045/tcp  open  ftp                Merit Megatouch game device ftpd 8
+8080/tcp  open  telnet             Cisco CSS telnetd
+8081/tcp  open  http               Catwalk 94395 (Canon imageRUNNER C5000-series printer http config)
+|_http-server-header: Catwalk/94395
+|_http-title: Site doesn't have a title.
+8082/tcp  open  blackice-alerts?
+| fingerprint-strings: 
+|   NULL: 
+|     HTTP/1.1 438 dServer: *Linux/ne-mxoOy, UPnP/nGcq, pvConnect UPnP SDK/KuL
+|_    l<title>?:TwonkyMedia|TwonkyMedia server media browser|TwonkyVision Configuration</title>
+8083/tcp  open  pso-login          Phantasy Star Online game login
+8084/tcp  open  websnp?
+| fingerprint-strings: 
+|   NULL: 
+|     HTTP/1.0 531 bServer: WindWeb/066508
+|     n"/js/branding_utils.js"></script>
+|     <script language="JavaScript"><!--
+|     iPortIndex = 0; 
+|     iProtocol = 0; 
+|_    serialPort = 1
+8085/tcp  open  http               Cisco Aironet BR500E WAP http config RVX
+8086/tcp  open  d-s-n?
+| fingerprint-strings: 
+|   NULL: 
+|     HTTP/1.0 200 OK
+|     iServer: Z-World Rabbit
+|_    f<TITLE>EC3 332 (Rev. 3) Web Configuration and Monitoring</TITLE>
+8087/tcp  open  simplifymedia?
+| fingerprint-strings: 
+|   NULL: 
+|     0000
+|     version
+|     bind00
+|     VERSION
+|     BIND00
+|_    00000('Peticion no permitida/Query not allowed
+8088/tcp  open  http               eHTTP ZgiNvIiQv (HP ProCurve Switch 2626 http config)
+|_http-title: Site doesn't have a title.
+|_http-server-header: eHTTP vZgiNvIiQv
+8089/tcp  open  qconn              qconn remote IDE support
+8090/tcp  open  ftp                BulletProof ftpd
+|_ftp-bounce: ERROR: Script execution failed (use -d to debug)
+8093/tcp  open  unknown
+| fingerprint-strings: 
+|   NULL: 
+|     HTTP/1.654 g
+|_    Server: approx/bpRDjTAPt Ocamlnet/KyWYI
+8099/tcp  open  unknown
+| fingerprint-strings: 
+|   NULL: 
+|     HTTP/1.716 h
+|_    Server: Sensorsoft-Remote-Watchman-Enterprise/333705280
+8100/tcp  open  xprint-server?
+| fingerprint-strings: 
+|   NULL: 
+|     HTTP/1.1 200 OK
+|     Server: Axeda Agent Web Server/Nxtnp
+|     cLast-Modified: 1200004200
+|     w<title>IM_v8_Data </title>
+|     </head>
+|     <body bgcolor="ffffff">
+|     <center>
+|     <DIV style="position:absolute; top:6; left:6; width:2 height:4 z-layer:1;" >
+|_    <applet codebase="/aagweb/classes" code=aglance.jag.AAGApplet
+8180/tcp  open  ftp                Sterling Connect:Enterprise ftpd Sf
+8181/tcp  open  intermapper?
+| fingerprint-strings: 
+|   NULL: 
+|_    00xoic CKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA00!0
+8192/tcp  open  http               AverMedia WebCamX httpd
+8193/tcp  open  nntp               InterNetNews (INN) (HDD full)
+8194/tcp  open  pop3               mdpop3 SYqdIZkTK (qzSohdT)
+8200/tcp  open  trivnet1?
+| fingerprint-strings: 
+|   NULL: 
+|     HTTP/1.0 200 OK
+|_    Server: ZOT-PS-9597256497
+8222/tcp  open  unknown
+| fingerprint-strings: 
+|   NULL: 
+|     HTTP/1.1 272 i
+|_    dServer: Netscape-Enterprise/S-oWo
+8254/tcp  open  unknown
+| fingerprint-strings: 
+|   NULL: 
+|     HTTP/1.1 200 OK
+|     ETag: W/"-252"
+|     lServer: null
+|_    e<title>HP - Data Center Fabric Manager</title>
+8290/tcp  open  smtp               Canon imageRUNNER C5185 smtpd
+|_smtp-commands: SMTP EHLO 10.10.173.125: failed to receive data: connection closed
+8291/tcp  open  telnet             HP LaserJet printer telnetd
+8292/tcp  open  blp3?
+| fingerprint-strings: 
+|   NULL: 
+|     tpaq0000qtoygtei
+|     *iMac16x04
+|     AFP3.3
+|     AFP3.2
+|     AFP3.1
+|     AFPX03
+|     DHCAST128v
+|     JsahenbBs
+|_    oafpserver
+8300/tcp  open  tmi?
+| fingerprint-strings: 
+|   NULL: 
+|     ">www.TightVNC.com</A>
+|_    </BODY>
+8333/tcp  open  durian             Durian Web Application Server III .
+8383/tcp  open  m2mservices?
+| fingerprint-strings: 
+|   NULL: 
+|     HTTP/1.1 404 Can't find file
+|_    p|Dynamode/Motorola WAP http config
+8400/tcp  open  http               IronPort mail appliance admin websever 7GQFC
+|_http-title: Site doesn't have a title.
+|_http-server-header: IronPort httpd/7GQFC
+8402/tcp  open  telnet             D-Link 524, DIR-300, or WBR-1310 WAP telnetd
+8443/tcp  open  http               GoAhead WebServer (AirMagnet SmartEdge Sensor http config)
+|_http-title: Site doesn't have a title.
+|_http-server-header: GoAhead-Webs
+| http-auth: 
+| HTTP/1.1 401 \x0D
+|_  Basic realm=AirMagnet SmartEdge Sensor
+8500/tcp  open  ftp
+| fingerprint-strings: 
+|   NULL: 
+|_    220 lankacom FTP server (MikroTik v?gzGep) ready
+8600/tcp  open  asterix?
+| fingerprint-strings: 
+|   NULL: 
+|     HTTP/1.1 200 OK
+|     Server: VNC Server Personal Edition/MDGc (r1)
+|     m<applet code="vncviewer/VNCViewer.class" archive="vncviewer.jar"
+|     width="1" height="4">
+|_    <param name="port" value="4">
+8649/tcp  open  http               Sendmail Mailstream Manager http config
+|_http-title: Site doesn't have a title.
+8651/tcp  open  unknown
+| fingerprint-strings: 
+|   NULL: 
+|_    Co je vubec hodno toho, aby to bylo vykonano,|Fantazie je dulezitejsi nez vedeni.|Potize narustaji, cim vice se clovek blizi|Kdo nezna pristav, do ktereho se chce plavit,|Lidske mysleni ztraci smysl,|Nikdo nevi, co muze vykonat,|Nic neprekvapi lidi vice nez zdravy rozum
+8652/tcp  open  unknown
+| fingerprint-strings: 
+|   NULL: 
+|     HTTP/1.1 200 OK
+|     CACHE-CONTROL: no-cache
+|     x<META name="author" content="J.Huber, R.Kunz">
+|_    <TITLE>Speedport W lKonfigurationsprogramm</TITLE>
+8654/tcp  open  upnp               Jungo OpenRG upnp USYhEb_ (UPnP PwgqsT-B)
+8701/tcp  open  http               Mongoose httpd
+|_http-title: Site doesn't have a title (text/plain).
+8800/tcp  open  http               Microsoft ISA httpd
+|_http-title: Site doesn't have a title.
+8873/tcp  open  http               Ultima online sphere httpd ..
+|_http-server-header: Sphere V\xE4\x07
+|_http-title: Site doesn't have a title.
+8888/tcp  open  ssh                (protocol 2.0)
+| fingerprint-strings: 
+|   NULL: 
+|_    SSH-2.0--Oxv-
+8899/tcp  open  smtp               AvMailGate smtp anti-virus mail gateway 6gABwmn
+|_smtp-commands: SMTP EHLO 10.10.173.125: failed to receive data: connection closed
+8994/tcp  open  unknown
+| fingerprint-strings: 
+|   NULL: 
+|     HTTP/1.0 200 OK
+|     Date: m
+|     Content-Type: text/html
+|     Content-Encoding: identity
+|     Content-Length: 6r
+|_    Expires: o
+9000/tcp  open  backdoor           Theef trojan (**BACKDOOR**)
+9001/tcp  open  tor-orport?
+| fingerprint-strings: 
+|   NULL: 
+|     E000
+|_    SFATAL0C0A0000Munsupported frontend protocol 65363.19778: server supports 1.0 to 3.00Fpostmaster.c0L14450RProcessStartupPacket00
+9002/tcp  open  telnet
+| fingerprint-strings: 
+|   NULL: 
+|     Error2 negotiated with client 2and get 1 char is a a d. 
+|_    Phone firmware +VyDEBnS
+9003/tcp  open  unknown
+| fingerprint-strings: 
+|   NULL: 
+|_    GOTBACK
+9009/tcp  open  smtp               Sendmail
+|_smtp-commands: SMTP EHLO 10.10.173.125: failed to receive data: connection closed
+9010/tcp  open  pop3-proxy         AVG pop3 proxy 54333314/62639625
+9011/tcp  open  d-star?
+9040/tcp  open  netsync            Netsync 6 (Monotone VCS; key name pWijAc)
+9050/tcp  open  telnet             Cisco router telnetd
+9071/tcp  open  telnet             tcpwrapped telnetd (refused)
+9080/tcp  open  telnet             Epson Network Scanner Server (p)
+9081/tcp  open  cisco-aqos?
+| fingerprint-strings: 
+|   NULL: 
+|     ,0,0
+|     0000
+|_    00<=
+9090/tcp  open  zeus-admin?
+| fingerprint-strings: 
+|   NULL: 
+|     HTTP/1.618 p
+|     Content-Length: 2r
+|     X-Powered-By: UVG
+|     Content-Type: m
+|_    Server: Xitami
+9091/tcp  open  xmltec-xmlmail?
+| fingerprint-strings: 
+|   NULL: 
+|_    72404 70{240,250}
+9099/tcp  open  smtp-proxy         MailStore smtp proxy
+9100/tcp  open  jetdirect?
+9101/tcp  open  jetdirect?
+9102/tcp  open  jetdirect?
+9103/tcp  open  jetdirect?
+9110/tcp  open  unknown
+| fingerprint-strings: 
+|   NULL: 
+|     version00000a000sxawq
+|     000000000kxokeoei000000000000000000
+|     eoxxnh000000000000000000
+|_    bpmsaycfbthltcl/Bitpeer:mfPVw/0000
+9111/tcp  open  telnet             Genetec Integration Service
+9200/tcp  open  http               Vibe Streamer httpd
+| http-auth: 
+| HTTP/1.1 401\x0D
+|_  Basic Realm=Vibe Streamer
+|_http-title: Site doesn't have a title (text/plain).
+9207/tcp  open  http               Apple Server Monitor http interface
+| http-auth: 
+| HTTP/1.1 401 Authorization Required\x0D
+|_  Basic realm=Server Admin
+|_http-title: Site doesn't have a title.
+|_http-server-header: servermgrd
+9220/tcp  open  telnet
+| fingerprint-strings: 
+|   NULL: 
+|_    +Samsung SWL-6100AP Configuration
+9290/tcp  open  pop3-proxy         JanaServer pop3 proxy
+9415/tcp  open  ftp                Golden ftpd j
+9418/tcp  open  inetd              Pure-FTPd under inetd (Broken)
+9485/tcp  open  telnet             Cisco router telnetd
+9500/tcp  open  ftp                Compaq Tru64 ftp server 7jcfSf
+9502/tcp  open  unknown
+| fingerprint-strings: 
+|   NULL: 
+|_    0sPDQ
+9503/tcp  open  telnet             Airspan MiMAX WiMAX WAP telnetd
+9535/tcp  open  http               Avtech PageR Enterprise http interface aPETH
+|_http-trane-info: Problem with XML parsing of /evox/about
+|_http-title: Site doesn't have a title (text/html).
+|_http-server-header: PageR Enterprise/aPETH
+9575/tcp  open  unknown
+| fingerprint-strings: 
+|   NULL: 
+|     HTTP/1.286 x
+|_    Server: cpsrvd/1
+9593/tcp  open  cba8?
+| fingerprint-strings: 
+|   NULL: 
+|_    220 FpxTgDG ESMTP server (stbfice vviUgN release Y ID#
+9594/tcp  open  http               NTL/Ambit DOCSIS router http config (R917)
+9595/tcp  open  telnet             AML M7100 telnetd
+9618/tcp  open  http               UltiDev Cassini httpd xp_EJ
+|_http-server-header: UltiDev Cassini/xp_EJ
+|_http-title: Site doesn't have a title.
+9666/tcp  open  smtp
+|_smtp-commands: SMTP EHLO 10.10.173.125: failed to receive data: connection closed
+| fingerprint-strings: 
+|   NULL: 
+|_    220 NBZp running IBM MVS SMTP CS ton i
+9876/tcp  open  systat             QNX systat
+9877/tcp  open  http               Anti-Web httpd 0 (Best httpd out there!)
+|_http-server-header: Anti-Web HTTPD V0 (ie)
+|_http-title: Site doesn't have a title.
+9878/tcp  open  http               Chumby chumbhttpd
+9898/tcp  open  monkeycom?
+| fingerprint-strings: 
+|   NULL: 
+|     HTTP/1.1 200 OK
+|_    mServer: FitNesse-vP_
+9900/tcp  open  efi-workstation    EFI Fiery Command WorkStation
+9917/tcp  open  unknown
+| fingerprint-strings: 
+|   NULL: 
+|     (0000000cw`0
+|_    whfnk...E00000000
+9929/tcp  open  nping-echo?
+| fingerprint-strings: 
+|   NULL: 
+|     Content-Length: 43
+|     <?xml version="1.0"?>s*<xmlsysd init="1">s*<system>s*<identity>s*<hostname>
+|     </hostname>s*<hostip>
+|_    </hostip>s*</identity>s*</system>s*<proc>s*<version>4</version>s*</proc>s*</xmlsysd>
+9943/tcp  open  http               Dell TrueMobile 539059477 wireless router http config
+| http-auth: 
+| HTTP/1.0 401 Unauthorized\x0D
+|_  Basic realm=Dell TrueMobile 539059477 Wireless Broadband Router
+|_http-server-header: httpd
+|_http-title: Site doesn't have a title.
+9944/tcp  open  finger             Solaris 10 fingerd (Somebody logged in)
+9968/tcp  open  unknown
+9998/tcp  open  distinct32?
+| fingerprint-strings: 
+|   NULL: 
+|_    220 VMware Authentication Daemon Version 4JDp, ServerDaemonProtocol:SOAP|IPC, MKSDisplayProtocol:VNC
+9999/tcp  open  abyss?
+10000/tcp open  http-proxy         IBM WebSEAL reverse http proxy
+10001/tcp open  http               PRINT_SERVER WEB SVUH (Netgear IE print server http config)
+|_http-title: NetGear Print Server Setup
+|_http-server-header: PRINT_SERVER WEB SVUH
+|_http-trane-info: Problem with XML parsing of /evox/about
+10002/tcp open  documentum?
+| fingerprint-strings: 
+|   NULL: 
+|     HTTP/1.1 200 OK
+|     cServer: Apache
+|_    d<title>BIG-IP&reg;- Redirect</title>
+10003/tcp open  http               Konica Minolta bizhub 423 printer http config
+|_http-title: Did not follow redirect to https://16/
+10004/tcp open  emcrmirccd?
+| fingerprint-strings: 
+|   NULL: 
+|     000w
+|     SMBr0000
+|     000000000000000@
+|_    0h?:0?:0{2,50}
+10009/tcp open  http               Conexant-EmWeb 05.307348
+|_http-title: Site doesn't have a title.
+|_http-server-header: Conexant-EmWeb/R05_307348
+| http-auth: 
+| HTTP/1.1 401 Unauthorized\x0D
+|_  Server returned status 401 but no WWW-Authenticate header.
+10010/tcp open  frozen-bubble      Frozen Bubble game server 03 (language: kn)
+10012/tcp open  http               ZyXEL ZyWALL qRUmX http config
+10024/tcp open  ftp-proxy          AVM KEN! ftp proxy
+10025/tcp open  telnet             TrueTime GPS clock telnetd
+10082/tcp open  ms-sql-s           Microsoft SQL Server 2005 9.00.3077; SP2+ MS09-004
+10180/tcp open  pop3               Cyrus pop3d
+10215/tcp open  upsd               Network UPS Tools upsd 2.6.1 (Synology DS209 NAS device)
+10243/tcp open  http               McData 4500 fibre switch http config
+|_http-server-header: Unknown
+|_http-title: Site doesn't have a title.
+10566/tcp open  ftp                FileZilla ftpd
+10616/tcp open  unknown
+| fingerprint-strings: 
+|   NULL: 
+|     HTTP/1.0 200 OK
+|     Date: j
+|     MIME-version: 1.0
+|     Server: ZOT-PS-17/9642
+|     Last-Modified: k
+|     Expires: i
+|     Pragma: no-cache
+|     Content-Type: text/html
+|     Content-Length: 4r
+|_    p/ZOT-PS-17 http/ v/$1/ i|Longshine/TRENDnet USB Print Server
+10617/tcp open  http               PRINT_SERVER WEB 28886 (Linksys wireless print server http config)
+| http-auth: 
+| HTTP/1.0 401 Unauthorized\x0D
+|_  Basic realm=NeedPassword
+|_http-server-header: PRINT_SERVER WEB 28886
+|_http-title: Site doesn't have a title (text/html).
+10621/tcp open  chargen            Lantronix chargen 9101753
+10626/tcp open  http               ATR httpd 95 (Allied Telesyn AT-8748XL switch http config)
+|_http-title: Site doesn't have a title (text/html).
+|_http-server-header: ATR-HTTP-Server/95
+10628/tcp open  telnet             Dreambox DVB telnetd (Kernel 3kil)
+10629/tcp open  smtp               Canon printer smtp server
+|_smtp-commands: SMTP EHLO 10.10.173.125: failed to receive data: connection closed
+10778/tcp open  ftp                netapp ftpd
+11110/tcp open  sgi-soap?
+| fingerprint-strings: 
+|   NULL: 
+|_    r000
+11111/tcp open  imap               Samsung contact imapd 14659
+|_imap-capabilities: CAPABILITY
+11967/tcp open  sysinfo-sp?
+| fingerprint-strings: 
+|   NULL: 
+|     HTTP/1.704 u
+|_    Server: Minix httpd Oa-MC
+12000/tcp open  http               PasteWSGIServer ZqWgQqPJ (HellaHella httpd; Python Sjk)
+|_http-server-header: PasteWSGIServer/ZqWgQqPJ Python/Sjk
+12174/tcp open  unknown
+| fingerprint-strings: 
+|   NULL: 
+|     version
+|     bind00
+|_    00000
+12265/tcp open  http               Westell cable modem http config 756940
+|_http-title: Site doesn't have a title.
+|_http-trane-info: Problem with XML parsing of /evox/about
+|_http-server-header: WSTL CPE 756940
+12345/tcp open  netbus?
+| fingerprint-strings: 
+|   NULL: 
+|     NFS shares are cool, especially when they are misconfigured
+|_    It's on the standard port, no need for another scan
+13456/tcp open  telnet             HP zquoWYghI switch telnetd
+13722/tcp open  pop3-proxy         AVG pop3 proxy 95837247 Beta
+13782/tcp open  http               BenQ AWL wireless router webadmin
+|_http-server-header: Apache/0.6.5
+|_http-title: Site doesn't have a title (text/html).
+| http-auth: 
+| HTTP/1.0 401 Unauthorized\x0D
+|_  Basic realm=System Setup
+13783/tcp open  telnet             TelSrc telnetd 9525837
+14000/tcp open  http               Allegro RomPager 305671775 (Xerox Phaser http admin)
+|_http-title: Site doesn't have a title (text/html).
+| http-auth: 
+| HTTP/1.1 401 Unauthorized\x0D
+|_  Basic realm=CentreWare_IS_Admin
+|_http-server-header: Allegro-Software-RomPager/305671775
+14238/tcp open  http               xbtt bittorrent tracker httpd
+|_http-title: Did not follow redirect to http://xbtt.sourceforge.net/
+14441/tcp open  unknown
+| fingerprint-strings: 
+|   NULL: 
+|     HTTP/1.1 200 OK
+|     Content-Type: text/html
+|     Date: j
+|     Expires: Thu, 26 Oct 1995 00:00:00 GMT
+|     cServer: Allegro-Software-RomPager/887790815
+|_    q<title>Emerson Network Power IntelliSlot Web/4Card</title>|s p/Allegro RomPager/ v/$1/ i|Emerson Network Power IntelliSlot Web/$2 card
+14442/tcp open  pop3               GoMail mass mailing plugin pop3d 8678857
+15000/tcp open  http               Netgear ProSafe FVS338 VPN firewall http config
+15002/tcp open  http-proxy         One1Stream Fastlane accelerating http proxy 06703389
+|_http-open-proxy: Proxy might be redirecting requests
+|_http-title: Site doesn't have a title.
+|_http-trane-info: Problem with XML parsing of /evox/about
+15003/tcp open  telnet             Nortel Networks Instant Internet broadband router telnetd
+15004/tcp open  http               Control By Web X-vgW remote management http interface
+15660/tcp open  http               Neubot
+|_http-title: Site doesn't have a title.
+15742/tcp open  unknown
+| fingerprint-strings: 
+|   NULL: 
+|_    Permission denied ?: Error ?:35|0|1
+16000/tcp open  ftp                ACLogic CesarFTP o
+16001/tcp open  http               VCS-VideoJet-Webserver httpd (Bosch VIP X1 video encoder http config)
+|_http-server-header: VCS-VideoJet-Webserver
+|_http-title: Did not follow redirect to http://xU/xampp/
+16012/tcp open  unknown
+16016/tcp open  http               BMC/Marimba Transmitter 94430
+|_http-server-header: Marimba-Transmitter/94430
+16018/tcp open  http               RapidLogic httpd ix_nGmMS (Thomson ST2030 VoIP phone http config)
+|_http-server-header: RapidLogic/ix_nGmMS
+|_http-title: Site doesn't have a title.
+|_http-trane-info: Problem with XML parsing of /evox/about
+16080/tcp open  http               Apache httpd (PHP ROtwE-Cp)
+|_http-server-header: Apache
+|_http-title: Site doesn't have a title.
+16113/tcp open  unknown
+| fingerprint-strings: 
+|   NULL: 
+|_    220-ix]+ ESMTP MDaemon 8Pc;
+16992/tcp open  amt-soap-http?
+| fingerprint-strings: 
+|   NULL: 
+|     0000nimi0000wwmwnlmx
+|     *Netatalk
+|     AFP2.2
+|     AFPX03
+|     AFP3.1
+|_    AFP3.2
+16993/tcp open  pop3               Cyrus pop3d 2QlVZSCOM (Red Hat)
+17877/tcp open  telnet             Cisco ASA firewall telnetd
+17988/tcp open  unknown
+| fingerprint-strings: 
+|   NULL: 
+|_    220 qgsVvVlds (Aironet BReV7632) ready
+18040/tcp open  upnp               LG LW5700 TV upnp (UPnP RB; DLNADOC bPB; INTEL_NMPR jMMBNZB; LGE_DLNA_SDK uSDNBDJk)
+18101/tcp open  http               Floosietek FTgate webmail httpd
+|_http-trane-info: Problem with XML parsing of /evox/about
+|_http-title: Site doesn't have a title (text/html).
+18988/tcp open  unknown
+| fingerprint-strings: 
+|   NULL: 
+|_    220-
+19101/tcp open  http               AIX Web-based System Manager
+19283/tcp open  keysrvr?
+| fingerprint-strings: 
+|   NULL: 
+|_    0.0.0.0:01:i
+19315/tcp open  http               Sony BDP-BX58 TV http config aI
+|_http-title: Site doesn't have a title.
+19350/tcp open  unknown
+| fingerprint-strings: 
+|   NULL: 
+|     +OK Citadel POP3 server <0UyQNZdT>
+|     -ERR Not logged in.
+|_    -ERR Not logged in.
+19780/tcp open  gopher             pygopherd
+| gopher-ls: 
+|_[3]  "'/GET / HTTP/1.0' does not exist (no handler found)"
+19801/tcp open  http               Allegro RomPager 39 (Cayman u DSL router)
+|_http-title: Site doesn't have a title.
+| http-auth: 
+| HTTP/1.1 401 Unauthorized\x0D
+|_  Server returned status 401 but no WWW-Authenticate header.
+19842/tcp open  gnutella           GiFT P2P client gnutella module 7FSMxtPiYL
+20000/tcp open  http               TiVo Desktop Server http config
+|_http-title: Site doesn't have a title (text/plain).
+20005/tcp open  btx?
+| fingerprint-strings: 
+|   NULL: 
+|     rFactorMonitor
+|_    04000
+20031/tcp open  http               Samsung UE55D7000 TV http config
+|_http-title: Site doesn't have a title (application/octet-stream).
+|_http-trane-info: Problem with XML parsing of /evox/about
+20221/tcp open  ftp                DrayTek Vigor 2820n ADSL router ftpd (access denied)
+20222/tcp open  ftp                Synology Disk Station DS-vDqJ NAS ftpd
+20828/tcp open  http               RapidLogic httpd 64144349 (Westell WireSpeed Dual Connect ADSL router http config)
+|_http-title: WireSpeed Dual Connect
+|_http-server-header: RapidLogic/64144349
+21571/tcp open  sip-proxy          Ingate SIParator JX-qJnknY
+22939/tcp open  unknown
+| fingerprint-strings: 
+|   NULL: 
+|     t000
+|_    3.v0fwx0
+23502/tcp open  smtp-proxy         PineApp Mail-SeCure smtp proxy
+24444/tcp open  ident              authd
+24800/tcp open  telnet             Belkin network USB hub telnetd ECKhVD
+25734/tcp open  unknown
+| fingerprint-strings: 
+|   NULL: 
+|     rshd ?: 5491- Le nom d'h
+|     correspondant 
+|_    l'adresse est inconnu.
+25735/tcp open  smtp-proxy         CCProxy smtp proxy 623 (Unregistered)
+26214/tcp open  http               Novell NetWare HTTP Stack (HTTPSTK.NLM)
+|_http-server-header: NetWare HTTP Stack
+27000/tcp open  ftp                Synology DiskStation NAS ftpd
+27352/tcp open  http               Websense Block Message httpd
+|_http-title: HTTP 404 File not found
+27353/tcp open  unknown
+| fingerprint-strings: 
+|   NULL: 
+|     <?xml version="
+|_    ?<=?>
+27355/tcp open  powerchute         APC PowerChute Agent 7.X
+27356/tcp open  http               Winstone Servlet Engine rmSZ
+|_http-title: Site doesn't have a title.
+|_http-server-header: Winstone Servlet Engine vrmSZ
+27715/tcp open  telnet             Allied Data CopperJet _XXaE telnetd IHpmE
+28201/tcp open  bindshell          Microsoft Windows 041940237 cmd.exe (**BACKDOOR**)
+30000/tcp open  ndmps?
+| fingerprint-strings: 
+|   NULL: 
+|     Port is out of range0
+|     Port is out of range0
+|     Port is out of range0
+|     Port is out of range0
+|_    Port is out of range0
+9 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port1-TCP:V=7.93%I=7%D=4/29%Time=644D388E%P=x86_64-pc-linux-gnu%r(NULL,
+SF:41,"550\x2012345\x20000000000000000000000000000000000000000000000000000
+SF:0000");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port3-TCP:V=7.93%I=7%D=4/29%Time=644D388E%P=x86_64-pc-linux-gnu%r(NULL,
+SF:41,"550\x2012345\x20000000000000000000000000000000000000000000000000000
+SF:0000");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port7-TCP:V=7.93%I=7%D=4/29%Time=644D388E%P=x86_64-pc-linux-gnu%r(NULL,
+SF:41,"550\x2012345\x200fffffffffffff777778887777777777cffffffffffffffffff
+SF:ff00");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port9-TCP:V=7.93%I=7%D=4/29%Time=644D388D%P=x86_64-pc-linux-gnu%r(NULL,
+SF:41,"550\x2012345\x200ffffffffff80000088808000000888800000008887ffffffff
+SF:ff00");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port13-TCP:V=7.93%I=7%D=4/29%Time=644D388E%P=x86_64-pc-linux-gnu%r(NULL
+SF:,41,"550\x2012345\x200ffffffff000000888000000000800000080000008800007ff
+SF:fff00");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port17-TCP:V=7.93%I=7%D=4/29%Time=644D388E%P=x86_64-pc-linux-gnu%r(NULL
+SF:,41,"550\x2012345\x200fffff7880000780f7cffff7800f8000008fffffff80808807
+SF:fff00");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port19-TCP:V=7.93%I=7%D=4/29%Time=644D388E%P=x86_64-pc-linux-gnu%r(NULL
+SF:,41,"550\x2012345\x200ff70008fc77f7000000f80008f8000007f000000000000088
+SF:8ff00");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port21-TCP:V=7.93%I=7%D=4/29%Time=644D388E%P=x86_64-pc-linux-gnu%r(NULL
+SF:,41,"550\x2012345\x200f7000f800770008777\x20go\x20to\x20port\x2012345\x
+SF:2080008f7f700880cf00");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port22-TCP:V=7.93%I=7%D=4/29%Time=644D388D%P=x86_64-pc-linux-gnu%r(NULL
+SF:,41,"550\x2012345\x200f8008c008fff8000000000000780000007f80008770800080
+SF:0ff00");
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.93%E=4%D=4/29%OT=1%CT=30718%CU=39196%PV=Y%DS=5%DC=T%G=Y%TM=644D
+OS:406C%P=x86_64-pc-linux-gnu)SEQ(SP=100%GCD=1%ISR=106%TI=Z%CI=Z%II=I%TS=A)
+OS:OPS(O1=M508ST11NW7%O2=M508ST11NW7%O3=M508NNT11NW7%O4=M508ST11NW7%O5=M508
+OS:ST11NW7%O6=M508ST11)WIN(W1=F4B3%W2=F4B3%W3=F4B3%W4=F4B3%W5=F4B3%W6=F4B3)
+OS:ECN(R=Y%DF=Y%T=40%W=F507%O=M508NNSNW7%CC=Y%Q=)T1(R=Y%DF=Y%T=40%S=O%A=S+%
+OS:F=AS%RD=0%Q=)T2(R=Y%DF=Y%T=40%W=0%S=Z%A=S%F=AR%O=%RD=0%Q=)T3(R=Y%DF=Y%T=
+OS:40%W=0%S=Z%A=O%F=AR%O=%RD=0%Q=)T4(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%
+OS:Q=)T5(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=Y%DF=Y%T=40%W=0%S=
+OS:A%A=Z%F=R%O=%RD=0%Q=)T7(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)U1(R=
+OS:Y%DF=N%T=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)IE(R=Y%DFI=N%
+OS:T=40%CD=S)
+
+Network Distance: 5 hops
+Service Info: Hosts: GfaaKE, dcUME, JI-Ir, S+, zEQ; OSs: OpenVMS, Linux, HP-UX, Windows, SGOS; Devices: storage-misc, print server, firewall, power-device, printer; CPE: cpe:/o:hp:openvms, cpe:/o:linux:linux_kernel, cpe:/h:axis:r, cpe:/h:hp:apache-based_web_server:5cie, cpe:/o:hp:hp-ux
+
+Host script results:
+|_smb2-time: Protocol negotiation failed (SMB2)
+
+TRACEROUTE (using port 32781/tcp)
+HOP RTT       ADDRESS
+1   17.82 ms  10.17.0.1 (10.17.0.1)
+2   ... 4
+5   140.95 ms 10.10.173.125 (10.10.173.125)
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Apr 29 12:06:04 2023 -- 1 IP address (1 host up) scanned in 2040.16 seconds
