@@ -1,0 +1,45 @@
+# Nmap 7.93 scan initiated Thu Apr  6 08:06:59 2023 as: nmap -sV -A -O -oN nmap.txt -p- 10.10.59.250
+Starting Nmap 7.93 ( https://nmap.org ) at 2023-04-06 08:08 EDT
+Stats: 0:01:21 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 17.46% done; ETC: 08:15 (0:06:18 remaining)                                                                                   
+Stats: 0:01:23 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan                                                                              
+SYN Stealth Scan Timing: About 17.75% done; ETC: 08:15 (0:06:20 remaining)                                                                                   
+Stats: 0:02:01 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan                                                                              
+SYN Stealth Scan Timing: About 24.19% done; ETC: 08:16 (0:06:19 remaining)                                                                                   
+Stats: 0:04:15 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 48.71% done; ETC: 08:16 (0:04:29 remaining)
+Stats: 0:06:13 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 68.65% done; ETC: 08:17 (0:02:50 remaining)
+Stats: 0:07:52 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 86.56% done; ETC: 08:17 (0:01:13 remaining)
+Nmap scan report for 10.10.59.250 (10.10.59.250)
+Host is up (0.15s latency).
+Not shown: 65533 closed tcp ports (reset)
+PORT     STATE SERVICE VERSION
+80/tcp   open  http    Apache httpd 2.4.18 ((Ubuntu))
+|_http-title: Apache2 Ubuntu Default Page: It works
+|_http-server-header: Apache/2.4.18 (Ubuntu)
+6379/tcp open  redis   Redis key-value store 6.0.7
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.93%E=4%D=4/6%OT=80%CT=1%CU=37084%PV=Y%DS=5%DC=T%G=Y%TM=642EB87C
+OS:%P=x86_64-pc-linux-gnu)SEQ(SP=105%GCD=1%ISR=10D%TI=Z%CI=I%TS=8)SEQ(SP=10
+OS:4%GCD=1%ISR=10D%TI=Z%TS=8)OPS(O1=M505ST11NW7%O2=M505ST11NW7%O3=M505NNT11
+OS:NW7%O4=M505ST11NW7%O5=M505ST11NW7%O6=M505ST11)WIN(W1=68DF%W2=68DF%W3=68D
+OS:F%W4=68DF%W5=68DF%W6=68DF)ECN(R=Y%DF=Y%T=40%W=6903%O=M505NNSNW7%CC=Y%Q=)
+OS:T1(R=Y%DF=Y%T=40%S=O%A=S+%F=AS%RD=0%Q=)T2(R=N)T3(R=N)T4(R=Y%DF=Y%T=40%W=
+OS:0%S=A%A=Z%F=R%O=%RD=0%Q=)T5(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T
+OS:6(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T7(R=Y%DF=Y%T=40%W=0%S=Z%A=S+
+OS:%F=AR%O=%RD=0%Q=)U1(R=Y%DF=N%T=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK
+OS:=G%RUD=G)IE(R=Y%DFI=N%T=40%CD=S)
+
+Network Distance: 5 hops
+
+TRACEROUTE (using port 5900/tcp)
+HOP RTT       ADDRESS
+1   29.46 ms  10.17.0.1 (10.17.0.1)
+2   ... 4
+5   150.60 ms 10.10.59.250 (10.10.59.250)
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 596.93 seconds
