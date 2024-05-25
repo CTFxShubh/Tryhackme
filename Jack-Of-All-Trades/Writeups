@@ -1,0 +1,58 @@
+** Using nmap to find the open ports 
+
+ --> Found 2 open ports 
+     There is twist in here 
+
+     Port service
+     
+  1. 22    http
+     
+  2. 80    ssh
+
+we were not able to access the port 22 because it was restricted so we need to enable to browser to access the port 22 because http was running there 
+
+type about:config --> then type "network.security.ports.banned.override" --> then type the value 22 
+
+Now it will allow the access 
+
+
+
+** Found an user named * jack *
+   --> Reviewing the source code found and directory /recovery.php 
+       and an encoded string  
+
+       " UmVtZW1iZXIgdG8gd2lzaCBKb2hueSBHcmF2ZXMgd2VsbCB3aXRoIGhpcyBjcnlwdG8gam9iaHVudGluZyEgSGlzIGVuY29kaW5nIHN5c3RlbXMgYXJlIGFtYXppbmchIEFsc28gZ290dGEgcmVtZW1iZXIgeW91ciBwYXNzd29yZDogdT9XdEtTcmFxCg== "
+
+  --> Decoding the above base64 encoded string it gives a simple message 
+
+      " Remember to wish Johny Graves well with his crypto jobhunting! His encoding systems are amazing! Also gotta remember your password: u?WtKSraq "
+
+      From Johny Graves , I dont have any clue , so after googling it I found a webpage in which John Graves posted this 
+
+        --> " My Favourite Crypto Method:First encode your message with a ROT13 cipher. Next Convert it to Hex. Finally convert the result into Base32.It's uncrackable! "
+
+    
+
+Visiting the recovery.php found an encoded string 
+  --> " GQ2TOMRXME3TEN3BGZTDOMRWGUZDANRXG42TMZJWG4ZDANRXG42TOMRSGA3TANRVG4ZDOMJXGI3DCNRXG43DMZJXHE3DMMRQGY3TMMRSGA3DONZVG4ZDEMBWGU3TENZQGYZDMOJXGI3DKNTDGIYDOOJWGI3TINZWGYYTEMBWMU3DKNZSGIYDONJXGY3TCNZRG4ZDMMJSGA3DENRRGIYDMNZXGU3TEMRQG42TMMRXME3TENRTGZSTONBXGIZDCMRQGU3DEMBXHA3DCNRSGZQTEMBXGU3DENTBGIYDOMZWGI3DKNZUG4ZDMNZXGM3DQNZZGIYDMYZWGI3DQMRQGZSTMNJXGIZGGMRQGY3DMMRSGA3TKNZSGY2TOMRSG43DMMRQGZSTEMBXGU3TMNRRGY3TGYJSGA3GMNZWGY3TEZJXHE3GGMTGGMZDINZWHE2GGNBUGMZDINQ= "
+
+  First I thought that Its base 64 but its output is very wierd so , then I remember Johny Graves tweet using cyberchef 
+
+   --> from Base32 -> fomr Hex -> from ROT13 
+
+   It will give the output
+
+   " Remember that the credentials to the recovery login are hidden on the homepage! I know how forgetful you are, so here's a hint: bit.ly/2TvYQ2S "
+
+
+Visiting the page is Steganosoraus , now I tthougt we need to do steganography so I did for image of dianasorus and jacinthebox but it didnt work so I went to /assets/headers.jpg 
+
+ Doing --> steghide -sf extract <image name>
+           to extract the content with password u?WtKSraq
+
+Found cms login credentials , inside that it was asking about cmd parameter and , inside parameteer , we can put values 
+
+using the parameter found an jacks_password_list , so using hydra to bruteforce the ssh of jack found password
+
+username : jack
+password : ITMJpGGIqg1jn?>@

@@ -1,0 +1,39 @@
+# Nmap 7.93 scan initiated Sat Apr 22 05:01:20 2023 as: nmap -sV -p- -A -O -oN nmap.txt 10.10.105.138
+Nmap scan report for 10.10.105.138 (10.10.105.138)
+Host is up (0.15s latency).
+Not shown: 65533 closed tcp ports (reset)
+PORT   STATE SERVICE VERSION
+22/tcp open  http    Apache httpd 2.4.10 ((Debian))
+|_http-title: Jack-of-all-trades!
+|_ssh-hostkey: ERROR: Script execution failed (use -d to debug)
+|_http-server-header: Apache/2.4.10 (Debian)
+80/tcp open  ssh     OpenSSH 6.7p1 Debian 5 (protocol 2.0)
+| ssh-hostkey: 
+|   1024 13b7f0a114e2d32540ff4b9460c5003d (DSA)
+|   2048 910cd643d940c388b1be350bbcb99088 (RSA)
+|   256 a3fb09fb5080718f931f8d43971edcab (ECDSA)
+|_  256 6521e74e7c5ae7bcc6ff68caf1cb75e3 (ED25519)
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.93%E=4%D=4/22%OT=22%CT=1%CU=42031%PV=Y%DS=5%DC=T%G=Y%TM=6443A61
+OS:3%P=x86_64-pc-linux-gnu)SEQ(SP=107%GCD=1%ISR=10C%TI=Z%CI=I%II=I%TS=8)OPS
+OS:(O1=M505ST11NW7%O2=M505ST11NW7%O3=M505NNT11NW7%O4=M505ST11NW7%O5=M505ST1
+OS:1NW7%O6=M505ST11)WIN(W1=68DF%W2=68DF%W3=68DF%W4=68DF%W5=68DF%W6=68DF)ECN
+OS:(R=Y%DF=Y%T=40%W=6903%O=M505NNSNW7%CC=Y%Q=)T1(R=Y%DF=Y%T=40%S=O%A=S+%F=A
+OS:S%RD=0%Q=)T2(R=N)T3(R=N)T4(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T5(R
+OS:=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F
+OS:=R%O=%RD=0%Q=)T7(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)U1(R=Y%DF=N%
+OS:T=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)IE(R=Y%DFI=N%T=40%CD
+OS:=S)
+
+Network Distance: 5 hops
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE (using port 80/tcp)
+HOP RTT       ADDRESS
+1   25.75 ms  10.17.0.1 (10.17.0.1)
+2   ... 4
+5   148.98 ms 10.10.105.138 (10.10.105.138)
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Apr 22 05:17:07 2023 -- 1 IP address (1 host up) scanned in 947.00 seconds
