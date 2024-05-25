@@ -1,0 +1,53 @@
+# Nmap 7.93 scan initiated Fri May 19 04:19:46 2023 as: nmap -sV -A -O -oN nmap.txt 10.10.13.0
+Nmap scan report for 10.10.13.0 (10.10.13.0)
+Host is up (0.16s latency).
+Not shown: 996 filtered tcp ports (no-response)
+PORT    STATE SERVICE     VERSION
+22/tcp  open  ssh         OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 7f5f48fa3d3ee69c239433d18d22b47a (RSA)
+|   256 5375a74aa8aa46666a128ccdc26f39aa (ECDSA)
+|_  256 7fc22f3d64d90a507460360398007598 (ED25519)
+80/tcp  open  http        Apache httpd 2.4.29 ((Ubuntu))
+|_http-server-header: Apache/2.4.29 (Ubuntu)
+|_http-title: Apache2 Ubuntu Default Page: Amazingly It works
+139/tcp open  netbios-ssn Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+445/tcp open  netbios-ssn Samba smbd 4.7.6-Ubuntu (workgroup: WORKGROUP)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: specialized
+Running: Crestron 2-Series
+OS CPE: cpe:/o:crestron:2_series
+OS details: Crestron XPanel control system
+Network Distance: 5 hops
+Service Info: Host: HOGWARTZ-CASTLE; OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Host script results:
+|_clock-skew: mean: 3s, deviation: 0s, median: 2s
+| smb2-time: 
+|   date: 2023-05-19T08:20:37
+|_  start_date: N/A
+|_nbstat: NetBIOS name: HOGWARTZ-CASTLE, NetBIOS user: <unknown>, NetBIOS MAC: 000000000000 (Xerox)
+| smb-security-mode: 
+|   account_used: guest
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: disabled (dangerous, but default)
+| smb2-security-mode: 
+|   311: 
+|_    Message signing enabled but not required
+| smb-os-discovery: 
+|   OS: Windows 6.1 (Samba 4.7.6-Ubuntu)
+|   Computer name: hogwartz-castle
+|   NetBIOS computer name: HOGWARTZ-CASTLE\x00
+|   Domain name: \x00
+|   FQDN: hogwartz-castle
+|_  System time: 2023-05-19T08:20:38+00:00
+
+TRACEROUTE (using port 139/tcp)
+HOP RTT       ADDRESS
+1   18.71 ms  10.17.0.1 (10.17.0.1)
+2   ... 4
+5   148.97 ms 10.10.13.0 (10.10.13.0)
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri May 19 04:21:15 2023 -- 1 IP address (1 host up) scanned in 88.79 seconds

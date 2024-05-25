@@ -1,0 +1,14 @@
+- Nikto v2.5.0
+---------------------------------------------------------------------------
++ Target IP:          10.10.13.0
++ Target Hostname:    hogwartz-castle.thm
++ Target Port:        80
++ Start Time:         2023-05-19 05:06:59 (GMT-4)
+---------------------------------------------------------------------------
++ Server: Apache/2.4.29 (Ubuntu)
++ /: The anti-clickjacking X-Frame-Options header is not present. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options
++ /: The X-Content-Type-Options header is not set. This could allow the user agent to render the content of the site in a different fashion to the MIME type. See: https://www.netsparker.com/web-vulnerability-scanner/vulnerabilities/missing-content-type-header/
++ Scan terminated: 0 error(s) and 2 item(s) reported on remote host
++ End Time:           2023-05-19 05:08:06 (GMT-4) (67 seconds)
+---------------------------------------------------------------------------
++ 1 host(s) tested

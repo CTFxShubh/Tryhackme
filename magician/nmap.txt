@@ -1,0 +1,104 @@
+Starting Nmap 7.93 ( https://nmap.org ) at 2023-01-04 11:16 EST
+Nmap scan report for magician (10.10.58.102)
+Host is up (0.13s latency).
+Not shown: 997 closed tcp ports (reset)
+PORT     STATE SERVICE    VERSION
+21/tcp   open  ftp        vsftpd 2.0.8 or later
+8080/tcp open  http-proxy
+| fingerprint-strings: 
+|   FourOhFourRequest: 
+|     HTTP/1.1 404 
+|     Vary: Origin
+|     Vary: Access-Control-Request-Method
+|     Vary: Access-Control-Request-Headers
+|     Content-Type: application/json
+|     Date: Wed, 04 Jan 2023 16:16:48 GMT
+|     Connection: close
+|     {"timestamp":"2023-01-04T16:16:49.715+0000","status":404,"error":"Not Found","message":"No message available","path":"/nice%20ports%2C/Tri%6Eity.txt%2ebak"}
+|   GetRequest: 
+|     HTTP/1.1 404 
+|     Vary: Origin
+|     Vary: Access-Control-Request-Method
+|     Vary: Access-Control-Request-Headers
+|     Content-Type: application/json
+|     Date: Wed, 04 Jan 2023 16:16:48 GMT
+|     Connection: close
+|     {"timestamp":"2023-01-04T16:16:48.686+0000","status":404,"error":"Not Found","message":"No message available","path":"/"}
+|   HTTPOptions: 
+|     HTTP/1.1 404 
+|     Vary: Origin
+|     Vary: Access-Control-Request-Method
+|     Vary: Access-Control-Request-Headers
+|     Content-Type: application/json
+|     Date: Wed, 04 Jan 2023 16:16:48 GMT
+|     Connection: close
+|     {"timestamp":"2023-01-04T16:16:49.117+0000","status":404,"error":"Not Found","message":"No message available","path":"/"}
+|   RTSPRequest: 
+|     HTTP/1.1 505 
+|     Content-Type: text/html;charset=utf-8
+|     Content-Language: en
+|     Content-Length: 465
+|     Date: Wed, 04 Jan 2023 16:16:48 GMT
+|     <!doctype html><html lang="en"><head><title>HTTP Status 505 
+|     HTTP Version Not Supported</title><style type="text/css">body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}</style></head><body><h1>HTTP Status 505 
+|_    HTTP Version Not Supported</h1></body></html>
+|_http-title: Site doesn't have a title (application/json).
+8081/tcp open  http       nginx 1.14.0 (Ubuntu)
+|_http-server-header: nginx/1.14.0 (Ubuntu)
+|_http-title: magician
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port8080-TCP:V=7.93%I=7%D=1/4%Time=63B5A670%P=x86_64-pc-linux-gnu%r(Get
+SF:Request,13B,"HTTP/1\.1\x20404\x20\r\nVary:\x20Origin\r\nVary:\x20Access
+SF:-Control-Request-Method\r\nVary:\x20Access-Control-Request-Headers\r\nC
+SF:ontent-Type:\x20application/json\r\nDate:\x20Wed,\x2004\x20Jan\x202023\
+SF:x2016:16:48\x20GMT\r\nConnection:\x20close\r\n\r\n{\"timestamp\":\"2023
+SF:-01-04T16:16:48\.686\+0000\",\"status\":404,\"error\":\"Not\x20Found\",
+SF:\"message\":\"No\x20message\x20available\",\"path\":\"/\"}")%r(HTTPOpti
+SF:ons,13B,"HTTP/1\.1\x20404\x20\r\nVary:\x20Origin\r\nVary:\x20Access-Con
+SF:trol-Request-Method\r\nVary:\x20Access-Control-Request-Headers\r\nConte
+SF:nt-Type:\x20application/json\r\nDate:\x20Wed,\x2004\x20Jan\x202023\x201
+SF:6:16:48\x20GMT\r\nConnection:\x20close\r\n\r\n{\"timestamp\":\"2023-01-
+SF:04T16:16:49\.117\+0000\",\"status\":404,\"error\":\"Not\x20Found\",\"me
+SF:ssage\":\"No\x20message\x20available\",\"path\":\"/\"}")%r(RTSPRequest,
+SF:259,"HTTP/1\.1\x20505\x20\r\nContent-Type:\x20text/html;charset=utf-8\r
+SF:\nContent-Language:\x20en\r\nContent-Length:\x20465\r\nDate:\x20Wed,\x2
+SF:004\x20Jan\x202023\x2016:16:48\x20GMT\r\n\r\n<!doctype\x20html><html\x2
+SF:0lang=\"en\"><head><title>HTTP\x20Status\x20505\x20\xe2\x80\x93\x20HTTP
+SF:\x20Version\x20Not\x20Supported</title><style\x20type=\"text/css\">body
+SF:\x20{font-family:Tahoma,Arial,sans-serif;}\x20h1,\x20h2,\x20h3,\x20b\x2
+SF:0{color:white;background-color:#525D76;}\x20h1\x20{font-size:22px;}\x20
+SF:h2\x20{font-size:16px;}\x20h3\x20{font-size:14px;}\x20p\x20{font-size:1
+SF:2px;}\x20a\x20{color:black;}\x20\.line\x20{height:1px;background-color:
+SF:#525D76;border:none;}</style></head><body><h1>HTTP\x20Status\x20505\x20
+SF:\xe2\x80\x93\x20HTTP\x20Version\x20Not\x20Supported</h1></body></html>"
+SF:)%r(FourOhFourRequest,15E,"HTTP/1\.1\x20404\x20\r\nVary:\x20Origin\r\nV
+SF:ary:\x20Access-Control-Request-Method\r\nVary:\x20Access-Control-Reques
+SF:t-Headers\r\nContent-Type:\x20application/json\r\nDate:\x20Wed,\x2004\x
+SF:20Jan\x202023\x2016:16:48\x20GMT\r\nConnection:\x20close\r\n\r\n{\"time
+SF:stamp\":\"2023-01-04T16:16:49\.715\+0000\",\"status\":404,\"error\":\"N
+SF:ot\x20Found\",\"message\":\"No\x20message\x20available\",\"path\":\"/ni
+SF:ce%20ports%2C/Tri%6Eity\.txt%2ebak\"}");
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.93%E=4%D=1/4%OT=21%CT=1%CU=30960%PV=Y%DS=5%DC=T%G=Y%TM=63B5A69D
+OS:%P=x86_64-pc-linux-gnu)SEQ(SP=101%GCD=1%ISR=105%TI=Z%CI=Z%II=I%TS=A)OPS(
+OS:O1=M505ST11NW7%O2=M505ST11NW7%O3=M505NNT11NW7%O4=M505ST11NW7%O5=M505ST11
+OS:NW7%O6=M505ST11)WIN(W1=F4B3%W2=F4B3%W3=F4B3%W4=F4B3%W5=F4B3%W6=F4B3)ECN(
+OS:R=Y%DF=Y%T=40%W=F507%O=M505NNSNW7%CC=Y%Q=)T1(R=Y%DF=Y%T=40%S=O%A=S+%F=AS
+OS:%RD=0%Q=)T2(R=N)T3(R=N)T4(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T5(R=
+OS:Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=
+OS:R%O=%RD=0%Q=)T7(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)U1(R=Y%DF=N%T
+OS:=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)IE(R=Y%DFI=N%T=40%CD=
+OS:S)
+
+Network Distance: 5 hops
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE (using port 80/tcp)
+HOP RTT       ADDRESS
+1   13.72 ms  10.17.0.1 (10.17.0.1)
+2   ... 4
+5   138.43 ms magician (10.10.58.102)
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 55.30 seconds

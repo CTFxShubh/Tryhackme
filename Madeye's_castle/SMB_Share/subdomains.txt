@@ -1,0 +1,10 @@
+Target: http://hogwartz-castle.thm/
+Total requests: 4989
+==================================================================
+ID    Response   Lines      Word         Chars          Request    
+==================================================================
+
+Total time: 0
+Processed Requests: 444
+Filtered Requests: 444
+Requests/sec.: 0

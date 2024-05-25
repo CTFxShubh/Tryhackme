@@ -1,0 +1,39 @@
+# Nmap 7.93 scan initiated Wed May  3 10:29:43 2023 as: nmap -sV -A -O -oN nmap.txt 10.10.33.231
+Nmap scan report for library.thm (10.10.33.231)
+Host is up (0.15s latency).
+Not shown: 998 closed tcp ports (reset)
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 7.2p2 Ubuntu 4ubuntu2.8 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 c42fc34767063204ef92918e0587d5dc (RSA)
+|   256 689213ec9479dcbb7702da99bfb69db0 (ECDSA)
+|_  256 43e824fcd8b8d3aac248089751dc5b7d (ED25519)
+80/tcp open  http    Apache httpd 2.4.18 ((Ubuntu))
+| http-robots.txt: 1 disallowed entry 
+|_/
+|_http-server-header: Apache/2.4.18 (Ubuntu)
+|_http-title: Welcome to  Blog - Library Machine
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.93%E=4%D=5/3%OT=22%CT=1%CU=42517%PV=Y%DS=5%DC=T%G=Y%TM=64527004
+OS:%P=x86_64-pc-linux-gnu)SEQ(TI=Z%CI=I%TS=8)SEQ(TI=Z%TS=8)OPS(O1=NNT11%O2=
+OS:M508ST11NW7%O3=NNT11%O4=M508ST11NW7%O5=M508ST11NW7%O6=M508ST11)WIN(W1=D2
+OS:%W2=68DF%W3=D2%W4=68DF%W5=68DF%W6=68DF)ECN(R=N)ECN(R=Y%DF=Y%T=40%W=6903%
+OS:O=M508NNSNW7%CC=Y%Q=)T1(R=Y%DF=Y%T=40%S=O%A=O%F=AP%RD=0%Q=)T2(R=Y%DF=Y%T
+OS:=40%W=D2%S=O%A=O%F=AP%O=NNT11%RD=0%Q=)T2(R=N)T3(R=N)T4(R=Y%DF=Y%T=40%W=0
+OS:%S=A%A=Z%F=R%O=%RD=0%Q=)T4(R=N)T5(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=
+OS:0%Q=)T5(R=N)T6(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T6(R=N)T7(R=Y%DF
+OS:=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)U1(R=Y%DF=N%T=40%IPL=164%UN=0%RIPL=
+OS:G%RID=G%RIPCK=G%RUCK=G%RUD=G)U1(R=N)IE(R=Y%DFI=N%T=40%CD=S)IE(R=N)
+
+Network Distance: 5 hops
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE (using port 8080/tcp)
+HOP RTT       ADDRESS
+1   33.04 ms  10.17.0.1 (10.17.0.1)
+2   ... 4
+5   156.42 ms library.thm (10.10.33.231)
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed May  3 10:30:28 2023 -- 1 IP address (1 host up) scanned in 44.70 seconds

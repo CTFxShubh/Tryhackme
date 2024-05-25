@@ -1,0 +1,276 @@
+# Nmap 7.93 scan initiated Sun Apr  9 09:21:20 2023 as: nmap -sV -A -O -oN nmap.txt 10.10.104.58
+Nmap scan report for 10.10.104.58 (10.10.104.58)
+Host is up (0.19s latency).
+Not shown: 916 closed tcp ports (reset)
+PORT      STATE SERVICE    VERSION
+22/tcp    open  ssh        OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 3f15197035fddd0d07a050a37dfa10a0 (RSA)
+|   256 a8675c52770241d790e7ed32d201d965 (ECDSA)
+|_  256 2692592d5e25908909f5e5e03381776a (ED25519)
+9000/tcp  open  ssh        Dropbear sshd (protocol 2.0)
+| ssh-hostkey: 
+|_  2048 fff4db79a9bcb88ad43f56c2cfcb7d11 (RSA)
+9001/tcp  open  ssh        Dropbear sshd (protocol 2.0)
+| ssh-hostkey: 
+|_  2048 fff4db79a9bcb88ad43f56c2cfcb7d11 (RSA)
+9002/tcp  open  ssh        Dropbear sshd (protocol 2.0)
+| ssh-hostkey: 
+|_  2048 fff4db79a9bcb88ad43f56c2cfcb7d11 (RSA)
+9003/tcp  open  ssh        Dropbear sshd (protocol 2.0)
+| ssh-hostkey: 
+|_  2048 fff4db79a9bcb88ad43f56c2cfcb7d11 (RSA)
+9009/tcp  open  ssh        Dropbear sshd (protocol 2.0)
+| ssh-hostkey: 
+|_  2048 fff4db79a9bcb88ad43f56c2cfcb7d11 (RSA)
+9010/tcp  open  ssh        Dropbear sshd (protocol 2.0)
+| ssh-hostkey: 
+|_  2048 fff4db79a9bcb88ad43f56c2cfcb7d11 (RSA)
+9011/tcp  open  ssh        Dropbear sshd (protocol 2.0)
+| ssh-hostkey: 
+|_  2048 fff4db79a9bcb88ad43f56c2cfcb7d11 (RSA)
+9040/tcp  open  ssh        Dropbear sshd (protocol 2.0)
+| ssh-hostkey: 
+|_  2048 fff4db79a9bcb88ad43f56c2cfcb7d11 (RSA)
+9050/tcp  open  ssh        Dropbear sshd (protocol 2.0)
+| ssh-hostkey: 
+|_  2048 fff4db79a9bcb88ad43f56c2cfcb7d11 (RSA)
+9071/tcp  open  ssh        Dropbear sshd (protocol 2.0)
+| ssh-hostkey: 
+|_  2048 fff4db79a9bcb88ad43f56c2cfcb7d11 (RSA)
+9080/tcp  open  ssh        Dropbear sshd (protocol 2.0)
+| ssh-hostkey: 
+|_  2048 fff4db79a9bcb88ad43f56c2cfcb7d11 (RSA)
+9081/tcp  open  ssh        Dropbear sshd (protocol 2.0)
+| ssh-hostkey: 
+|_  2048 fff4db79a9bcb88ad43f56c2cfcb7d11 (RSA)
+9090/tcp  open  ssh        Dropbear sshd (protocol 2.0)
+| ssh-hostkey: 
+|_  2048 fff4db79a9bcb88ad43f56c2cfcb7d11 (RSA)
+9091/tcp  open  ssh        Dropbear sshd (protocol 2.0)
+| ssh-hostkey: 
+|_  2048 fff4db79a9bcb88ad43f56c2cfcb7d11 (RSA)
+9099/tcp  open  ssh        Dropbear sshd (protocol 2.0)
+| ssh-hostkey: 
+|_  2048 fff4db79a9bcb88ad43f56c2cfcb7d11 (RSA)
+9100/tcp  open  jetdirect?
+9101/tcp  open  jetdirect?
+9102/tcp  open  jetdirect?
+9103/tcp  open  jetdirect?
+9110/tcp  open  ssh        Dropbear sshd (protocol 2.0)
+| ssh-hostkey: 
+|_  2048 fff4db79a9bcb88ad43f56c2cfcb7d11 (RSA)
+9111/tcp  open  ssh        Dropbear sshd (protocol 2.0)
+| ssh-hostkey: 
+|_  2048 fff4db79a9bcb88ad43f56c2cfcb7d11 (RSA)
+9200/tcp  open  ssh        Dropbear sshd (protocol 2.0)
+| ssh-hostkey: 
+|_  2048 fff4db79a9bcb88ad43f56c2cfcb7d11 (RSA)
+9207/tcp  open  ssh        Dropbear sshd (protocol 2.0)
+| ssh-hostkey: 
+|_  2048 fff4db79a9bcb88ad43f56c2cfcb7d11 (RSA)
+9220/tcp  open  ssh        Dropbear sshd (protocol 2.0)
+| ssh-hostkey: 
+|_  2048 fff4db79a9bcb88ad43f56c2cfcb7d11 (RSA)
+9290/tcp  open  ssh        Dropbear sshd (protocol 2.0)
+| ssh-hostkey: 
+|_  2048 fff4db79a9bcb88ad43f56c2cfcb7d11 (RSA)
+9415/tcp  open  ssh        Dropbear sshd (protocol 2.0)
+| ssh-hostkey: 
+|_  2048 fff4db79a9bcb88ad43f56c2cfcb7d11 (RSA)
+9418/tcp  open  ssh        Dropbear sshd (protocol 2.0)
+| ssh-hostkey: 
+|_  2048 fff4db79a9bcb88ad43f56c2cfcb7d11 (RSA)
+9485/tcp  open  ssh        Dropbear sshd (protocol 2.0)
+| ssh-hostkey: 
+|_  2048 fff4db79a9bcb88ad43f56c2cfcb7d11 (RSA)
+9500/tcp  open  ssh        Dropbear sshd (protocol 2.0)
+| ssh-hostkey: 
+|_  2048 fff4db79a9bcb88ad43f56c2cfcb7d11 (RSA)
+9502/tcp  open  ssh        Dropbear sshd (protocol 2.0)
+| ssh-hostkey: 
+|_  2048 fff4db79a9bcb88ad43f56c2cfcb7d11 (RSA)
+9503/tcp  open  ssh        Dropbear sshd (protocol 2.0)
+| ssh-hostkey: 
+|_  2048 fff4db79a9bcb88ad43f56c2cfcb7d11 (RSA)
+9535/tcp  open  ssh        Dropbear sshd (protocol 2.0)
+| ssh-hostkey: 
+|_  2048 fff4db79a9bcb88ad43f56c2cfcb7d11 (RSA)
+9575/tcp  open  ssh        Dropbear sshd (protocol 2.0)
+| ssh-hostkey: 
+|_  2048 fff4db79a9bcb88ad43f56c2cfcb7d11 (RSA)
+9593/tcp  open  ssh        Dropbear sshd (protocol 2.0)
+| ssh-hostkey: 
+|_  2048 fff4db79a9bcb88ad43f56c2cfcb7d11 (RSA)
+9594/tcp  open  ssh        Dropbear sshd (protocol 2.0)
+| ssh-hostkey: 
+|_  2048 fff4db79a9bcb88ad43f56c2cfcb7d11 (RSA)
+9595/tcp  open  ssh        Dropbear sshd (protocol 2.0)
+| ssh-hostkey: 
+|_  2048 fff4db79a9bcb88ad43f56c2cfcb7d11 (RSA)
+9618/tcp  open  ssh        Dropbear sshd (protocol 2.0)
+| ssh-hostkey: 
+|_  2048 fff4db79a9bcb88ad43f56c2cfcb7d11 (RSA)
+9666/tcp  open  ssh        Dropbear sshd (protocol 2.0)
+| ssh-hostkey: 
+|_  2048 fff4db79a9bcb88ad43f56c2cfcb7d11 (RSA)
+9876/tcp  open  ssh        Dropbear sshd (protocol 2.0)
+| ssh-hostkey: 
+|_  2048 fff4db79a9bcb88ad43f56c2cfcb7d11 (RSA)
+9877/tcp  open  ssh        Dropbear sshd (protocol 2.0)
+| ssh-hostkey: 
+|_  2048 fff4db79a9bcb88ad43f56c2cfcb7d11 (RSA)
+9878/tcp  open  ssh        Dropbear sshd (protocol 2.0)
+| ssh-hostkey: 
+|_  2048 fff4db79a9bcb88ad43f56c2cfcb7d11 (RSA)
+9898/tcp  open  ssh        Dropbear sshd (protocol 2.0)
+| ssh-hostkey: 
+|_  2048 fff4db79a9bcb88ad43f56c2cfcb7d11 (RSA)
+9900/tcp  open  ssh        Dropbear sshd (protocol 2.0)
+| ssh-hostkey: 
+|_  2048 fff4db79a9bcb88ad43f56c2cfcb7d11 (RSA)
+9917/tcp  open  ssh        Dropbear sshd (protocol 2.0)
+| ssh-hostkey: 
+|_  2048 fff4db79a9bcb88ad43f56c2cfcb7d11 (RSA)
+9929/tcp  open  ssh        Dropbear sshd (protocol 2.0)
+| ssh-hostkey: 
+|_  2048 fff4db79a9bcb88ad43f56c2cfcb7d11 (RSA)
+9943/tcp  open  ssh        Dropbear sshd (protocol 2.0)
+| ssh-hostkey: 
+|_  2048 fff4db79a9bcb88ad43f56c2cfcb7d11 (RSA)
+9944/tcp  open  ssh        Dropbear sshd (protocol 2.0)
+| ssh-hostkey: 
+|_  2048 fff4db79a9bcb88ad43f56c2cfcb7d11 (RSA)
+9968/tcp  open  ssh        Dropbear sshd (protocol 2.0)
+| ssh-hostkey: 
+|_  2048 fff4db79a9bcb88ad43f56c2cfcb7d11 (RSA)
+9998/tcp  open  ssh        Dropbear sshd (protocol 2.0)
+| ssh-hostkey: 
+|_  2048 fff4db79a9bcb88ad43f56c2cfcb7d11 (RSA)
+|_uptime-agent-info: SSH-2.0-dropbear\x0D
+9999/tcp  open  ssh        Dropbear sshd (protocol 2.0)
+| ssh-hostkey: 
+|_  2048 fff4db79a9bcb88ad43f56c2cfcb7d11 (RSA)
+10000/tcp open  ssh        Dropbear sshd (protocol 2.0)
+| ssh-hostkey: 
+|_  2048 fff4db79a9bcb88ad43f56c2cfcb7d11 (RSA)
+10001/tcp open  ssh        Dropbear sshd (protocol 2.0)
+| ssh-hostkey: 
+|_  2048 fff4db79a9bcb88ad43f56c2cfcb7d11 (RSA)
+10002/tcp open  ssh        Dropbear sshd (protocol 2.0)
+| ssh-hostkey: 
+|_  2048 fff4db79a9bcb88ad43f56c2cfcb7d11 (RSA)
+10003/tcp open  ssh        Dropbear sshd (protocol 2.0)
+| ssh-hostkey: 
+|_  2048 fff4db79a9bcb88ad43f56c2cfcb7d11 (RSA)
+10004/tcp open  ssh        Dropbear sshd (protocol 2.0)
+| ssh-hostkey: 
+|_  2048 fff4db79a9bcb88ad43f56c2cfcb7d11 (RSA)
+10009/tcp open  ssh        Dropbear sshd (protocol 2.0)
+| ssh-hostkey: 
+|_  2048 fff4db79a9bcb88ad43f56c2cfcb7d11 (RSA)
+10010/tcp open  ssh        Dropbear sshd (protocol 2.0)
+| ssh-hostkey: 
+|_  2048 fff4db79a9bcb88ad43f56c2cfcb7d11 (RSA)
+10012/tcp open  ssh        Dropbear sshd (protocol 2.0)
+| ssh-hostkey: 
+|_  2048 fff4db79a9bcb88ad43f56c2cfcb7d11 (RSA)
+10024/tcp open  ssh        Dropbear sshd (protocol 2.0)
+| ssh-hostkey: 
+|_  2048 fff4db79a9bcb88ad43f56c2cfcb7d11 (RSA)
+10025/tcp open  ssh        Dropbear sshd (protocol 2.0)
+| ssh-hostkey: 
+|_  2048 fff4db79a9bcb88ad43f56c2cfcb7d11 (RSA)
+10082/tcp open  ssh        Dropbear sshd (protocol 2.0)
+| ssh-hostkey: 
+|_  2048 fff4db79a9bcb88ad43f56c2cfcb7d11 (RSA)
+10180/tcp open  ssh        Dropbear sshd (protocol 2.0)
+| ssh-hostkey: 
+|_  2048 fff4db79a9bcb88ad43f56c2cfcb7d11 (RSA)
+10215/tcp open  ssh        Dropbear sshd (protocol 2.0)
+| ssh-hostkey: 
+|_  2048 fff4db79a9bcb88ad43f56c2cfcb7d11 (RSA)
+10243/tcp open  ssh        Dropbear sshd (protocol 2.0)
+| ssh-hostkey: 
+|_  2048 fff4db79a9bcb88ad43f56c2cfcb7d11 (RSA)
+10566/tcp open  ssh        Dropbear sshd (protocol 2.0)
+| ssh-hostkey: 
+|_  2048 fff4db79a9bcb88ad43f56c2cfcb7d11 (RSA)
+10616/tcp open  ssh        Dropbear sshd (protocol 2.0)
+| ssh-hostkey: 
+|_  2048 fff4db79a9bcb88ad43f56c2cfcb7d11 (RSA)
+10617/tcp open  ssh        Dropbear sshd (protocol 2.0)
+| ssh-hostkey: 
+|_  2048 fff4db79a9bcb88ad43f56c2cfcb7d11 (RSA)
+10621/tcp open  ssh        Dropbear sshd (protocol 2.0)
+| ssh-hostkey: 
+|_  2048 fff4db79a9bcb88ad43f56c2cfcb7d11 (RSA)
+10626/tcp open  ssh        Dropbear sshd (protocol 2.0)
+| ssh-hostkey: 
+|_  2048 fff4db79a9bcb88ad43f56c2cfcb7d11 (RSA)
+10628/tcp open  ssh        Dropbear sshd (protocol 2.0)
+| ssh-hostkey: 
+|_  2048 fff4db79a9bcb88ad43f56c2cfcb7d11 (RSA)
+10629/tcp open  ssh        Dropbear sshd (protocol 2.0)
+| ssh-hostkey: 
+|_  2048 fff4db79a9bcb88ad43f56c2cfcb7d11 (RSA)
+10778/tcp open  ssh        Dropbear sshd (protocol 2.0)
+| ssh-hostkey: 
+|_  2048 fff4db79a9bcb88ad43f56c2cfcb7d11 (RSA)
+11110/tcp open  ssh        Dropbear sshd (protocol 2.0)
+| ssh-hostkey: 
+|_  2048 fff4db79a9bcb88ad43f56c2cfcb7d11 (RSA)
+11111/tcp open  ssh        Dropbear sshd (protocol 2.0)
+| ssh-hostkey: 
+|_  2048 fff4db79a9bcb88ad43f56c2cfcb7d11 (RSA)
+11967/tcp open  ssh        Dropbear sshd (protocol 2.0)
+| ssh-hostkey: 
+|_  2048 fff4db79a9bcb88ad43f56c2cfcb7d11 (RSA)
+12000/tcp open  ssh        Dropbear sshd (protocol 2.0)
+| ssh-hostkey: 
+|_  2048 fff4db79a9bcb88ad43f56c2cfcb7d11 (RSA)
+12174/tcp open  ssh        Dropbear sshd (protocol 2.0)
+| ssh-hostkey: 
+|_  2048 fff4db79a9bcb88ad43f56c2cfcb7d11 (RSA)
+12265/tcp open  ssh        Dropbear sshd (protocol 2.0)
+| ssh-hostkey: 
+|_  2048 fff4db79a9bcb88ad43f56c2cfcb7d11 (RSA)
+12345/tcp open  ssh        Dropbear sshd (protocol 2.0)
+| ssh-hostkey: 
+|_  2048 fff4db79a9bcb88ad43f56c2cfcb7d11 (RSA)
+13456/tcp open  ssh        Dropbear sshd (protocol 2.0)
+| ssh-hostkey: 
+|_  2048 fff4db79a9bcb88ad43f56c2cfcb7d11 (RSA)
+13722/tcp open  ssh        Dropbear sshd (protocol 2.0)
+| ssh-hostkey: 
+|_  2048 fff4db79a9bcb88ad43f56c2cfcb7d11 (RSA)
+13782/tcp open  ssh        Dropbear sshd (protocol 2.0)
+| ssh-hostkey: 
+|_  2048 fff4db79a9bcb88ad43f56c2cfcb7d11 (RSA)
+13783/tcp open  ssh        Dropbear sshd (protocol 2.0)
+| ssh-hostkey: 
+|_  2048 fff4db79a9bcb88ad43f56c2cfcb7d11 (RSA)
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.93%E=4%D=4/9%OT=22%CT=1%CU=41849%PV=Y%DS=5%DC=T%G=Y%TM=6432BC82
+OS:%P=x86_64-pc-linux-gnu)SEQ(SP=101%GCD=1%ISR=107%TI=Z%CI=Z%II=I%TS=A)OPS(
+OS:O1=M505ST11NW7%O2=M505ST11NW7%O3=M505NNT11NW7%O4=M505ST11NW7%O5=M505ST11
+OS:NW7%O6=M505ST11)WIN(W1=F4B3%W2=F4B3%W3=F4B3%W4=F4B3%W5=F4B3%W6=F4B3)ECN(
+OS:R=Y%DF=Y%T=40%W=F507%O=M505NNSNW7%CC=Y%Q=)T1(R=Y%DF=Y%T=40%S=O%A=S+%F=AS
+OS:%RD=0%Q=)T2(R=N)T3(R=N)T4(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T5(R=
+OS:Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=
+OS:R%O=%RD=0%Q=)T7(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)U1(R=Y%DF=N%T
+OS:=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)IE(R=Y%DFI=N%T=40%CD=
+OS:S)
+
+Network Distance: 5 hops
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE (using port 80/tcp)
+HOP RTT       ADDRESS
+1   21.89 ms  10.17.0.1 (10.17.0.1)
+2   ... 4
+5   227.28 ms 10.10.104.58 (10.10.104.58)
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Apr  9 09:24:18 2023 -- 1 IP address (1 host up) scanned in 179.20 seconds
