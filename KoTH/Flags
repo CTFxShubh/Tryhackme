@@ -1,0 +1,21 @@
+All Flags
+
+Found a user Dan on port 15065
+
+Found an image on port 16109 
+
+Donwloading the image and using steghide 
+--> steghide extract -sf  <image_name>
+--> give us an credentials pasta:pastaisdynamic
+
+using this in telnet port 46969 gives us an ssh shell of user pasta
+
+
+Flag 1 --> thm{7baf5aa8491a4b7b1c2d231a24aec575}   ,  Location = /home/bread
+Flag 2 --> thm{58a3cb46855af54d0660b34fd20a04c1}   ,  Location = /home/food	
+Flag 3 --> thm{0c48608136e6f8c86aecdb5d4c3d7ba8}   ,  Location = /var/
+Flag 4 --> thm{2f30841ff8d9646845295135adda8332}   ,  Location = /mysql_database inside user tables
+Flag 5 
+Flag 6 
+Flag 7 --> thm{5a926ab5d3561e976f4ae5a7e2d034fe}   ,  Location = /home/tryhackme 
+Flag 8

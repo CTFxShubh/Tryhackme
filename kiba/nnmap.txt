@@ -1,0 +1,35 @@
+5044/tcp open  lxi-evntsvc?
+5601/tcp open  esmagent?
+| fingerprint-strings: 
+|   DNSStatusRequestTCP, DNSVersionBindReqTCP, Help, Kerberos, LDAPBindReq, LDAPSearchReq, LPDString, RPCCheck, RTSPRequest, SIPOptions, SMBProgNeg, SSLSessionReq, TLSSessionReq, TerminalServerCookie, X11Probe: 
+|     HTTP/1.1 400 Bad Request
+|   FourOhFourRequest: 
+|     HTTP/1.1 404 Not Found
+|     kbn-name: kibana
+|     kbn-xpack-sig: c4d007a8c4d04923283ef48ab54e3e6c
+|     content-type: application/json; charset=utf-8
+|     cache-control: no-cache
+|     content-length: 60
+|     connection: close
+|     Date: Sun, 08 Jan 2023 11:40:35 GMT
+|     {"statusCode":404,"error":"Not Found","message":"Not Found"}
+|   GetRequest: 
+|     HTTP/1.1 302 Found
+|     location: /app/kibana
+|     kbn-name: kibana
+|     kbn-xpack-sig: c4d007a8c4d04923283ef48ab54e3e6c
+|     cache-control: no-cache
+|     content-length: 0
+|     connection: close
+|     Date: Sun, 08 Jan 2023 11:40:31 GMT
+|   HTTPOptions: 
+|     HTTP/1.1 404 Not Found
+|     kbn-name: kibana
+|     kbn-xpack-sig: c4d007a8c4d04923283ef48ab54e3e6c
+|     content-type: application/json; charset=utf-8
+|     cache-control: no-cache
+|     content-length: 38
+|     connection: close
+|     Date: Sun, 08 Jan 2023 11:40:31 GMT
+|_    {"statusCode":404,"error":"Not Found"}
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :

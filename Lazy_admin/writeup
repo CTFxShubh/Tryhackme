@@ -1,0 +1,54 @@
+step 1 -> start nmap scann 
+           
+          Syntax : nmap -sV -A -O IP ADDRESS 
+
+step 2 -> check if http or https is running 
+
+step 3 -> found ssh and http running 
+
+step 4 -> using gobuster to find the hidden directories 
+
+step 5 -> found an hidden page /content/ 
+       
+          got some details and telling about to turn on the website , if we are a webmaster it give's us a idea that we need to have page where we can operate the whole webpage settings
+
+step 6 -> using gobuster to find the hidden pages inside /content/
+
+          found /as/    and    /inc/
+
+step 7 -> found a a mysql_bacup file in /inc/ folder 
+
+          inside the mysql_backup file found username and password 
+ 
+          password was encrypted but we can decrypt it online 
+ 
+          username = manager & password = Password123 
+
+step 8 -> using the credentials we logged in the website and turned the website on 
+
+          after exploring found an functionaltiy "ads" which helps to put up our code so we can put our php reverse shell 
+
+step 9 -> setting up our netcat listener 
+
+          go to http://IP ADDRESS/inc/ads     run the reverse shell 
+
+step 10 -> stabilizing the shell using 
+           -->python3 -c 'import pty;pty.spawn("/bin/bash")'
+           -->export TERM=xterm
+
+step 11 -> found the user.txt 
+
+step 12 -> now privilige escalation , type sudo -l
+
+step 13 -> we can run sudo commands for /home/itguy/backup.pl
+
+step 14 -> using cat command toin backup.pl  found a system command calling /etc/copy.sh
+
+step 15 -> using cat command to view the contents of copy.sh , found a reverse shell ,
+          
+           so we can change the ip and port to our ip address and port 
+step 16 -> setting up netcat listener on different port 
+
+step 17 -> run the command sudo /usr/bin/perl /home/itguy/backup.perl
+
+--->>> GOT ROOT SHELL <<<---
