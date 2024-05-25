@@ -1,0 +1,24 @@
+1. scanning ip address using nmap using -p- 
+   found 2 ip address 
+   22   : ssh
+   5984 : CouchDB httpd 1.6.1
+
+2. Now visting the page found some information 
+
+3. Doing some research found this link for CouchDB "https://guide.couchdb.org/draft/tour.html"
+
+4. using curl to find database curl -X GET http://IP:5984/_all_dbs
+
+5. on browser type http://IP:5984/_utils 
+
+   This will give a GUI interface od database
+
+6. Found login credentials on couch table 
+
+7. using the credentials to login using ssh because , after the scan ssh was found to be open 
+
+8. Now root shell 
+
+9. nano .bashrc_history we will see a docker command it is spaming a container of whole hirarchy from / 
+   using the command "docker -H 127.0.0.1:2375 run --rm -it --privileged --net=host -v /:/mnt alpine"
+   we got into the container and getting the root shell
