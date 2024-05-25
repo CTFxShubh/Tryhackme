@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit button */
+.login_button {
+  background-color: #4571d0;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: black;
+   color: white;
+   text-align: center;
+}
+
+</style>
+</head>
+<body>
+
+<div class="container">
+<form action="" method="POST">
+    <h1>Intranet login</h1>
+    <hr>
+    <label for="usr"><b>Username</b></label>
+    <input type="text" placeholder="Firstname" name="username" id="username" value="natalie" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Password" name="password" id="password" value="arturo" required>
+    <hr>
+
+    <h2>Too many bad login attempts!</h2>
+    
+    <label for="usr"><b><h3>Captcha enabled</h3></b></label><br>
+    632 * 17 = ?
+    
+    <input type="text" placeholder="xxxx" name="captcha" id="captcha" value="948" required>
+
+    <button type="submit" class="login_button"><b>Log in</b></button>
+  
+</form>
+    
+    <p class="error"><strong>Error:</strong> Invalid password for user &#39;natalie&#39;
+    
+      </div>
+
+<div class="footer">
+  <p>Proudly hosted, maintained, and developed by <b>SecureSolaCoders.no ©</b></p>
+</div>
+</body>
+</html>

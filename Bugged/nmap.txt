@@ -1,0 +1,45 @@
+# Nmap 7.93 scan initiated Sat Mar  4 22:48:02 2023 as: nmap -sC -sV -p1883 -oN nmap.txt 10.10.68.200
+Nmap scan report for 10.10.68.200 (10.10.68.200)
+Host is up (0.14s latency).
+
+PORT     STATE SERVICE                  VERSION
+1883/tcp open  mosquitto version 2.0.14
+| mqtt-subscribe: 
+|   Topics and their most recent payloads: 
+|     $SYS/broker/load/sockets/15min: 0.22
+|     $SYS/broker/load/messages/sent/5min: 92.18
+|     $SYS/broker/clients/connected: 2
+|     $SYS/broker/load/publish/sent/1min: 0.06
+|     $SYS/broker/load/messages/received/1min: 89.36
+|     $SYS/broker/load/bytes/sent/1min: 360.25
+|     $SYS/broker/bytes/received: 297241
+|     $SYS/broker/publish/bytes/received: 212351
+|     $SYS/broker/clients/active: 2
+|     patio/lights: {"id":16912775078030547016,"color":"RED","status":"OFF"}
+|     $SYS/broker/load/messages/sent/15min: 90.90
+|     $SYS/broker/load/bytes/received/1min: 4243.91
+|     $SYS/broker/load/bytes/sent/15min: 424.73
+|     storage/thermostat: {"id":9526253071784099334,"temperature":24.334013}
+|     $SYS/broker/load/messages/received/15min: 89.36
+|     $SYS/broker/load/bytes/received/15min: 4239.05
+|     livingroom/speaker: {"id":3793508594660671235,"gain":64}
+|     $SYS/broker/messages/sent: 6318
+|     frontdeck/camera: {"id":10151399430021382135,"yaxis":5.13385,"xaxis":-131.77565,"zoom":1.3672365,"movement":false}
+|     $SYS/broker/clients/disconnected: 0
+|     $SYS/broker/uptime: 4158 seconds
+|     $SYS/broker/load/publish/sent/15min: 1.53
+|     kitchen/toaster: {"id":1023796098687967165,"in_use":true,"temperature":140.43509,"toast_time":282}
+|     $SYS/broker/load/bytes/received/5min: 4275.79
+|     $SYS/broker/load/messages/sent/1min: 89.42
+|     $SYS/broker/load/sockets/1min: 0.92
+|     $SYS/broker/load/publish/sent/5min: 1.99
+|     $SYS/broker/messages/received: 6256
+|     $SYS/broker/load/bytes/sent/5min: 447.90
+|     $SYS/broker/version: mosquitto version 2.0.14
+|     $SYS/broker/load/messages/received/5min: 90.19
+|     $SYS/broker/clients/inactive: 0
+|     $SYS/broker/load/sockets/5min: 0.36
+|_    $SYS/broker/bytes/sent: 27806
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Mar  4 22:48:17 2023 -- 1 IP address (1 host up) scanned in 15.56 seconds
