@@ -1,0 +1,72 @@
+1. start scanning using nmap 
+
+2. found three ports
+   ftp -> 21
+   ssh -> 22
+   http -> 80 
+
+3. seems like http is running , opened in fire fox 
+   viewing the source page it tell to add team.thm on host directory 
+
+   /etc/hosts is directory where our computer store the address of a particular website 
+   so to access the team.thm we will add it in out /etc/hosts directory 
+
+   SYNTAX : <IP ADDRESS> team.thm
+
+4. seems like a normal wesite ,started dobuster found assests , images , scripts 
+   under the scripts it shows a bash file and under that it tell that "script" file is being updated 
+   we need to find the old extension 
+   
+   nano extension.txt , inside this file i wrote script ,so we will use it has a wordlist
+   
+   now gobuster dir -u http://team.thm/scripts -w ~/extension.txt -x php,txt,old
+   
+   after that we found a script.old file 
+
+5. inside the script.old file we found credentials of ftp , using this credentials we 
+   logged in 
+       
+   username : ftpuser
+   password : T3@m$h@r3
+    
+   found a "New_site.txt"  opening the text file it was telling about a new php  website which in currently being built
+   to access it we need to add dev as our domain inside the /etc/hosts , so 
+   
+   from above while adding the team.thm we will put some space and add dev.team.thm
+ 
+   SYNTAX : dev.team.thm
+   
+6. After opening the dev.team.thm 
+   In the link i found a parameter page=
+   so entering /etc/ssh/sshd_config in the above parameter 
+   
+   Because it contains private_rsa key for dale 
+
+   NOTE : sshd_config does not contain it private_rsa_key but from "New_site.txt" it was giving a hint to view this file 
+
+   Found private_rsa key but everything is messed up now in view page source you will find it copying it  
+   and giving ti only read permission to it 
+
+7. logging in it as dale
+   ssh -i id_rsa dale@team.thm
+
+8. typing sudo -l 
+   we can see that we can run "admin_checks" but as gyle user 
+   syntax sudo -u gyle ./admin_checks
+9. entering some random values
+   we got gyle sheel 
+
+10. stabilizing the shell using python 
+
+11. now we can see that there a file in /opt/admin_stuff/script.sh
+    inside this scipr_sh we can see that this file is telling that root is running this file every minute 
+
+12. so editing the file into a netcat reverse shell and setting up a listener on our machine 
+
+13. we got our root shell 
+
+
+    NOTE : read the source page carefully and understand the clue and try different ways to enumerate it 
+
+
+--> THANK YOU <-- 
