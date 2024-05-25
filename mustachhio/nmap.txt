@@ -1,0 +1,32 @@
+# Nmap 7.93 scan initiated Mon Jan  9 00:26:18 2023 as: nmap -sV -A -O -oN nmap.txt 10.10.220.51
+Nmap scan report for 10.10.220.51 (10.10.220.51)
+Host is up (0.16s latency).
+Not shown: 998 filtered tcp ports (no-response)
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 7.2p2 Ubuntu 4ubuntu2.10 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 581b0c0ffacf05be4cc07af1f188611c (RSA)
+|   256 3cfce8a37e039a302c77e00a1ce452e6 (ECDSA)
+|_  256 9d59c6c779c554c41daae4d184710192 (ED25519)
+80/tcp open  http    Apache httpd 2.4.18 ((Ubuntu))
+| http-robots.txt: 1 disallowed entry 
+|_/
+|_http-title: Mustacchio | Home
+|_http-server-header: Apache/2.4.18 (Ubuntu)
+8765/tcp open  http    nginx 1.10.3 (Ubuntu)
+|_http-title: Mustacchio | Login
+|_http-server-header: nginx/1.10.3 (Ubuntu)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Linux 3.10 - 3.13 (91%), Linux 5.4 (90%), Crestron XPanel control system (89%), HP P2000 G3 NAS device (86%), ASUS RT-N56U WAP (Linux 3.4) (86%), Linux 3.1 (86%), Linux 3.16 (86%), Linux 3.2 (86%), AXIS 210A or 211 Network Camera (Linux 2.6.17) (86%), Android 4.1.1 (85%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 5 hops
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE (using port 80/tcp)
+HOP RTT       ADDRESS
+1   35.57 ms  10.17.0.1 (10.17.0.1)
+2   ... 4
+5   156.85 ms 10.10.220.51 (10.10.220.51)
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 377.09 seconds

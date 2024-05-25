@@ -1,0 +1,68 @@
+# Nmap 7.93 scan initiated Sat Apr 29 03:01:54 2023 as: nmap -sV -A -O -oN nmap.txt 10.10.169.71
+Nmap scan report for minotaur.thm (10.10.169.71)
+Host is up (0.18s latency).
+Not shown: 996 closed tcp ports (reset)
+PORT     STATE SERVICE  VERSION
+21/tcp   open  ftp      ProFTPD
+| ftp-anon: Anonymous FTP login allowed (FTP code 230)
+|_drwxr-xr-x   3 nobody   nogroup      4096 Jun 15  2021 pub
+80/tcp   open  http     Apache httpd 2.4.48 ((Unix) OpenSSL/1.1.1k PHP/8.0.7 mod_perl/2.0.11 Perl/v5.32.1)
+|_http-server-header: Apache/2.4.48 (Unix) OpenSSL/1.1.1k PHP/8.0.7 mod_perl/2.0.11 Perl/v5.32.1
+| http-title: Login
+|_Requested resource was login.html
+443/tcp  open  ssl/http Apache httpd 2.4.48 ((Unix) OpenSSL/1.1.1k PHP/8.0.7 mod_perl/2.0.11 Perl/v5.32.1)
+|_http-server-header: Apache/2.4.48 (Unix) OpenSSL/1.1.1k PHP/8.0.7 mod_perl/2.0.11 Perl/v5.32.1
+| ssl-cert: Subject: commonName=localhost/organizationName=Apache Friends/stateOrProvinceName=Berlin/countryName=DE
+| Not valid before: 2004-10-01T09:10:30
+|_Not valid after:  2010-09-30T09:10:30
+| tls-alpn: 
+|_  http/1.1
+|_ssl-date: TLS randomness does not represent time
+| http-title: Login
+|_Requested resource was login.html
+3306/tcp open  mysql?
+| fingerprint-strings: 
+|   Kerberos, NCP, NULL, RTSPRequest, SIPOptions, SMBProgNeg, WMSRequest: 
+|_    Host 'ip-10-17-0-179.eu-west-1.compute.internal' is not allowed to connect to this MariaDB server
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port3306-TCP:V=7.93%I=7%D=4/29%Time=644CC0E6%P=x86_64-pc-linux-gnu%r(NU
+SF:LL,68,"d\0\0\x01\xffj\x04Host\x20'ip-10-17-0-179\.eu-west-1\.compute\.i
+SF:nternal'\x20is\x20not\x20allowed\x20to\x20connect\x20to\x20this\x20Mari
+SF:aDB\x20server")%r(RTSPRequest,68,"d\0\0\x01\xffj\x04Host\x20'ip-10-17-0
+SF:-179\.eu-west-1\.compute\.internal'\x20is\x20not\x20allowed\x20to\x20co
+SF:nnect\x20to\x20this\x20MariaDB\x20server")%r(Kerberos,68,"d\0\0\x01\xff
+SF:j\x04Host\x20'ip-10-17-0-179\.eu-west-1\.compute\.internal'\x20is\x20no
+SF:t\x20allowed\x20to\x20connect\x20to\x20this\x20MariaDB\x20server")%r(SM
+SF:BProgNeg,68,"d\0\0\x01\xffj\x04Host\x20'ip-10-17-0-179\.eu-west-1\.comp
+SF:ute\.internal'\x20is\x20not\x20allowed\x20to\x20connect\x20to\x20this\x
+SF:20MariaDB\x20server")%r(SIPOptions,68,"d\0\0\x01\xffj\x04Host\x20'ip-10
+SF:-17-0-179\.eu-west-1\.compute\.internal'\x20is\x20not\x20allowed\x20to\
+SF:x20connect\x20to\x20this\x20MariaDB\x20server")%r(NCP,68,"d\0\0\x01\xff
+SF:j\x04Host\x20'ip-10-17-0-179\.eu-west-1\.compute\.internal'\x20is\x20no
+SF:t\x20allowed\x20to\x20connect\x20to\x20this\x20MariaDB\x20server")%r(WM
+SF:SRequest,68,"d\0\0\x01\xffj\x04Host\x20'ip-10-17-0-179\.eu-west-1\.comp
+SF:ute\.internal'\x20is\x20not\x20allowed\x20to\x20connect\x20to\x20this\x
+SF:20MariaDB\x20server");
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.93%E=4%D=4/29%OT=21%CT=1%CU=34825%PV=Y%DS=5%DC=T%G=Y%TM=644CC11
+OS:3%P=x86_64-pc-linux-gnu)SEQ(SP=FE%GCD=1%ISR=104%TI=Z%CI=Z%II=I%TS=A)SEQ(
+OS:SP=FE%GCD=1%ISR=103%TI=Z%CI=Z%TS=A)OPS(O1=M508ST11NW7%O2=M508ST11NW7%O3=
+OS:M508NNT11NW7%O4=M508ST11NW7%O5=M508ST11NW7%O6=M508ST11)WIN(W1=F4B3%W2=F4
+OS:B3%W3=F4B3%W4=F4B3%W5=F4B3%W6=F4B3)ECN(R=Y%DF=Y%T=40%W=F507%O=M508NNSNW7
+OS:%CC=Y%Q=)T1(R=Y%DF=Y%T=40%S=O%A=S+%F=AS%RD=0%Q=)T2(R=N)T3(R=N)T4(R=Y%DF=
+OS:Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T5(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%
+OS:RD=0%Q=)T6(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T7(R=Y%DF=Y%T=40%W=0
+OS:%S=Z%A=S+%F=AR%O=%RD=0%Q=)U1(R=Y%DF=N%T=40%IPL=164%UN=0%RIPL=G%RID=G%RIP
+OS:CK=G%RUCK=G%RUD=G)IE(R=Y%DFI=N%T=40%CD=S)
+
+Network Distance: 5 hops
+
+TRACEROUTE (using port 3389/tcp)
+HOP RTT       ADDRESS
+1   64.09 ms  10.17.0.1 (10.17.0.1)
+2   ... 4
+5   223.21 ms minotaur.thm (10.10.169.71)
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Apr 29 03:02:43 2023 -- 1 IP address (1 host up) scanned in 49.18 seconds

@@ -1,0 +1,7 @@
+use sqlite3 to open user.bak file
+
+SYNTAX : sqlite3 users.bak
+         select * from users
+         then enter ;
+
+answer admin|1868e36a6d2b17d4c2745f1659433a54d4bc5f4b

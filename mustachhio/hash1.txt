@@ -1,0 +1,4 @@
+1868e36a6d2b17d4c2745f1659433a54d4bc5f4b
+
+
+SYNTAX : john has1h.txt --format="Raw-SHA1-AxCrypt" --wordlist=~/Tryhackme/List_For_Enumeration/wordlists/rockyou.txt

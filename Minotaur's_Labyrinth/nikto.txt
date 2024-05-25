@@ -1,0 +1,32 @@
+- Nikto v2.5.0
+---------------------------------------------------------------------------
++ Target IP:          10.10.169.71
++ Target Hostname:    10.10.169.71
++ Target Port:        80
++ Start Time:         2023-04-29 03:01:38 (GMT-4)
+---------------------------------------------------------------------------
++ Server: Apache/2.4.48 (Unix) OpenSSL/1.1.1k PHP/8.0.7 mod_perl/2.0.11 Perl/v5.32.1
++ /: Cookie PHPSESSID created without the httponly flag. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies
++ /: Retrieved x-powered-by header: PHP/8.0.7.
++ /: The anti-clickjacking X-Frame-Options header is not present. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options
++ /: The X-Content-Type-Options header is not set. This could allow the user agent to render the content of the site in a different fashion to the MIME type. See: https://www.netsparker.com/web-vulnerability-scanner/vulnerabilities/missing-content-type-header/
++ Root page / redirects to: login.html
++ OpenSSL/1.1.1k appears to be outdated (current is at least 3.0.7). OpenSSL 1.1.1s is current for the 1.x branch and will be supported until Nov 11 2023.
++ PHP/8.0.7 appears to be outdated (current is at least 8.1.5), PHP 7.4.28 for the 7.4 branch.
++ Apache/2.4.48 appears to be outdated (current is at least Apache/2.4.54). Apache 2.2.34 is the EOL for the 2.x branch.
++ /: HTTP TRACE method is active which suggests the host is vulnerable to XST. See: https://owasp.org/www-community/attacks/Cross_Site_Tracing
++ /css/: Directory indexing found.
++ /css/: This might be interesting.
++ /imgs/: Directory indexing found.
++ /imgs/: This might be interesting.
++ /logs/: Directory indexing found.
++ /logs/: This might be interesting.
++ /icons/: Directory indexing found.
++ /icons/README: Apache default file found. See: https://www.vntweb.co.uk/apache-restricting-access-to-iconsreadme/
++ /login.html: Admin login page/section found.
++ /login.php: Admin login page/section found.
++ /README.md: Readme Found.
++ 8880 requests: 0 error(s) and 19 item(s) reported on remote host
++ End Time:           2023-04-29 03:25:46 (GMT-4) (1448 seconds)
+---------------------------------------------------------------------------
++ 1 host(s) tested
