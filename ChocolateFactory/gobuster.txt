@@ -1,0 +1,51 @@
+gobuster dir -u http://10.10.177.113 ~/Tryhackme/List_For_Enumeration/wordlists/dirb/common.txt -x txt,php,cs,js,py,ssh,cgi -t 64 
+Error: required flag(s) "wordlist" not set
+                                                                                                                              
+┌──(kali㉿kali)-[~/Tryhackme/ChocolateFactory]
+└─$ gobuster dir -u http://10.10.177.113 -w ~/Tryhackme/List_For_Enumeration/wordlists/dirb/common.txt -x txt,php,cs,js,py,ssh,cgi -t 64 
+===============================================================
+Gobuster v3.3
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     http://10.10.177.113
+[+] Method:                  GET
+[+] Threads:                 64
+[+] Wordlist:                /home/kali/Tryhackme/List_For_Enumeration/wordlists/dirb/common.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.3
+[+] Extensions:              cs,js,py,ssh,cgi,txt,php
+[+] Timeout:                 10s
+===============================================================
+2022/12/10 13:48:03 Starting gobuster in directory enumeration mode
+===============================================================
+/.hta.txt             (Status: 403) [Size: 278]
+/.hta                 (Status: 403) [Size: 278]
+/.hta.cs              (Status: 403) [Size: 278]
+/.hta.php             (Status: 403) [Size: 278]
+/.hta.py              (Status: 403) [Size: 278]
+/.hta.js              (Status: 403) [Size: 278]
+/.hta.ssh             (Status: 403) [Size: 278]
+/.htaccess            (Status: 403) [Size: 278]
+/.hta.cgi             (Status: 403) [Size: 278]
+/.htaccess.js         (Status: 403) [Size: 278]
+/.htaccess.py         (Status: 403) [Size: 278]
+/.htaccess.ssh        (Status: 403) [Size: 278]
+/.htaccess.cgi        (Status: 403) [Size: 278]
+/.htaccess.txt        (Status: 403) [Size: 278]
+/.htaccess.php        (Status: 403) [Size: 278]
+/.htpasswd            (Status: 403) [Size: 278]
+/.htaccess.cs         (Status: 403) [Size: 278]
+/.htpasswd.py         (Status: 403) [Size: 278]
+/.htpasswd.cgi        (Status: 403) [Size: 278]
+/.htpasswd.ssh        (Status: 403) [Size: 278]
+/.htpasswd.txt        (Status: 403) [Size: 278]
+/.htpasswd.php        (Status: 403) [Size: 278]
+/.htpasswd.cs         (Status: 403) [Size: 278]
+/.htpasswd.js         (Status: 403) [Size: 278]
+/.php                 (Status: 403) [Size: 278]
+/home.php             (Status: 200) [Size: 569]
+/index.html           (Status: 200) [Size: 1466]
+/server-status        (Status: 403) [Size: 278]
+Progress: 36821 / 36920 (99.73%)===============================================================
+2022/12/10 13:49:29 Finished
+===============================================================

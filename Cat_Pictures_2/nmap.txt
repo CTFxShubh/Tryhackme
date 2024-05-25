@@ -1,0 +1,121 @@
+# Nmap 7.94 scan initiated Sat Jul  1 06:46:57 2023 as: nmap -sV -A -O -oN nmap.txt 10.10.152.0
+Nmap scan report for 10.10.152.0 (10.10.152.0)
+Host is up (0.15s latency).
+Not shown: 995 closed tcp ports (reset)
+PORT     STATE SERVICE VERSION
+22/tcp   open  ssh     OpenSSH 7.6p1 Ubuntu 4ubuntu0.7 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 33:f0:03:36:26:36:8c:2f:88:95:2c:ac:c3:bc:64:65 (RSA)
+|   256 4f:f3:b3:f2:6e:03:91:b2:7c:c0:53:d5:d4:03:88:46 (ECDSA)
+|_  256 13:7c:47:8b:6f:f8:f4:6b:42:9a:f2:d5:3d:34:13:52 (ED25519)
+80/tcp   open  http    nginx 1.4.6 (Ubuntu)
+| http-git: 
+|   10.10.152.0:80/.git/
+|     Git repository found!
+|     Repository description: Unnamed repository; edit this file 'description' to name the...
+|     Remotes:
+|       https://github.com/electerious/Lychee.git
+|_    Project type: PHP application (guessed from .gitignore)
+| http-robots.txt: 7 disallowed entries 
+|_/data/ /dist/ /docs/ /php/ /plugins/ /src/ /uploads/
+|_http-server-header: nginx/1.4.6 (Ubuntu)
+|_http-title: Lychee
+222/tcp  open  ssh     OpenSSH 9.0 (protocol 2.0)
+| ssh-hostkey: 
+|   256 be:cb:06:1f:33:0f:60:06:a0:5a:06:bf:06:53:33:c0 (ECDSA)
+|_  256 9f:07:98:92:6e:fd:2c:2d:b0:93:fa:fe:e8:95:0c:37 (ED25519)
+3000/tcp open  ppp?
+| fingerprint-strings: 
+|   GenericLines, Help, RTSPRequest: 
+|     HTTP/1.1 400 Bad Request
+|     Content-Type: text/plain; charset=utf-8
+|     Connection: close
+|     Request
+|   GetRequest: 
+|     HTTP/1.0 200 OK
+|     Cache-Control: no-store, no-transform
+|     Content-Type: text/html; charset=UTF-8
+|     Set-Cookie: i_like_gitea=6ad42ac42378b514; Path=/; HttpOnly; SameSite=Lax
+|     Set-Cookie: _csrf=-5wKUO7TNzSJBsdbkrfgv28Zvn46MTY4ODIwODQzNzE3NTI4ODIzNw; Path=/; Expires=Sun, 02 Jul 2023 10:47:17 GMT; HttpOnly; SameSite=Lax
+|     Set-Cookie: macaron_flash=; Path=/; Max-Age=0; HttpOnly; SameSite=Lax
+|     X-Frame-Options: SAMEORIGIN
+|     Date: Sat, 01 Jul 2023 10:47:17 GMT
+|     <!DOCTYPE html>
+|     <html lang="en-US" class="theme-">
+|     <head>
+|     <meta charset="utf-8">
+|     <meta name="viewport" content="width=device-width, initial-scale=1">
+|     <title> Gitea: Git with a cup of tea</title>
+|     <link rel="manifest" href="data:application/json;base64,eyJuYW1lIjoiR2l0ZWE6IEdpdCB3aXRoIGEgY3VwIG9mIHRlYSIsInNob3J0X25hbWUiOiJHaXRlYTogR2l0IHdpdGggYSBjdXAgb2YgdGVhIiwic3RhcnRfdXJsIjoiaHR0cDovL2xvY2FsaG9zdDozMDAwLyIsImljb25zIjpbeyJzcmMiOiJodHRwOi
+|   HTTPOptions: 
+|     HTTP/1.0 405 Method Not Allowed
+|     Cache-Control: no-store, no-transform
+|     Set-Cookie: i_like_gitea=e388651d5cfbc267; Path=/; HttpOnly; SameSite=Lax
+|     Set-Cookie: _csrf=ATmtPdvxHOpIYifZ5eDAeogGrPA6MTY4ODIwODQ0MzQyODYwNzQ0MQ; Path=/; Expires=Sun, 02 Jul 2023 10:47:23 GMT; HttpOnly; SameSite=Lax
+|     Set-Cookie: macaron_flash=; Path=/; Max-Age=0; HttpOnly; SameSite=Lax
+|     X-Frame-Options: SAMEORIGIN
+|     Date: Sat, 01 Jul 2023 10:47:23 GMT
+|_    Content-Length: 0
+8080/tcp open  http    SimpleHTTPServer 0.6 (Python 3.6.9)
+|_http-title: Welcome to nginx!
+|_http-server-header: SimpleHTTP/0.6 Python/3.6.9
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port3000-TCP:V=7.94%I=7%D=7/1%Time=64A00431%P=x86_64-pc-linux-gnu%r(Gen
+SF:ericLines,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20te
+SF:xt/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x2
+SF:0Request")%r(GetRequest,2DE8,"HTTP/1\.0\x20200\x20OK\r\nCache-Control:\
+SF:x20no-store,\x20no-transform\r\nContent-Type:\x20text/html;\x20charset=
+SF:UTF-8\r\nSet-Cookie:\x20i_like_gitea=6ad42ac42378b514;\x20Path=/;\x20Ht
+SF:tpOnly;\x20SameSite=Lax\r\nSet-Cookie:\x20_csrf=-5wKUO7TNzSJBsdbkrfgv28
+SF:Zvn46MTY4ODIwODQzNzE3NTI4ODIzNw;\x20Path=/;\x20Expires=Sun,\x2002\x20Ju
+SF:l\x202023\x2010:47:17\x20GMT;\x20HttpOnly;\x20SameSite=Lax\r\nSet-Cooki
+SF:e:\x20macaron_flash=;\x20Path=/;\x20Max-Age=0;\x20HttpOnly;\x20SameSite
+SF:=Lax\r\nX-Frame-Options:\x20SAMEORIGIN\r\nDate:\x20Sat,\x2001\x20Jul\x2
+SF:02023\x2010:47:17\x20GMT\r\n\r\n<!DOCTYPE\x20html>\n<html\x20lang=\"en-
+SF:US\"\x20class=\"theme-\">\n<head>\n\t<meta\x20charset=\"utf-8\">\n\t<me
+SF:ta\x20name=\"viewport\"\x20content=\"width=device-width,\x20initial-sca
+SF:le=1\">\n\t<title>\x20Gitea:\x20Git\x20with\x20a\x20cup\x20of\x20tea</t
+SF:itle>\n\t<link\x20rel=\"manifest\"\x20href=\"data:application/json;base
+SF:64,eyJuYW1lIjoiR2l0ZWE6IEdpdCB3aXRoIGEgY3VwIG9mIHRlYSIsInNob3J0X25hbWUi
+SF:OiJHaXRlYTogR2l0IHdpdGggYSBjdXAgb2YgdGVhIiwic3RhcnRfdXJsIjoiaHR0cDovL2x
+SF:vY2FsaG9zdDozMDAwLyIsImljb25zIjpbeyJzcmMiOiJodHRwOi")%r(Help,67,"HTTP/1
+SF:\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/plain;\x20charset
+SF:=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Request")%r(HTTPOpt
+SF:ions,1C2,"HTTP/1\.0\x20405\x20Method\x20Not\x20Allowed\r\nCache-Control
+SF::\x20no-store,\x20no-transform\r\nSet-Cookie:\x20i_like_gitea=e388651d5
+SF:cfbc267;\x20Path=/;\x20HttpOnly;\x20SameSite=Lax\r\nSet-Cookie:\x20_csr
+SF:f=ATmtPdvxHOpIYifZ5eDAeogGrPA6MTY4ODIwODQ0MzQyODYwNzQ0MQ;\x20Path=/;\x2
+SF:0Expires=Sun,\x2002\x20Jul\x202023\x2010:47:23\x20GMT;\x20HttpOnly;\x20
+SF:SameSite=Lax\r\nSet-Cookie:\x20macaron_flash=;\x20Path=/;\x20Max-Age=0;
+SF:\x20HttpOnly;\x20SameSite=Lax\r\nX-Frame-Options:\x20SAMEORIGIN\r\nDate
+SF::\x20Sat,\x2001\x20Jul\x202023\x2010:47:23\x20GMT\r\nContent-Length:\x2
+SF:00\r\n\r\n")%r(RTSPRequest,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nCo
+SF:ntent-Type:\x20text/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n
+SF:\r\n400\x20Bad\x20Request");
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.94%E=4%D=7/1%OT=22%CT=1%CU=40194%PV=Y%DS=5%DC=T%G=Y%TM=64A004AF
+OS:%P=x86_64-pc-linux-gnu)SEQ(TI=Z%TS=A)SEQ(TI=Z%CI=Z%TS=A)SEQ(SP=105%GCD=1
+OS:%ISR=105%TI=Z%CI=Z%TS=A)SEQ(SP=FB%GCD=1%ISR=10C%TI=Z%CI=Z%TS=A)OPS(O1=M5
+OS:08ST11NW7%O2=M508ST11NW7%O3=M508NNT11NW7%O4=M508ST11NW7%O5=M508ST11NW7%O
+OS:6=M508ST11)WIN(W1=F4B3%W2=F4B3%W3=F4B3%W4=F4B3%W5=F4B3%W6=F4B3)ECN(R=N)E
+OS:CN(R=Y%DF=Y%T=40%W=F507%O=M508NNSNW7%CC=Y%Q=)T1(R=Y%DF=Y%T=40%S=O%A=S+%F
+OS:=AS%RD=0%Q=)T2(R=N)T3(R=N)T4(R=N)T4(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=
+OS:0%Q=)T5(R=N)T5(R=Y%DF=Y%T=40%W=0%S=Z%A=O%F=AR%O=%RD=0%Q=)T5(R=Y%DF=Y%T=4
+OS:0%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=N)T6(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O
+OS:=%RD=0%Q=)T6(R=Y%DF=Y%T=40%W=0%S=O%A=Z%F=R%O=%RD=0%Q=)T7(R=Y%DF=Y%T=40%W
+OS:=0%S=Z%A=O%F=AR%O=%RD=0%Q=)T7(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=
+OS:)U1(R=Y%DF=N%T=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)IE(R=Y%
+OS:DFI=N%T=40%CD=S)
+
+Network Distance: 5 hops
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE (using port 993/tcp)
+HOP RTT       ADDRESS
+1   17.06 ms  10.17.0.1 (10.17.0.1)
+2   ... 4
+5   150.68 ms 10.10.152.0 (10.10.152.0)
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Jul  1 06:49:19 2023 -- 1 IP address (1 host up) scanned in 141.99 seconds

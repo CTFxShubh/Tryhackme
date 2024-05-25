@@ -1,0 +1,19 @@
+step 1 : check id system is alive or not 
+step 2 : scann the system using nmap 
+step 3 : wait for the result and check if th ip address is website or not using the browser and paste the ipaddress if not then type just http instead of https
+step 4 : saw the nmap result and found anonymous ftp login , logging in found a jpeg using steghide to extract the image SYNTAX(steghide extract -sf  gum_room.jpg)
+step 5 : find hidden directories using gobuster 
+step 6 : found /home.php where we can input commands 
+step 7 : pasting a reverse shell using php-reverse-shell
+step 8 : using strings to view the content of the file fond the key 
+step 9 : using strings to open teleport file and found a rsa key 
+step 10 : changing the file permission mod and logging in in charlie using ssh with rsa key found 
+step 11 : cat the user txt file 
+step 12 : privilege escalation 
+step 13 : sudo -l found vi command can be run as root 
+step 14 : gtfobins  sudo vi -c ':!/bin/sh' /dev/null
+step 15 : gained root access now cat the root.txt
+step 16 : find charlie password using john or hascat 
+step 17 : easiet way to find charlie password is to view the validate .php file in /var/www/html directory view the command to see the password as it will given the password to compare
+
+step 18 : over
