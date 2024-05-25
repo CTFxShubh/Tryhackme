@@ -1,0 +1,57 @@
+**First and foremost trying nmap to scann for the open ports and exposed Services
+
+	--> Found 2 open ports running 
+		-> 80 : Internet Information Services
+		-> 3389 : Microsfot RDP services 
+
+	80 : Doing a quick research from CHAT GPT , I found out the IIS is an service by micrsoft which is used to host website on the WINDOWS machine 
+
+	3389 : is an RDP like service which is used to control the machine remotly , but it requires username and password
+
+
+
+** Second thing using gobuster 
+
+	--> Found 2 hidden directory 
+		-> /retro  , /Retro 
+		Looking those directory , I found out new website 
+
+	--> Using Goubster again to bruteforce the directory inside the /retro
+		-> found wordpress common directory , so from there I found out that Wordpress is begin used 
+
+		Looking around the website found the login page 
+			-> /retro/wp-login.php
+
+** Credentials 
+	
+	--> Using WPScan to enumerate users
+		->  Found user = wade 
+
+	--> Entering the wade user with a random password teels us in the login page that password for user wade is incorrect which confirms about the wade user
+
+	--> While there were so many chats or something like that in the website , I found a chat in which wade used to forget his password 
+
+		-> And in another chat he left behind an note in which  "parzival"  was written
+
+
+
+** Initial Access 
+
+	--> After getting the initial access , the first thing to get a shell is test for Theme Editor 404 , which is basically pasting an php reverse shell and just invoking it
+
+		-> It failed because it gets automatically disconnected 
+
+	--> Trying Malicious Plugin 
+		-> It failed too
+
+	
+	After failing , next thing was to do iss to gett the rdp access and the only credential's we have is wade and his password 
+
+
+	--> Using those credentials with xfreerdp tool we goot an GUI Initial Access
+
+** Privilege Escalation
+
+	--> They gave hint which I was not able to understand and after searching around for a while , I found out that there is an Kernel Exploit for this version
+
+	--> Using the Kernel Exploit to get Administrative shell 

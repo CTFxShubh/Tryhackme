@@ -1,0 +1,40 @@
+# Nmap 7.94 scan initiated Sun Jun 25 10:52:55 2023 as: nmap -sV -A -O -oN nmap.txt -Pn 10.10.55.154
+Nmap scan report for retro.thm (10.10.55.154)
+Host is up (0.14s latency).
+Not shown: 998 filtered tcp ports (no-response)
+PORT     STATE SERVICE       VERSION
+80/tcp   open  http          Microsoft IIS httpd 10.0
+| http-methods: 
+|_  Potentially risky methods: TRACE
+|_http-title: IIS Windows Server
+|_http-server-header: Microsoft-IIS/10.0
+3389/tcp open  ms-wbt-server Microsoft Terminal Services
+| rdp-ntlm-info: 
+|   Target_Name: RETROWEB
+|   NetBIOS_Domain_Name: RETROWEB
+|   NetBIOS_Computer_Name: RETROWEB
+|   DNS_Domain_Name: RetroWeb
+|   DNS_Computer_Name: RetroWeb
+|   Product_Version: 10.0.14393
+|_  System_Time: 2023-06-25T14:53:29+00:00
+| ssl-cert: Subject: commonName=RetroWeb
+| Not valid before: 2023-06-24T14:43:41
+|_Not valid after:  2023-12-24T14:43:41
+|_ssl-date: 2023-06-25T14:53:33+00:00; 0s from scanner time.
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: VoIP adapter|firewall|general purpose
+Running (JUST GUESSING): Cisco embedded (85%), Fortinet embedded (85%), Linux 2.6.X (85%)
+OS CPE: cpe:/h:cisco:unified_call_manager cpe:/o:linux:linux_kernel:2.6.26
+Aggressive OS guesses: Cisco Unified Communications Manager VoIP adapter (85%), Fortinet FortiGate-50B or 310B firewall (85%), Linux 2.6.26 (PCLinuxOS) (85%), Linux 2.6.32 (85%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 5 hops
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+TRACEROUTE (using port 80/tcp)
+HOP RTT       ADDRESS
+1   19.61 ms  10.17.0.1 (10.17.0.1)
+2   ... 4
+5   143.53 ms retro.thm (10.10.55.154)
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Jun 25 10:53:36 2023 -- 1 IP address (1 host up) scanned in 41.52 seconds

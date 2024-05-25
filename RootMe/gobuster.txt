@@ -1,0 +1,31 @@
+Syntax :- gobuster dir -u http://10.10.6.234/ -w /home/kali/Tryhackme/List_For_Enumeration/wordlists/dirbuster/directory-list-2.3-medium.txt -x php,cs,js,py,txt,cgi -t 64           
+
+
+
+===============================================================
+Gobuster v3.2.0-dev
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     http://10.10.6.234/
+[+] Method:                  GET
+[+] Threads:                 64
+[+] Wordlist:                /home/kali/Tryhackme/List_For_Enumeration/wordlists/dirbuster/directory-list-2.3-medium.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.2.0-dev
+[+] Extensions:              py,txt,cgi,php,cs,js
+[+] Timeout:                 10s
+===============================================================
+2022/12/05 06:28:50 Starting gobuster in directory enumeration mode
+===============================================================
+/.php                 (Status: 403) [Size: 276]
+/index.php            (Status: 200) [Size: 616]
+/uploads              (Status: 301) [Size: 312] [--> http://10.10.6.234/uploads/]
+/css                  (Status: 301) [Size: 308] [--> http://10.10.6.234/css/]
+/js                   (Status: 301) [Size: 307] [--> http://10.10.6.234/js/]
+/panel                (Status: 301) [Size: 310] [--> http://10.10.6.234/panel/]
+/.php                 (Status: 403) [Size: 276]
+Progress: 424900 / 1543927 (27.52%)^C
+[!] Keyboard interrupt detected, terminating.
+===============================================================
+2022/12/05 06:45:00 Finished
+===============================================================
