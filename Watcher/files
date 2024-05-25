@@ -1,0 +1,4 @@
+dr-xr-xr-x    3 65534    65534        4096 Dec 03  2020 .
+dr-xr-xr-x    3 65534    65534        4096 Dec 03  2020 ..
+drwxr-xr-x    2 1001     1001         4096 Jun 22 13:13 files
+-rw-r--r--    1 0        0              21 Dec 03  2020 flag_2.txt
