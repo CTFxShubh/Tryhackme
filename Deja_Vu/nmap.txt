@@ -1,0 +1,28 @@
+# Nmap 7.94 scan initiated Sat Jul  1 01:35:43 2023 as: nmap -sV -A -O -oN nmap.txt 10.10.162.54
+Nmap scan report for 10.10.162.54 (10.10.162.54)
+Host is up (0.14s latency).
+Not shown: 984 filtered tcp ports (no-response), 14 filtered tcp ports (admin-prohibited)
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 8.0 (protocol 2.0)
+| ssh-hostkey: 
+|   3072 30:0f:38:8d:3b:be:67:f3:e0:ca:eb:1c:93:ad:15:86 (RSA)
+|   256 46:09:66:2b:1f:d1:b9:3c:d7:e1:73:0f:2f:33:4f:74 (ECDSA)
+|_  256 a8:43:0e:d2:c1:a9:d1:14:e0:95:31:a1:62:94:ed:44 (ED25519)
+80/tcp open  http    Golang net/http server (Go-IPFS json-rpc or InfluxDB API)
+|_http-title: Dog Gallery!
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose|specialized|storage-misc
+Running (JUST GUESSING): Linux 3.X (88%), Crestron 2-Series (86%), HP embedded (85%)
+OS CPE: cpe:/o:linux:linux_kernel:3 cpe:/o:crestron:2_series cpe:/h:hp:p2000_g3
+Aggressive OS guesses: Linux 3.10 - 3.13 (88%), Crestron XPanel control system (86%), HP P2000 G3 NAS device (85%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 5 hops
+
+TRACEROUTE (using port 80/tcp)
+HOP RTT       ADDRESS
+1   18.53 ms  10.17.0.1 (10.17.0.1)
+2   ... 4
+5   141.56 ms 10.10.162.54 (10.10.162.54)
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Jul  1 01:36:27 2023 -- 1 IP address (1 host up) scanned in 45.05 seconds
