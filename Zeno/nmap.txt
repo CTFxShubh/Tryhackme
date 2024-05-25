@@ -1,0 +1,28 @@
+# Nmap 7.93 scan initiated Tue Apr 25 13:50:10 2023 as: nmap -p- -sV -A -O -oN nmap.txt 10.10.79.163
+Nmap scan report for 10.10.79.163 (10.10.79.163)
+Host is up (0.14s latency).
+Not shown: 65235 filtered tcp ports (no-response), 298 filtered tcp ports (host-prohibited)
+PORT      STATE SERVICE VERSION
+22/tcp    open  ssh     OpenSSH 7.4 (protocol 2.0)
+| ssh-hostkey: 
+|   2048 092362a2186283690440623297ff3ccd (RSA)
+|   256 33663536b0680632c18af601bc4338ce (ECDSA)
+|_  256 1498e3847055e6600cc20977f8b7a61c (ED25519)
+12340/tcp open  http    Apache httpd 2.4.6 ((CentOS) PHP/5.4.16)
+|_http-server-header: Apache/2.4.6 (CentOS) PHP/5.4.16
+|_http-title: We&#39;ve got some trouble | 404 - Resource not found
+| http-methods: 
+|_  Potentially risky methods: TRACE
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Linux 3.10 - 3.13 (90%), Crestron XPanel control system (90%), ASUS RT-N56U WAP (Linux 3.4) (87%), Linux 3.1 (87%), Linux 3.16 (87%), Linux 3.2 (87%), HP P2000 G3 NAS device (87%), AXIS 210A or 211 Network Camera (Linux 2.6.17) (87%), Adtran 424RG FTTH gateway (86%), Linux 2.6.32 (86%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 5 hops
+
+TRACEROUTE (using port 22/tcp)
+HOP RTT       ADDRESS
+1   21.58 ms  10.17.0.1 (10.17.0.1)
+2   ... 4
+5   144.52 ms 10.10.79.163 (10.10.79.163)
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Apr 25 13:55:39 2023 -- 1 IP address (1 host up) scanned in 328.37 seconds

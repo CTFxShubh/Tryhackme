@@ -1,0 +1,11 @@
+Target: http://wekor.thm/
+Total requests: 4989
+==================================================================
+ID    Response   Lines      Word         Chars          Request    
+==================================================================
+00382:  C=200      5 L	      29 W	    143 Ch	  "site - site"
+
+Total time: 0
+Processed Requests: 3066
+Filtered Requests: 3065
+Requests/sec.: 0
