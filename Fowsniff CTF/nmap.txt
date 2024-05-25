@@ -1,0 +1,43 @@
+# Nmap 7.93 scan initiated Fri Jan 27 14:17:01 2023 as: nmap -sV -A -O -oN nmap.txt 10.10.138.251
+Nmap scan report for 10.10.138.251 (10.10.138.251)
+Host is up (0.22s latency).
+Not shown: 996 closed tcp ports (reset)
+PORT    STATE SERVICE VERSION
+22/tcp  open  ssh     OpenSSH 7.2p2 Ubuntu 4ubuntu2.4 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 903566f4c6d295121be8cddeaa4e0323 (RSA)
+|   256 539d236734cf0ad55a9a1174bdfdde71 (ECDSA)
+|_  256 a28fdbae9e3dc9e6a9ca03b1d71b6683 (ED25519)
+80/tcp  open  http    Apache httpd 2.4.18 ((Ubuntu))
+|_http-title: Fowsniff Corp - Delivering Solutions
+| http-robots.txt: 1 disallowed entry 
+|_/
+|_http-server-header: Apache/2.4.18 (Ubuntu)
+110/tcp open  pop3    Dovecot pop3d
+|_pop3-capabilities: SASL(PLAIN) USER UIDL TOP CAPA PIPELINING RESP-CODES AUTH-RESP-CODE
+143/tcp open  imap    Dovecot imapd
+|_imap-capabilities: IMAP4rev1 post-login ID AUTH=PLAINA0001 ENABLE SASL-IR have IDLE OK listed capabilities Pre-login LOGIN-REFERRALS LITERAL+ more
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.93%E=4%D=1/27%OT=22%CT=1%CU=35013%PV=Y%DS=5%DC=T%G=Y%TM=63D4235
+OS:7%P=x86_64-pc-linux-gnu)SEQ(SP=106%GCD=1%ISR=10B%TI=Z%CI=I%TS=8)SEQ(SP=1
+OS:06%GCD=1%ISR=10B%TI=Z%TS=8)OPS(O1=M505ST11NW7%O2=M505ST11NW7%O3=M505NNT1
+OS:1NW7%O4=M505ST11NW7%O5=M505ST11NW7%O6=M505ST11)WIN(W1=68DF%W2=68DF%W3=68
+OS:DF%W4=68DF%W5=68DF%W6=68DF)ECN(R=Y%DF=Y%T=40%W=6903%O=M505NNSNW7%CC=Y%Q=
+OS:)T1(R=Y%DF=Y%T=40%S=O%A=S+%F=AS%RD=0%Q=)T2(R=N)T3(R=N)T4(R=Y%DF=Y%T=40%W
+OS:=0%S=A%A=Z%F=R%O=%RD=0%Q=)T5(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)
+OS:T6(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T7(R=Y%DF=Y%T=40%W=0%S=Z%A=S
+OS:+%F=AR%O=%RD=0%Q=)U1(R=Y%DF=N%T=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUC
+OS:K=G%RUD=G)IE(R=N)
+
+Network Distance: 5 hops
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE (using port 23/tcp)
+HOP RTT       ADDRESS
+1   90.39 ms  10.17.0.1 (10.17.0.1)
+2   ... 4
+5   295.25 ms 10.10.138.251 (10.10.138.251)
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Jan 27 14:17:43 2023 -- 1 IP address (1 host up) scanned in 42.71 seconds
