@@ -1,0 +1,61 @@
+sudo nmap -sV -A -O -p- 10.10.167.202 
+Starting Nmap 7.93 ( https://nmap.org ) at 2023-01-10 03:57 EST
+Stats: 0:00:52 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 12.44% done; ETC: 04:04 (0:06:06 remaining)
+Stats: 0:01:53 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 22.67% done; ETC: 04:05 (0:06:25 remaining)
+Stats: 0:05:16 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 53.65% done; ETC: 04:06 (0:04:33 remaining)
+Stats: 0:08:35 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 84.51% done; ETC: 04:07 (0:01:34 remaining)
+Stats: 0:09:09 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 89.34% done; ETC: 04:07 (0:01:06 remaining)
+Stats: 0:09:33 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 93.17% done; ETC: 04:07 (0:00:42 remaining)
+Stats: 0:09:35 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 93.35% done; ETC: 04:07 (0:00:41 remaining)
+Stats: 0:09:37 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 93.50% done; ETC: 04:07 (0:00:40 remaining)
+Nmap scan report for 10.10.167.202 (10.10.167.202)
+Host is up (0.14s latency).
+Not shown: 65532 closed tcp ports (reset)
+PORT      STATE SERVICE VERSION
+80/tcp    open  http    nginx 1.16.1
+| http-robots.txt: 1 disallowed entry 
+|_/
+|_http-title: Welcome to nginx!
+|_http-server-header: nginx/1.16.1
+6498/tcp  open  ssh     OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 304a2b22acd95609f2da122057f46cd4 (RSA)
+|   256 bf86c9c7b7ef8c8bb994ae0188c0854d (ECDSA)
+|_  256 a172ef6c812913ef5a6c24034cfe3d0b (ED25519)
+65524/tcp open  http    Apache httpd 2.4.43 ((Ubuntu))
+| http-robots.txt: 1 disallowed entry 
+|_/
+|_http-title: Apache2 Debian Default Page: It works
+|_http-server-header: Apache/2.4.43 (Ubuntu)
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.93%E=4%D=1/10%OT=80%CT=1%CU=40377%PV=Y%DS=5%DC=T%G=Y%TM=63BD2AF
+OS:A%P=x86_64-pc-linux-gnu)SEQ(SP=100%GCD=1%ISR=10B%TI=Z%CI=Z%II=I%TS=A)OPS
+OS:(O1=M505ST11NW7%O2=M505ST11NW7%O3=M505NNT11NW7%O4=M505ST11NW7%O5=M505ST1
+OS:1NW7%O6=M505ST11)WIN(W1=F4B3%W2=F4B3%W3=F4B3%W4=F4B3%W5=F4B3%W6=F4B3)ECN
+OS:(R=Y%DF=Y%T=40%W=F507%O=M505NNSNW7%CC=Y%Q=)T1(R=Y%DF=Y%T=40%S=O%A=S+%F=A
+OS:S%RD=0%Q=)T2(R=N)T3(R=N)T4(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T5(R
+OS:=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F
+OS:=R%O=%RD=0%Q=)T7(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)U1(R=Y%DF=N%
+OS:T=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)IE(R=Y%DFI=N%T=40%CD
+OS:=S)
+
+Network Distance: 5 hops
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE (using port 80/tcp)
+HOP RTT       ADDRESS
+1   17.82 ms  10.17.0.1 (10.17.0.1)
+2   ... 4
+5   141.22 ms 10.10.167.202 (10.10.167.202)
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 666.07 seconds
