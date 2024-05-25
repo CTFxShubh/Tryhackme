@@ -1,0 +1,29 @@
+Exploit Link = https://github.com/0z09e/CVE-2020-35846.git
+RCE Link = https://swarm.ptsecurity.com/rce-cockpit-cms 
+
+<============================== Informations ==============================>
+[+] Username : admin
+[+] Email : admin@yourdomain.de
+[+] Group : admin
+[+] Hash : $2y$10$dChrF2KNbWuib/5lW1ePiegKYSxHeqWwrVC.FN5kyqhIsIdbtnOjq
+
+
+<-------------------------------------------------------------------------->
+[+] Username : darkStar7471
+[+] Email : darkstar7471@tryhackme.fakemail
+[+] Group : admin
+[+] Hash : $2y$10$uAm8IylkDFQviO/CbzP4duOqKCFCFZTiv2x7JSdm2UWyr9TJUX86e
+
+
+<-------------------------------------------------------------------------->
+[+] Username : skidy
+[+] Email : skidy@tryhackme.fakemail
+[+] Group : admin
+[+] Hash : $2y$10$uiZPeUQNErlnYxbI5PsnLurWgvhOCW2LbPovpL05XTWY.jCUave6S
+
+
+<-------------------------------------------------------------------------->
+[+] Username : ekoparty
+[+] Email : ekoparty@tryhackme.fakemail
+[+] Group : admin
+[+] Hash : $2y$10$Cz5whXg.dzlI4t8upxw9GulhqVbt0hNVE8trz5aB2pReye5/qW8BW

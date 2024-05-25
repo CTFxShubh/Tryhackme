@@ -1,0 +1,40 @@
+# Nmap 7.93 scan initiated Tue Apr 11 02:51:51 2023 as: nmap -sV -A -O -oN nmap.txt 10.10.87.238
+Nmap scan report for cmess.thm (10.10.87.238)
+Host is up (0.14s latency).
+Not shown: 998 closed tcp ports (reset)
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 7.2p2 Ubuntu 4ubuntu2.8 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 d9b652d3939a3850b4233bfd210c051f (RSA)
+|   256 21c36e318b85228a6d72868fae64662b (ECDSA)
+|_  256 5bb9757805d7ec43309617ffc6a86ced (ED25519)
+80/tcp open  http    Apache httpd 2.4.18 ((Ubuntu))
+|_http-server-header: Apache/2.4.18 (Ubuntu)
+|_http-generator: Gila CMS
+|_http-title: Site doesn't have a title (text/html; charset=UTF-8).
+| http-robots.txt: 3 disallowed entries 
+|_/src/ /themes/ /lib/
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.93%E=4%D=4/11%OT=22%CT=1%CU=43555%PV=Y%DS=5%DC=T%G=Y%TM=643503D
+OS:F%P=x86_64-pc-linux-gnu)SEQ(SP=EE%GCD=1%ISR=103%TI=Z%CI=I%II=I%TS=8)OPS(
+OS:O1=M505ST11NW7%O2=M505ST11NW7%O3=M505NNT11NW7%O4=M505ST11NW7%O5=M505ST11
+OS:NW7%O6=M505ST11)WIN(W1=68DF%W2=68DF%W3=68DF%W4=68DF%W5=68DF%W6=68DF)ECN(
+OS:R=Y%DF=Y%T=40%W=6903%O=M505NNSNW7%CC=Y%Q=)T1(R=Y%DF=Y%T=40%S=O%A=S+%F=AS
+OS:%RD=0%Q=)T2(R=N)T3(R=N)T4(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T5(R=
+OS:Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=
+OS:R%O=%RD=0%Q=)T7(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)U1(R=Y%DF=N%T
+OS:=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)IE(R=Y%DFI=N%T=40%CD=
+OS:S)
+
+Network Distance: 5 hops
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE (using port 80/tcp)
+HOP RTT      ADDRESS
+1   16.63 ms 10.17.0.1 (10.17.0.1)
+2   ... 4
+5   7.45 ms  cmess.thm (10.10.87.238)
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Apr 11 02:53:19 2023 -- 1 IP address (1 host up) scanned in 88.70 seconds

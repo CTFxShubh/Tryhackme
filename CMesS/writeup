@@ -1,0 +1,59 @@
+1. Using nmap scan the sevices on the IP
+
+   Found 2 ports open 80 , 22
+
+2. Using gobuster to enumerate the directories 
+
+   A Lot result were found but nothing was interesting accept the /admin page
+
+3. Since nothing we can do further , we can only do is [ SUBDOMAIN ENUMERATION ]
+
+   using wfuzz to enumerate the subdomain
+
+   SYNTAX : wfuzz -u 'website url' -c -f < output file name > -H "HOST : FUZZ.< website url > -hw 290
+
+   -u = url 
+   -w = subdomain wordlist
+   -c = colour output
+   -f = output file name , output to be saved 
+   -H = HEADER , tell the wfuzz where to apply the words from the list in URL
+   -hw = to hide response based on the word size 
+     
+4. Now based on the output found an subdomain dev , visiting dev.cmess.thm
+   
+   Found some chat's of user's and got credentials 
+
+   email : andre@cmess.thm
+   pass  : KPFTN_f2yxe%
+
+5. Loged to the website found the Gila CMS version 1.10.9
+   
+   Searching for the exploits in the searchsploit found LFI 
+  
+   http://10.10.190.67/admin/fm/?f=src../../../../../../../../../WINDOWS/system32/drivers/etc/hosts
+
+6. uploading php reverse shell 
+
+7. now once the file is being uploaded we need to execute the file on the server by calling the file 
+
+8. setting up the listner on the attacker machine 
+
+9. so to do this URL is http://cmess.thm/php-reverse-shell.php
+
+10. we will get the shell 
+
+11. after getting reverse shell we need to search for some files for the username or password or any vulnerable thing 
+
+12. found .password.bak file inside /opt directory it was hidden file 
+
+13. found ceredentials for andre , now loged in andre using ssh 
+
+    username : andre
+    pass     : UQfsdCB7aAP6
+
+14. So there was a directory inside the backup file 
+    
+    every 2 min backup was being created using tar and when we checked inside the crontab we found wildcard 
+
+    so gaining access using wild card extension 
+ 

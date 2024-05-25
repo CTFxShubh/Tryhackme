@@ -1,0 +1,11 @@
+Target: http://cmess.thm/
+Total requests: 4989
+==================================================================
+ID    Response   Lines      Word         Chars          Request    
+==================================================================
+00019:  C=200     30 L	     104 W	    934 Ch	  "dev - dev"
+
+Total time: 0
+Processed Requests: 1862
+Filtered Requests: 1861
+Requests/sec.: 0
