@@ -1,0 +1,25 @@
+# Nmap 7.93 scan initiated Sun May 14 13:33:19 2023 as: nmap -sV -A -O -oN nmap.txt -p- 10.10.241.228
+Nmap scan report for unstable.thm (10.10.241.228)
+Host is up (0.17s latency).
+Not shown: 65210 filtered tcp ports (no-response), 323 filtered tcp ports (admin-prohibited)
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 8.0 (protocol 2.0)
+| ssh-hostkey: 
+|   3072 baa2408edec37bc7f7b37e0c1eec9fb8 (RSA)
+|   256 38284ce14a753d0de7e48564382a8ec7 (ECDSA)
+|_  256 1a33a0ed83ba09a562a7dfab2feed099 (ED25519)
+80/tcp open  http    nginx 1.14.1
+|_http-title: Site doesn't have a title (text/html; charset=utf-8).
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Linux 3.10 - 3.13 (90%), Crestron XPanel control system (89%), HP P2000 G3 NAS device (86%), ASUS RT-N56U WAP (Linux 3.4) (86%), Linux 3.1 (86%), Linux 3.16 (86%), Linux 3.2 (86%), AXIS 210A or 211 Network Camera (Linux 2.6.17) (86%), Linux 2.6.32 (85%), Linux 2.6.39 - 3.2 (85%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 5 hops
+
+TRACEROUTE (using port 22/tcp)
+HOP RTT       ADDRESS
+1   16.54 ms  10.17.0.1 (10.17.0.1)
+2   ... 4
+5   171.51 ms unstable.thm (10.10.241.228)
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun May 14 13:39:51 2023 -- 1 IP address (1 host up) scanned in 392.96 seconds

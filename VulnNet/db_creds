@@ -1,0 +1,9 @@
+ $BDTYPE = 'mysql';
+        //Database Host
+        $DBHOST = '';
+        //Database Name
+        $DBNAME = 'VulnNet';
+        //Database Username
+        $DBUSER = 'admin';
+        //Database Password
+        $DBPASS = 'VulnNetAdminPass0990';

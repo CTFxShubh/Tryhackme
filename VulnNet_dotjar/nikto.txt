@@ -1,0 +1,24 @@
+- Nikto v2.5.0
+---------------------------------------------------------------------------
++ Target IP:          10.10.162.221
++ Target Hostname:    10.10.162.221
++ Target Port:        8080
++ Start Time:         2023-05-15 09:13:27 (GMT-4)
+---------------------------------------------------------------------------
++ Server: No banner retrieved
++ /: The anti-clickjacking X-Frame-Options header is not present. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options
++ /: The X-Content-Type-Options header is not set. This could allow the user agent to render the content of the site in a different fashion to the MIME type. See: https://www.netsparker.com/web-vulnerability-scanner/vulnerabilities/missing-content-type-header/
++ No CGI Directories found (use '-C all' to force check all possible dirs)
++ /favicon.ico: identifies this app/server as: Apache Tomcat (possibly 5.5.26 through 8.0.15), Alfresco Community. See: https://en.wikipedia.org/wiki/Favicon
++ OPTIONS: Allowed HTTP Methods: GET, HEAD, POST, PUT, DELETE, OPTIONS .
++ HTTP method ('Allow' Header): 'PUT' method could allow clients to save files on the web server.
++ HTTP method ('Allow' Header): 'DELETE' may allow clients to remove files on the web server.
++ /examples/servlets/index.html: Apache Tomcat default JSP pages present.
++ /examples/jsp/snp/snoop.jsp: Displays information about page retrievals, including other users. See: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2004-2104
++ /manager/html: Default Tomcat Manager / Host Manager interface found.
++ /host-manager/html: Default Tomcat Manager / Host Manager interface found.
++ /manager/status: Default Tomcat Server Status interface found.
++ 8379 requests: 0 error(s) and 11 item(s) reported on remote host
++ End Time:           2023-05-15 09:57:58 (GMT-4) (2671 seconds)
+---------------------------------------------------------------------------
++ 1 host(s) tested

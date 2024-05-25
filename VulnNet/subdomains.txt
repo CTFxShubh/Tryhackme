@@ -1,0 +1,12 @@
+Target: http://vulnnet.thm/
+Total requests: 4989
+==================================================================
+ID    Response   Lines      Word         Chars          Request    
+==================================================================
+00689:  C=400     12 L	      53 W	    424 Ch	  "gc._msdcs - gc._msdcs"
+01236:  C=401     14 L	      54 W	    468 Ch	  "broadcast - broadcast"
+
+Total time: 0
+Processed Requests: 4989
+Filtered Requests: 4987
+Requests/sec.: 0
