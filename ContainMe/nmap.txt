@@ -1,0 +1,42 @@
+# Nmap 7.93 scan initiated Tue May 16 08:27:34 2023 as: nmap -sV -A -O -oN nmap.txt 10.10.234.109
+Nmap scan report for 10.10.234.109 (10.10.234.109)
+Host is up (0.16s latency).
+Not shown: 996 closed tcp ports (reset)
+PORT     STATE SERVICE       VERSION
+22/tcp   open  ssh           OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 a63e80d9b098fd7e096d3412f9158a18 (RSA)
+|   256 ec5f8a1d59b3592f49effbf44ad01d7a (ECDSA)
+|_  256 b14a22dc7f60e4fc080c554fe415e0fa (ED25519)
+80/tcp   open  tcpwrapped
+2222/tcp open  EtherNetIP-1?
+|_ssh-hostkey: ERROR: Script execution failed (use -d to debug)
+8022/tcp open  ssh           OpenSSH 7.7p1 Ubuntu 4ppa1+obfuscated (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 dcaeea273fab10ae8c2eb30c5bd542bc (RSA)
+|   256 67297504741b83d3c8de6d65fee60735 (ECDSA)
+|_  256 7f7e89c4e0a0da926ea67045fc432384 (ED25519)
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.93%E=4%D=5/16%OT=22%CT=1%CU=42758%PV=Y%DS=5%DC=T%G=Y%TM=646377B
+OS:4%P=x86_64-pc-linux-gnu)SEQ(SP=105%GCD=1%ISR=105%TI=Z%CI=Z%TS=A)SEQ(SP=1
+OS:05%GCD=1%ISR=105%TI=Z%CI=Z%II=I%TS=A)OPS(O1=M508ST11NW7%O2=M508ST11NW7%O
+OS:3=M508NNT11NW7%O4=M508ST11NW7%O5=M508ST11NW7%O6=M508ST11)WIN(W1=F4B3%W2=
+OS:F4B3%W3=F4B3%W4=F4B3%W5=F4B3%W6=F4B3)ECN(R=Y%DF=Y%T=40%W=F507%O=M508NNSN
+OS:W7%CC=Y%Q=)T1(R=Y%DF=Y%T=40%S=O%A=S+%F=AS%RD=0%Q=)T2(R=N)T3(R=N)T4(R=Y%D
+OS:F=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T5(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O
+OS:=%RD=0%Q=)T6(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T7(R=Y%DF=Y%T=40%W
+OS:=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)U1(R=Y%DF=N%T=40%IPL=164%UN=0%RIPL=G%RID=G%R
+OS:IPCK=G%RUCK=G%RUD=G)IE(R=Y%DFI=N%T=40%CD=S)
+
+Network Distance: 5 hops
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE (using port 80/tcp)
+HOP RTT       ADDRESS
+1   35.23 ms  10.17.0.1 (10.17.0.1)
+2   ... 4
+5   159.49 ms 10.10.234.109 (10.10.234.109)
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue May 16 08:31:48 2023 -- 1 IP address (1 host up) scanned in 254.24 seconds

