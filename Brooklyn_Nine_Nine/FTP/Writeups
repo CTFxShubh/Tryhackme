@@ -1,0 +1,23 @@
+Starting enumreation using nmap scan 
+ --> Found 3 Ports 
+     --> 21,22,80
+
+
+Anonymous login was allowed in FTP , so login in , found an text file 
+
+Note contains 2 Users
+--> Amy , Jake , holt
+
+
+We got 3 usernames 
+ --> So Trying brute force attack on ssh service using USERNAME boris 
+
+     --> Found password USERNAME : boris
+                        PASSWORD : 987654321
+
+
+Using sudo -l in jake 
+
+can run commands as root /bin/less check GTOBins 
+
+to get root shell 

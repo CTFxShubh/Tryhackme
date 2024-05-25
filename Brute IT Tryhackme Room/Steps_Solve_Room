@@ -1,0 +1,44 @@
+Step 1 : Scan the IP Address given by tryhackme 
+         2 ports were open 
+         1st Service = ssh
+         2nd Service = http
+
+Step 2 : If a http service is running check the IP address in web browser 
+
+Step 3 : Find the hidden directories in the website using gobuster 
+    
+         syntax = gobuster dir -u http://10.10.22.134 -w /usr/share/wordlists/dirb/common.txt > gobuster.txt
+
+         found a admin page in admin page the inspect tool revealed a user name called john and admin 
+
+Step 4 : checking whether the request of the username and password is sent in GET or POST and in the inspect tool under the network tab it was found that the username and password were
+       
+         in post form 
+
+Step 5 : Hydra to brute force the admin page 
+
+
+         Syntax= hydra -l admin -P /usr/share/wordlists/rockyou.txt 10.10.22.134  http-form-post "/admin/index.php:user=^USER^&pass=^PASS^:F=Username or password invalid" > hydra.txt 
+
+Step 6 : Found RSA key now to decrypt it with john 
+
+         /usr/share/john/ssh2john.py RSA.key > new.key
+
+         Now its ready to decrypt using john to find john user passphrase
+
+         john new.key --wordlist=/usr/share/wordlists/rockyou.txt
+
+Step 7 : using SSH to login john using RSA KEY before login give execution permission to RSA key chmod +x RSA KEY
+
+         syntax = ssh -i RSA KEY john@IP ADDRESS 
+
+         now it will ask for the passphrase just enter it 
+
+Step 8 : Privilege to root
+
+         now in Linux there is a file path /etc/shadow in shadow it contains all the password of user copy all the user password into a new file and crack it again using john 
+         
+         you will find the password of root login the password in root typing su and enter it and enter the password 
+       
+
+--->>> !!! Thats it !!! <<<---

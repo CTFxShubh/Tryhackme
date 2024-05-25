@@ -1,0 +1,11 @@
+Target: http://broke.thm/
+Total requests: 4989
+==================================================================
+ID    Response   Lines      Word         Chars          Request    
+==================================================================
+00689:  C=400     12 L	      53 W	    422 Ch	  "gc._msdcs - gc._msdcs"
+
+Total time: 0
+Processed Requests: 4989
+Filtered Requests: 4988
+Requests/sec.: 0
