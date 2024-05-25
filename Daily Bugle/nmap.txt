@@ -1,0 +1,42 @@
+# Nmap 7.93 scan initiated Fri Feb 17 13:29:58 2023 as: nmap -sV -A -O -oN nmap.txt 10.10.63.2
+Nmap scan report for 10.10.63.2 (10.10.63.2)
+Host is up (0.14s latency).
+Not shown: 997 closed tcp ports (reset)
+PORT     STATE SERVICE VERSION
+22/tcp   open  ssh     OpenSSH 7.4 (protocol 2.0)
+| ssh-hostkey: 
+|   2048 68ed7b197fed14e618986dc58830aae9 (RSA)
+|   256 5cd682dab219e33799fb96820870ee9d (ECDSA)
+|_  256 d2a975cf2f1ef5444f0b13c20fd737cc (ED25519)
+80/tcp   open  http    Apache httpd 2.4.6 ((CentOS) PHP/5.6.40)
+|_http-server-header: Apache/2.4.6 (CentOS) PHP/5.6.40
+|_http-generator: Joomla! - Open Source Content Management
+|_http-title: Home
+| http-robots.txt: 15 disallowed entries 
+| /joomla/administrator/ /administrator/ /bin/ /cache/ 
+| /cli/ /components/ /includes/ /installation/ /language/ 
+|_/layouts/ /libraries/ /logs/ /modules/ /plugins/ /tmp/
+3306/tcp open  mysql   MariaDB (unauthorized)
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.93%E=4%D=2/17%OT=22%CT=1%CU=42927%PV=Y%DS=5%DC=T%G=Y%TM=63EFC7C
+OS:5%P=x86_64-pc-linux-gnu)SEQ(SP=108%GCD=1%ISR=10A%TI=Z%II=I%TS=A)SEQ(SP=1
+OS:08%GCD=1%ISR=10A%TI=Z%CI=I%II=I%TS=A)OPS(O1=M505ST11NW7%O2=M505ST11NW7%O
+OS:3=M505NNT11NW7%O4=M505ST11NW7%O5=M505ST11NW7%O6=M505ST11)WIN(W1=68DF%W2=
+OS:68DF%W3=68DF%W4=68DF%W5=68DF%W6=68DF)ECN(R=Y%DF=Y%T=40%W=6903%O=M505NNSN
+OS:W7%CC=Y%Q=)T1(R=Y%DF=Y%T=40%S=O%A=S+%F=AS%RD=0%Q=)T2(R=N)T3(R=N)T4(R=Y%D
+OS:F=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T5(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O
+OS:=%RD=0%Q=)T6(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T7(R=Y%DF=Y%T=40%W
+OS:=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)U1(R=Y%DF=N%T=40%IPL=164%UN=0%RIPL=G%RID=G%R
+OS:IPCK=G%RUCK=G%RUD=G)IE(R=Y%DFI=N%T=40%CD=S)
+
+Network Distance: 5 hops
+
+TRACEROUTE (using port 3389/tcp)
+HOP RTT       ADDRESS
+1   15.87 ms  10.17.0.1 (10.17.0.1)
+2   ... 4
+5   137.38 ms 10.10.63.2 (10.10.63.2)
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Feb 17 13:30:29 2023 -- 1 IP address (1 host up) scanned in 31.78 seconds

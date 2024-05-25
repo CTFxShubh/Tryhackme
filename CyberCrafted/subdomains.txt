@@ -1,0 +1,16 @@
+Target: http://cybercrafted.thm/
+Total requests: 4989
+==================================================================
+ID    Response   Lines      Word         Chars          Request    
+==================================================================
+00001:  C=200     34 L	      71 W	    832 Ch	  "www - www"
+00024:  C=200     30 L	      64 W	    937 Ch	  "admin - admin"
+00081:  C=403      9 L	      28 W	    287 Ch	  "store - store"
+00290:  C=200     30 L	      64 W	    937 Ch	  "www.admin - www.admin"
+00377:  C=403      9 L	      28 W	    291 Ch	  "www.store - www.store"
+00689:  C=400     10 L	      35 W	    301 Ch	  "gc._msdcs - gc._msdcs"
+
+Total time: 0
+Processed Requests: 4989
+Filtered Requests: 4983
+Requests/sec.: 0

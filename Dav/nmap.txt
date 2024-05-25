@@ -1,0 +1,31 @@
+# Nmap 7.93 scan initiated Sun Mar  5 00:19:54 2023 as: nmap -sV -A -O -oN nmap.txt 10.10.170.134
+Nmap scan report for 10.10.170.134 (10.10.170.134)
+Host is up (0.14s latency).
+Not shown: 999 closed tcp ports (reset)
+PORT   STATE SERVICE VERSION
+80/tcp open  http    Apache httpd 2.4.18 ((Ubuntu))
+|_http-server-header: Apache/2.4.18 (Ubuntu)
+|_http-title: Apache2 Ubuntu Default Page: It works
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.93%E=4%D=3/5%OT=80%CT=1%CU=41318%PV=Y%DS=5%DC=T%G=Y%TM=640426A4
+OS:%P=x86_64-pc-linux-gnu)SEQ(SP=FF%GCD=3%ISR=10C%TI=Z%CI=I%TS=8)SEQ(SP=FF%
+OS:GCD=1%ISR=10B%TI=Z%TS=8)OPS(O1=M505ST11NW7%O2=M505ST11NW7%O3=M505NNT11NW
+OS:7%O4=M505ST11NW7%O5=M505ST11NW7%O6=M505ST11)WIN(W1=68DF%W2=68DF%W3=68DF%
+OS:W4=68DF%W5=68DF%W6=68DF)ECN(R=Y%DF=Y%T=40%W=6903%O=M505NNSNW7%CC=Y%Q=)T1
+OS:(R=Y%DF=Y%T=40%S=O%A=S+%F=AS%RD=0%Q=)T2(R=N)T3(R=N)T4(R=Y%DF=Y%T=40%W=0%
+OS:S=A%A=Z%F=R%O=%RD=0%Q=)T5(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(
+OS:R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T7(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F
+OS:=AR%O=%RD=0%Q=)U1(R=Y%DF=N%T=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G
+OS:%RUD=G)IE(R=Y%DFI=N%T=40%CD=S)
+
+Network Distance: 5 hops
+
+TRACEROUTE (using port 21/tcp)
+HOP RTT       ADDRESS
+1   18.76 ms  10.17.0.1 (10.17.0.1)
+2   ... 4
+5   139.93 ms 10.10.170.134 (10.10.170.134)
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Mar  5 00:20:36 2023 -- 1 IP address (1 host up) scanned in 41.34 seconds
