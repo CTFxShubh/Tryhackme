@@ -1,0 +1,27 @@
+Target: http://undiscovered.thm/
+Total requests: 4989
+==================================================================
+ID    Response   Lines      Word         Chars          Request    
+==================================================================
+00491:  C=200     68 L	     341 W	   4584 Ch	  "manager - manager"
+00516:  C=200     68 L	     341 W	   4626 Ch	  "dashboard - dashboard"
+00522:  C=200     82 L	     341 W	   4650 Ch	  "deliver - deliver"
+00566:  C=200     68 L	     341 W	   4584 Ch	  "newsite - newsite"
+00612:  C=200     68 L	     341 W	   4584 Ch	  "develop - develop"
+00674:  C=200     68 L	     341 W	   4605 Ch	  "mailgate - mailgate"
+00665:  C=200     68 L	     341 W	   4521 Ch	  "view - view"
+00633:  C=200     68 L	     341 W	   4668 Ch	  "maintenance - maintenance"
+00630:  C=200     68 L	     341 W	   4542 Ch	  "forms - forms"
+00628:  C=200     68 L	     341 W	   4584 Ch	  "network - network"
+00691:  C=200     68 L	     341 W	   4605 Ch	  "terminal - terminal"
+00685:  C=200     83 L	     341 W	   4599 Ch	  "booking - booking"
+00680:  C=200     68 L	     341 W	   4542 Ch	  "start - start"
+00678:  C=200     68 L	     341 W	   4521 Ch	  "play - play"
+00694:  C=200     68 L	     341 W	   4521 Ch	  "gold - gold"
+00702:  C=200     68 L	     341 W	   4626 Ch	  "resources - resources"
+00696:  C=200     68 L	     341 W	   4605 Ch	  "internet - internet"
+
+Total time: 0
+Processed Requests: 4989
+Filtered Requests: 4972
+Requests/sec.: 0

@@ -1,0 +1,24 @@
+Using nmap scan found nfs running , but unable to find mountable directory 
+
+--> Starting Subdomains 
+    
+
+     manager                                                                                                         
+     dashboard                                                                                                     
+     deliver                                                                                                         
+     newsite                                                                                                         
+     develop                                                                                                         
+     mailgate                                                                                                     
+     view                                                                                                               
+     maintenance                                                                                                 
+     forms                                                                                                             
+     network                                                                                                         
+     terminal                                                                                                       
+     booking                                                                                                         
+     start                                                                                                            
+     play                                                                                                               
+     gold                                                                                                               
+     resources                                                                                                     
+     internet                                                                                                       
+
+    --> Found RiteCMS 2.2.1 in dashboard domain

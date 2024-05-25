@@ -1,0 +1,53 @@
+# Nmap 7.93 scan initiated Thu Apr 13 02:51:31 2023 as: nmap -sV -A -O -oN nmap.txt 10.10.30.54
+Nmap scan report for 10.10.30.54 (10.10.30.54)
+Host is up (0.15s latency).
+Not shown: 997 closed tcp ports (reset)
+PORT   STATE SERVICE VERSION
+21/tcp open  ftp     vsftpd 3.0.3
+| ftp-syst: 
+|   STAT: 
+| FTP server status:
+|      Connected to ::ffff:10.17.0.179
+|      Logged in as ftp
+|      TYPE: ASCII
+|      No session bandwidth limit
+|      Session timeout in seconds is 300
+|      Control connection is plain text
+|      Data connections will be plain text
+|      At session startup, client count was 1
+|      vsFTPd 3.0.3 - secure, fast, stable
+|_End of status
+| ftp-anon: Anonymous FTP login allowed (FTP code 230)
+|_drwxr-xr-x    3 ftp      ftp          4096 Jan 23  2021 need_Help?
+22/tcp open  ssh     OpenSSH 7.2p2 Ubuntu 4ubuntu2.10 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 fa9e38d395df55ea14c949d80a61db5e (RSA)
+|   256 adb7a75e36cb32a090908e0b98308a97 (ECDSA)
+|_  256 a2a2c81496c5206885e541d0aa538bbd (ED25519)
+80/tcp open  http    Apache httpd 2.4.18 ((Ubuntu))
+|_http-title: Welcome To Tokyo goul
+|_http-server-header: Apache/2.4.18 (Ubuntu)
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.93%E=4%D=4/13%OT=21%CT=1%CU=44267%PV=Y%DS=5%DC=T%G=Y%TM=6437A69
+OS:9%P=x86_64-pc-linux-gnu)SEQ(SP=101%GCD=1%ISR=104%TI=Z%CI=I%II=I%TS=8)OPS
+OS:(O1=M505ST11NW7%O2=M505ST11NW7%O3=M505NNT11NW7%O4=M505ST11NW7%O5=M505ST1
+OS:1NW7%O6=M505ST11)WIN(W1=68DF%W2=68DF%W3=68DF%W4=68DF%W5=68DF%W6=68DF)ECN
+OS:(R=Y%DF=Y%T=40%W=6903%O=M505NNSNW7%CC=Y%Q=)T1(R=Y%DF=Y%T=40%S=O%A=S+%F=A
+OS:S%RD=0%Q=)T2(R=N)T3(R=N)T4(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T5(R
+OS:=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F
+OS:=R%O=%RD=0%Q=)T7(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)U1(R=Y%DF=N%
+OS:T=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)IE(R=Y%DFI=N%T=40%CD
+OS:=S)
+
+Network Distance: 5 hops
+Service Info: OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE (using port 80/tcp)
+HOP RTT       ADDRESS
+1   30.01 ms  10.17.0.1 (10.17.0.1)
+2   ... 4
+5   152.89 ms 10.10.30.54 (10.10.30.54)
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Apr 13 02:52:09 2023 -- 1 IP address (1 host up) scanned in 38.00 seconds
