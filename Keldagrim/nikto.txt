@@ -1,0 +1,14 @@
+- Nikto v2.5.0
+---------------------------------------------------------------------------
++ Target IP:          10.10.169.49
++ Target Hostname:    10.10.169.49
++ Target Port:        80
++ Start Time:         2023-05-14 08:19:45 (GMT-4)
+---------------------------------------------------------------------------
++ Server: No banner retrieved
++ /YkyrdVOM.thtml: The anti-clickjacking X-Frame-Options header is not present. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options
++ /YkyrdVOM.thtml: The X-Content-Type-Options header is not set. This could allow the user agent to render the content of the site in a different fashion to the MIME type. See: https://www.netsparker.com/web-vulnerability-scanner/vulnerabilities/missing-content-type-header/
++ Scan terminated: 8 error(s) and 2 item(s) reported on remote host
++ End Time:           2023-05-14 08:30:07 (GMT-4) (622 seconds)
+---------------------------------------------------------------------------
++ 1 host(s) tested

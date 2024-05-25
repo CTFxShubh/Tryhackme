@@ -1,0 +1,3 @@
+import pty 
+pty.spawn("/bin/bash")
+exit()

@@ -1,0 +1,111 @@
+# Nmap 7.93 scan initiated Tue May  9 10:24:54 2023 as: nmap -sV -A -O -oN nmap.txt 10.10.186.200
+Nmap scan report for 10.10.186.200 (10.10.186.200)
+Host is up (0.17s latency).
+Not shown: 998 closed tcp ports (reset)
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 8.2p1 Ubuntu 4ubuntu0.2 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   3072 5b2d9d60a745de7a99203e4294ce193c (RSA)
+|   256 bf32780183af785ee7fe9c834a7daa6b (ECDSA)
+|_  256 12ab1380e5ad7307c848d5ca7c7de0af (ED25519)
+80/tcp open  http
+|_http-title: Horror LLC
+| fingerprint-strings: 
+|   GetRequest, HTTPOptions: 
+|     HTTP/1.1 200 OK
+|     Content-Type: text/html
+|     Date: Tue, 09 May 2023 14:30:40 GMT
+|     Connection: close
+|     <html><head>
+|     <title>Horror LLC</title>
+|     <style>
+|     body {
+|     background: linear-gradient(253deg, #4a040d, #3b0b54, #3a343b);
+|     background-size: 300% 300%;
+|     -webkit-animation: Background 10s ease infinite;
+|     -moz-animation: Background 10s ease infinite;
+|     animation: Background 10s ease infinite;
+|     @-webkit-keyframes Background {
+|     background-position: 0% 50%
+|     background-position: 100% 50%
+|     100% {
+|     background-position: 0% 50%
+|     @-moz-keyframes Background {
+|     background-position: 0% 50%
+|     background-position: 100% 50%
+|     100% {
+|     background-position: 0% 50%
+|     @keyframes Background {
+|     background-position: 0% 50%
+|_    background-posi
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port80-TCP:V=7.93%I=7%D=5/9%Time=645A590C%P=x86_64-pc-linux-gnu%r(GetRe
+SF:quest,E4B,"HTTP/1\.1\x20200\x20OK\r\nContent-Type:\x20text/html\r\nDate
+SF::\x20Tue,\x2009\x20May\x202023\x2014:30:40\x20GMT\r\nConnection:\x20clo
+SF:se\r\n\r\n<html><head>\n<title>Horror\x20LLC</title>\n<style>\n\x20\x20
+SF:body\x20{\n\x20\x20\x20\x20background:\x20linear-gradient\(253deg,\x20#
+SF:4a040d,\x20#3b0b54,\x20#3a343b\);\n\x20\x20\x20\x20background-size:\x20
+SF:300%\x20300%;\n\x20\x20\x20\x20-webkit-animation:\x20Background\x2010s\
+SF:x20ease\x20infinite;\n\x20\x20\x20\x20-moz-animation:\x20Background\x20
+SF:10s\x20ease\x20infinite;\n\x20\x20\x20\x20animation:\x20Background\x201
+SF:0s\x20ease\x20infinite;\n\x20\x20}\n\x20\x20\n\x20\x20@-webkit-keyframe
+SF:s\x20Background\x20{\n\x20\x20\x20\x200%\x20{\n\x20\x20\x20\x20\x20\x20
+SF:background-position:\x200%\x2050%\n\x20\x20\x20\x20}\n\x20\x20\x20\x205
+SF:0%\x20{\n\x20\x20\x20\x20\x20\x20background-position:\x20100%\x2050%\n\
+SF:x20\x20\x20\x20}\n\x20\x20\x20\x20100%\x20{\n\x20\x20\x20\x20\x20\x20ba
+SF:ckground-position:\x200%\x2050%\n\x20\x20\x20\x20}\n\x20\x20}\n\x20\x20
+SF:\n\x20\x20@-moz-keyframes\x20Background\x20{\n\x20\x20\x20\x200%\x20{\n
+SF:\x20\x20\x20\x20\x20\x20background-position:\x200%\x2050%\n\x20\x20\x20
+SF:\x20}\n\x20\x20\x20\x2050%\x20{\n\x20\x20\x20\x20\x20\x20background-pos
+SF:ition:\x20100%\x2050%\n\x20\x20\x20\x20}\n\x20\x20\x20\x20100%\x20{\n\x
+SF:20\x20\x20\x20\x20\x20background-position:\x200%\x2050%\n\x20\x20\x20\x
+SF:20}\n\x20\x20}\n\x20\x20\n\x20\x20@keyframes\x20Background\x20{\n\x20\x
+SF:20\x20\x200%\x20{\n\x20\x20\x20\x20\x20\x20background-position:\x200%\x
+SF:2050%\n\x20\x20\x20\x20}\n\x20\x20\x20\x2050%\x20{\n\x20\x20\x20\x20\x2
+SF:0\x20background-posi")%r(HTTPOptions,E4B,"HTTP/1\.1\x20200\x20OK\r\nCon
+SF:tent-Type:\x20text/html\r\nDate:\x20Tue,\x2009\x20May\x202023\x2014:30:
+SF:40\x20GMT\r\nConnection:\x20close\r\n\r\n<html><head>\n<title>Horror\x2
+SF:0LLC</title>\n<style>\n\x20\x20body\x20{\n\x20\x20\x20\x20background:\x
+SF:20linear-gradient\(253deg,\x20#4a040d,\x20#3b0b54,\x20#3a343b\);\n\x20\
+SF:x20\x20\x20background-size:\x20300%\x20300%;\n\x20\x20\x20\x20-webkit-a
+SF:nimation:\x20Background\x2010s\x20ease\x20infinite;\n\x20\x20\x20\x20-m
+SF:oz-animation:\x20Background\x2010s\x20ease\x20infinite;\n\x20\x20\x20\x
+SF:20animation:\x20Background\x2010s\x20ease\x20infinite;\n\x20\x20}\n\x20
+SF:\x20\n\x20\x20@-webkit-keyframes\x20Background\x20{\n\x20\x20\x20\x200%
+SF:\x20{\n\x20\x20\x20\x20\x20\x20background-position:\x200%\x2050%\n\x20\
+SF:x20\x20\x20}\n\x20\x20\x20\x2050%\x20{\n\x20\x20\x20\x20\x20\x20backgro
+SF:und-position:\x20100%\x2050%\n\x20\x20\x20\x20}\n\x20\x20\x20\x20100%\x
+SF:20{\n\x20\x20\x20\x20\x20\x20background-position:\x200%\x2050%\n\x20\x2
+SF:0\x20\x20}\n\x20\x20}\n\x20\x20\n\x20\x20@-moz-keyframes\x20Background\
+SF:x20{\n\x20\x20\x20\x200%\x20{\n\x20\x20\x20\x20\x20\x20background-posit
+SF:ion:\x200%\x2050%\n\x20\x20\x20\x20}\n\x20\x20\x20\x2050%\x20{\n\x20\x2
+SF:0\x20\x20\x20\x20background-position:\x20100%\x2050%\n\x20\x20\x20\x20}
+SF:\n\x20\x20\x20\x20100%\x20{\n\x20\x20\x20\x20\x20\x20background-positio
+SF:n:\x200%\x2050%\n\x20\x20\x20\x20}\n\x20\x20}\n\x20\x20\n\x20\x20@keyfr
+SF:ames\x20Background\x20{\n\x20\x20\x20\x200%\x20{\n\x20\x20\x20\x20\x20\
+SF:x20background-position:\x200%\x2050%\n\x20\x20\x20\x20}\n\x20\x20\x20\x
+SF:2050%\x20{\n\x20\x20\x20\x20\x20\x20background-posi");
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.93%E=4%D=5/9%OT=22%CT=1%CU=31944%PV=Y%DS=5%DC=T%G=Y%TM=645A593D
+OS:%P=x86_64-pc-linux-gnu)SEQ(SP=FF%GCD=1%ISR=10E%TI=Z%CI=Z%II=I%TS=A)OPS(O
+OS:1=M508ST11NW7%O2=M508ST11NW7%O3=M508NNT11NW7%O4=M508ST11NW7%O5=M508ST11N
+OS:W7%O6=M508ST11)WIN(W1=F4B3%W2=F4B3%W3=F4B3%W4=F4B3%W5=F4B3%W6=F4B3)ECN(R
+OS:=Y%DF=Y%T=40%W=F507%O=M508NNSNW7%CC=Y%Q=)T1(R=Y%DF=Y%T=40%S=O%A=S+%F=AS%
+OS:RD=0%Q=)T2(R=N)T3(R=N)T4(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T5(R=Y
+OS:%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R
+OS:%O=%RD=0%Q=)T7(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)U1(R=Y%DF=N%T=
+OS:40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)IE(R=Y%DFI=N%T=40%CD=S
+OS:)
+
+Network Distance: 5 hops
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE (using port 443/tcp)
+HOP RTT       ADDRESS
+1   15.20 ms  10.17.0.1 (10.17.0.1)
+2   ... 4
+5   210.23 ms 10.10.186.200 (10.10.186.200)
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue May  9 10:31:25 2023 -- 1 IP address (1 host up) scanned in 391.13 seconds
