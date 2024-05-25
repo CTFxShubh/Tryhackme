@@ -1,0 +1,39 @@
+step 1 : scan the machine find to service running on the port
+
+step 2 : using default scan found 5 open ports 
+
+step 3 : to find the open port above 10000 
+
+step 4 : found ftp running on 10021
+
+step 5 : getting server-header of http om port 80 
+
+         using telnet we will connect to port 80
+
+         then type SYNTAX : GET/ HTTP/1.1
+ 
+                            host: telnet
+ 
+         this will reply with bad response and will give server header 
+
+step 6 : same for ssh header 
+
+step 7 : it was already given the two user name we need to find the ftp passwords of both 
+
+         given username:{USER 1 : eddie, USER 2 : quinn} 
+
+step 8 : using hydra to bruteforce the both user as
+
+         SYNTAX : hydra -l quinn -P ~/Tryhackme/List_For_Enumeration/wordlists/rockyou.txt 10.10.37.230 ftp -s 10021 -f -V 
+
+         from the above syntax it is mentioned that we will bruteforce ftp on port 10021 because on traget ftp was running on 10021
+
+step 9 : same for eddie 
+
+         found both user's password
+
+step 10 : using nmap to scann the port 8080 on the target without getting detected 
+
+          SYNTAX : nmap -sN 10.10.37.230
+
+--->>> THANK YOU <<<---

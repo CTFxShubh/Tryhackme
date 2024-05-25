@@ -1,0 +1,20 @@
+Using nmap and gobuster 
+
+found some hidden dir
+ /index.php            (Status: 302) [Size: 0] [--> http://10.10.225.123/index.php?page=login]
+ /misc                 (Status: 301) [Size: 313] [--> http://10.10.225.123/misc/]
+
+ /css                  (Status: 301) [Size: 312] [--> http://10.10.225.123/css/]
+ /imgs                 (Status: 301) [Size: 313] [--> http://10.10.225.123/imgs/]
+ /install              (Status: 301) [Size: 316] [--> http://10.10.225.123/install/]
+ /db                   (Status: 301) [Size: 311] [--> http://10.10.225.123/db/]
+ /app                  (Status: 301) [Size: 312] [--> http://10.10.225.123/app/]
+ /js                   (Status: 301) [Size: 311] [--> http://10.10.225.123/js/]
+ /api                  (Status: 301) [Size: 312] [--> http://10.10.225.123/api/]
+ /upgrade              (Status: 301) [Size: 316] [--> http://10.10.225.123/upgrade/]
+ /javascript           (Status: 301) [Size: 319] [--> http://10.10.225.123/javascript/]
+ /config.php           (Status: 200) [Size: 0]
+ /robots.txt
+ /INSTALL.txt
+ /functions
+ /install

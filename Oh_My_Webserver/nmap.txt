@@ -1,0 +1,29 @@
+# Nmap 7.93 scan initiated Mon Mar  6 03:53:27 2023 as: nmap -sV -A -O -p- -oN nmap.txt 10.10.128.229
+Nmap scan report for 10.10.128.229 (10.10.128.229)
+Host is up (0.15s latency).
+Not shown: 65533 filtered tcp ports (no-response)
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 8.2p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   3072 e0d188762a9379d391046d25160e56d4 (RSA)
+|   256 91185c2c5ef8993c9a1f0424300eaa9b (ECDSA)
+|_  256 d1632a36dd94cf3c573e8ae88500caf6 (ED25519)
+80/tcp open  http    Apache httpd 2.4.49 ((Unix))
+|_http-server-header: Apache/2.4.49 (Unix)
+|_http-title: Consult - Business Consultancy Agency Template | Home
+| http-methods: 
+|_  Potentially risky methods: TRACE
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Crestron XPanel control system (89%), HP P2000 G3 NAS device (86%), ASUS RT-N56U WAP (Linux 3.4) (86%), Linux 3.1 (86%), Linux 3.16 (86%), Linux 3.2 (86%), AXIS 210A or 211 Network Camera (Linux 2.6.17) (86%), Linux 2.6.32 (85%), Linux 2.6.32 - 3.1 (85%), Linux 2.6.39 - 3.2 (85%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 5 hops
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE (using port 80/tcp)
+HOP RTT       ADDRESS
+1   28.49 ms  10.17.0.1 (10.17.0.1)
+2   ... 4
+5   146.74 ms 10.10.128.229 (10.10.128.229)
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Mar  6 03:59:04 2023 -- 1 IP address (1 host up) scanned in 337.48 seconds

