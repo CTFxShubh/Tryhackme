@@ -1,0 +1,3 @@
+[+] Salt for password found: 1dac0d92e9fa6bb2
+[+] Username found: mitch
+

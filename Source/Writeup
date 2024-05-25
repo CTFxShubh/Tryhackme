@@ -1,0 +1,16 @@
+1. nmap to scan the ip 
+
+2. after the result of nmap found a port running ssh on 22, and http on 10000
+
+3. when trying to access the website it is using SSL so we found a login page of Webmin 
+
+4. found an RCE exploit for webmin 
+   the module requires the usage of metasploit 
+   using the metasploit and filling the requires details of the expoit 
+   
+   run 
+
+5. got the root shell of the server 
+
+
+-->> Thank you <<-- 
